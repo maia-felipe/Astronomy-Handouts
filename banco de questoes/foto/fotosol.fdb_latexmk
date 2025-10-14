@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1742524441.48432 "c:/Users/femai/OneDrive/Área de Trabalho/Latex Geral/Astronomia/banco de questoes/Listas Por materia/foto/fotosol.tex" "fotosol.pdf" "fotosol" 1742524446.12439 0
+["pdflatex"] 1756306246.91233 "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/foto/fotosol.tex" "fotosol.pdf" "fotosol" 1756306258.41214 0
   "C:/Users/femai/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1737858923 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/femai/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1730851663 12668 2ed3ebfe78a8b8a0dace041e7e76ac2e ""
   "C:/Users/femai/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730333339 11948316 c48dc9b332b682011d03c9e0e6e5b637 ""
@@ -227,9 +227,9 @@
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1695383086 2269 4fe6fb3396214c91f164d45faf9bec45 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1695383086 20785 f7d1133a287929598a897c93f8f4c44b ""
-  "c:/Users/femai/OneDrive/Área de Trabalho/Latex Geral/Astronomia/banco de questoes/Listas Por materia/foto/fotosol.tex" 1742524439 28466 3f2e1fea2917904f8ef30830c863a464 ""
-  "fotosol.aux" 1742524445 1348 4e58a47524290194efb2418420c6fd9b "pdflatex"
-  "fotosol.out" 1742524445 190 68cf3b159a94f1d2e0edf9a1146d91f6 "pdflatex"
+  "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/foto/fotosol.tex" 1742524439 28466 3f2e1fea2917904f8ef30830c863a464 ""
+  "fotosol.aux" 1756306257 1348 4e58a47524290194efb2418420c6fd9b "pdflatex"
+  "fotosol.out" 1756306257 190 68cf3b159a94f1d2e0edf9a1146d91f6 "pdflatex"
   "fotosol.tex" 1742524439 28466 3f2e1fea2917904f8ef30830c863a464 ""
   "imagens/cherenkov.1.png" 1737596057 45438 d79bc0331d130935a5434ae8cb0fec9d ""
   "imagens/cherenkov.png" 1736983352 94273 dd41cf6e180a4879b90e07f163571ffe ""
