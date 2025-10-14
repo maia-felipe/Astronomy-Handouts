@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.30)  23 AUG 2025 12:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.30)  13 OCT 2025 23:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1071,10 +1071,46 @@ l.471
        <./imagens/q20.png>]
 
 [15]
+<imagens/lua-aldebaran.png, id=158, 974.89218pt x 318.43968pt>
+File: imagens/lua-aldebaran.png Graphic file (type png)
+<use imagens/lua-aldebaran.png>
+Package pdftex.def Info: imagens/lua-aldebaran.png  used on input line 557.
+(pdftex.def)             Requested size: 434.0749pt x 141.78539pt.
+<imagens/lua-aldebaran2.png, id=159, 1086.30844pt x 344.03531pt>
+File: imagens/lua-aldebaran2.png Graphic file (type png)
+<use imagens/lua-aldebaran2.png>
+Package pdftex.def Info: imagens/lua-aldebaran2.png  used on input line 570.
+(pdftex.def)             Requested size: 434.0749pt x 137.46994pt.
+
 
 [16]
 
-[17] (astropossol.aux)
+[17 <./imagens/lua-aldebaran.png> <./imagens/lua-aldebaran2.png>]
+<imagens/sol-ilha.png, id=173, 1326.9575pt x 724.7075pt>
+File: imagens/sol-ilha.png Graphic file (type png)
+<use imagens/sol-ilha.png>
+Package pdftex.def Info: imagens/sol-ilha.png  used on input line 618.
+(pdftex.def)             Requested size: 434.0749pt x 237.06422pt.
+
+
+[18 <./imagens/sol-ilha.png>]
+
+[19]
+<imagens/tricima.png, id=193, 564.60938pt x 470.50781pt>
+File: imagens/tricima.png Graphic file (type png)
+<use imagens/tricima.png>
+Package pdftex.def Info: imagens/tricima.png  used on input line 680.
+(pdftex.def)             Requested size: 263.07692pt x 219.23616pt.
+<imagens/tri1.png, id=194, 804.75656pt x 508.90125pt>
+File: imagens/tri1.png Graphic file (type png)
+<use imagens/tri1.png>
+Package pdftex.def Info: imagens/tri1.png  used on input line 705.
+(pdftex.def)             Requested size: 263.07692pt x 166.36159pt.
+
+
+[20 <./imagens/tricima.png>]
+
+[21 <./imagens/tri1.png>] (astropossol.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-10-09>
@@ -1083,17 +1119,17 @@ Package rerunfilecheck Info: File `astropossol.out' has not changed.
 (rerunfilecheck)             Checksum: 05DAC176340E765A83F7546C0B3466DD;160.
  ) 
 Here is how much of TeX's memory you used:
- 50360 strings out of 473897
- 1234278 string characters out of 5726461
+ 50412 strings out of 473897
+ 1235497 string characters out of 5726461
  1877058 words of memory out of 5000000
- 72572 multiletter control sequences out of 15000+600000
+ 72617 multiletter control sequences out of 15000+600000
  566850 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,13n,107p,989b,1532s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\femai\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on astropossol.pdf (17 pages, 1337865 bytes).
+ 99i,12n,107p,989b,1532s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\femai\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on astropossol.pdf (21 pages, 1703832 bytes).
 PDF statistics:
- 240 PDF objects out of 1000 (max. 8388607)
- 83 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 276 PDF objects out of 1000 (max. 8388607)
+ 90 named destinations out of 1000 (max. 500000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

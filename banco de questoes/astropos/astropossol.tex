@@ -533,7 +533,7 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
 \end{pssolution*}
 
 
-\pts{3}
+\pts{4}
 \begin{pproblem} (Lista 2 - Vinhedo 2021)
     Em fevereiro de 2015, a Lua iniciou um ciclo de ocultações mensais de Aldebaran ($\alpha$ Tau). Ou seja, todo mês a Lua passava na frente de Aldebaran para um observador na Terra. Vale ressaltar que essas ocultações não ocorriam necessariamente para observadores na mesma posição todo mês. 
 
@@ -547,6 +547,56 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
     \end{itemize}
 \end{pproblem}
 
+\begin{pssolution*}{}{}
+    A precessão nodal da Lua faz com que os nodos entre a órbita lunar e a Eclíptica rotacionem com um período de 18,6 anos. Dessa forma, a latitude eclíptica da Lua ao cruzar o meridiano de longitude eclíptica de Aldebaran varia de $-5, 15^\circ$ a $5, 15^\circ$ (a órbita lunar possuí uma inclinação $\gamma=5,15^\circ$ em relação à eclíptica) ao longo desse período. 
+    
+    O primeiro passo da resolução é determinar a longitude eclíptica máxima (ou mínima em módulo) para que a Lua oculte Aldebaran. Com base na seguinte figura:
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.99\linewidth]{imagens/lua-aldebaran.png}
+    \end{figure}
+
+    Utilizando trigonometria básica, podemos aferir
+
+    \[-b-(-i) = \sin^{-1}\left(\frac{R+r}{L}\right)\]
+
+    \[i = b+\sin^{-1}\left(\frac{R+r}{L}\right)\]
+
+    Substituindo, obtemos \(i\approx -4,26^\circ\). Agora precisamos determinar o ângulo  que compreende todos os pontos em que a latitude eclíptica da Lua é superior a \(|i|\). Para isso, vamos utilizar os seguintes triângulos esféricos:
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.99\linewidth]{imagens/lua-aldebaran2.png}
+    \end{figure}
+
+    Usando a Lei dos 4 elementos, podemos determinar $\kappa$, 
+
+    \[\cos(\kappa)\cos(90^\circ) = \sin(\kappa)\cot (4{,}26^\circ)-\sin(90^\circ)\cot(5{,}15^\circ)\]
+
+    \[\sin(\kappa)=\frac{\tan(4{,}26^\circ)}{\tan(5{,}15^\circ)}\]
+
+    \[\kappa = 55{,}74^\circ \]
+
+    Agora é possível calcular o intervalo de longitudes eclípticas que a Lua pode ocultar Aldebaran:
+
+    \[\Gamma = 2(90^\circ-\kappa) = 68{,}52^\circ \]
+
+    Portanto, o intervalo de tempo é dado por, 
+
+    \[\Delta t = \frac{\Gamma}{360^\circ}T \]
+
+    \[\boxed{\Delta t = 3{,}54 \text{ anos}}\]
+
+    Como as ocultações começaram em fevereiro de 2015, 
+
+    \[\text{Fevereiro de 2015} + 3{,}54\text{ anos} = \text{Agosto de 2018}\]
+
+    \(\therefore\) O ciclo de ocultações termina em \(\boxed{\text{Agosto de 2018}}\).
+
+\end{pssolution*}
+
+
 
 \pts{4}
 \begin{pproblem} (Lista 2 - Vinhedo 2021)
@@ -559,6 +609,46 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
         \item Considerando a refração atmosférica, o tamanho do intervalo do item anterior iria diminuir, aumentar ou se manter constante?
     \end{alternativas}
 
+\begin{pssolution*}{}{}
+    \begin{alternativas}
+        \item Observe o desenho da situação, 
+        
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.99\linewidth]{imagens/sol-ilha.png}
+        \end{figure}
+
+        Utilizando a Lei dos Cossenos, 
+
+        \[\cos(90^\circ-|\delta_\odot|) = \cos(90^\circ)\cos(^\circ-|\phi|) + \sin(90^\circ)\sin(90-|\phi|)\cos(90^\circ-\Delta A/2)\]
+
+        \[\cos(|\phi|) = \frac{\sin(|\delta_\odot|)}{\sin(\Delta A/2)}\]
+
+        Como a ilha está no hemisfério Sul, \(\phi = - |\phi|\). Usando $|\delta_\odot|=23{,}47^\circ$
+
+        \[\boxed{\phi = - \frac{\sin(23{,}47^\circ)}{\sin(33{,}82^\circ)} = -44^\circ 21'}\]
+
+        Consultando no Google Earth, encontramos que a ilha é \textit{Rangatira}.
+
+        \item No mesmo triângulo esférico do item anterior, vamos calcular o ângulo horário do Sol (o ângulo do PSC). Utilizando uma lei dos senos, 
+        
+        \[\frac{\sin(- H)}{\sin (90^\circ)} = \frac{\sin(90^\circ - \Delta A/2)}{\sin(90^\circ-\delta_\odot)}\]
+
+        \[H = -\sin^{-1}\left(\frac{\cos(\Delta A/2)}{\cos\delta_\odot}\right)\]
+
+        Substituindo \(\delta_\odot = \pm 23,47^\circ\) (para os soltícios), obtemos \(H = -4\text{h} \ 19\text{min} \ 38\text{s}\) para o inverno e \(H = -7\text{h} \ 40\text{min} \ 22\text{s}\) para o verão.
+        
+        O fuso UT+\(12\frac{3}{4}\) é equivalente à UT-\(11\frac{1}{4}\). O centro desse fuso é na longitude \(\lambda_0 = -180^\circ +\frac{3}{4}\cdot 15^\circ = -168^\circ 45'\).
+        
+        A diferença de longitude entre o centro do fuso e da ilha é \(\Delta \lambda = 7^\circ 24'38''\). Logo, a hora cívil está \(7^\circ 24'38'' = 29\text{min} \ 38\text{s}\) atrasada em relação à hora solar mais \(12\text{h}\).
+
+        Dessa maneira, o tempo cívil é \(TC = 12\text{h} + H + \Delta \lambda\). Obtemos \(TC = 8\text{h} \ 10\text{min}\) e \(4\text{h} \ 49\text{m}\) para os dois solstícios.
+
+        Portanto o intervalo dos horários em que o Sol pode nascer é de \(\boxed{4\text{h} \ 49\text{m} \ \text{a} \ 8\text{h} \ 10\text{min}}\).
+
+        \item O sol possuí a mesma velocidade ângular do Sol nos dois casos é \(\omega\cos\delta\) onde \(\omega\) é a velocidade de rotação da Terra. Como \(\delta\) tem o mesmo módulo nas duas datas, o tamanho do invervalo continua constante.
+    \end{alternativas}
+\end{pssolution*}
 \end{pproblem}
 
 
@@ -582,6 +672,51 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
     Bruno estava bastante interessado em Shaula ($\lambda \ \text{Sco}, \delta = 37,1^{\circ} \text{S}$). Determine as coordenadas de
     Shaula no instante em que a estrela se tornava visível para Bruno quando observada através da porta. Assuma que Shaula estava abaixo do horizonte quando Bruno começava a observar o céu.
     
+\begin{pssolution*}{}{}
+    O primeiro passo para determinar as coordenadas de Shaula é calcular o azimute do lado esquerdo (leste) da porta com base no seguinte triângulo,  que corresponde ao sistema visto de cima:
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\linewidth]{imagens/tricima.png}
+    \end{figure}
+
+    \[A = 180^\circ - \tan^{-1}\left(\frac{0{,}75}{1{,}00}\right) = 143,1^\circ\]
+
+    Vale notar que a hipotenusa desse triângulo vale \(\sqrt{0{,}75^2+1{,}00^2} = 1{,}25\text{m}\). Este valor será importante no fulturo.
+
+    Existem duas possibilidades para as coordenadas de Shaula. Caso o nascer de Shaula ocorra a  leste da porta, Bruno começava a ver a estrela em algum ponto do lado esquerdo da porta. Caso contrário, Bruno começava a ver Shaula a partir de algum ponto no horizonte.
+
+    Dessa forma, o próximo próximo passo é calcular o azimulte do nascer de Shaula. Para isso, vamos usar uma lei dos cossenos no triângulo PAZ para $h=0$. Com isso, 
+
+    \[\cos A_0 = \frac{\sin\delta}{\cos\phi}\rightarrow A_0 = 128{,}7^\circ\]
+
+    Como Shaula nasce a leste da porta, Bruno conseguia começar a ver a estrela quando ela estava exatamente no lado esquerdo da porta. Dessa forma, a coordenada em $x$ de Shaula corresponde à coordenada do lado esquerdo da porta ($x = 0$). O azimute de Shaula ao ser vista inicialmente por Bruno é de $A=143{,}1^\circ$.
+
+    Agora a declinação e o azimulte de Shaula são conhecidos, assim como a latitude do observador. Usando o triângulo da PAZ novamente, 
+
+    \[\cos h = \frac{\sin\phi\sin h - \sin \delta}{\cos\phi\cos A}\]
+
+    Por iteração, obtemos \(h = 61{,}2^\circ\).
+
+    Com base no seguinte triângulo retângulo, é possível calcular a diferença de altura entre os olhos de Bruno e a projeção de Shaula na porta:
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\linewidth]{imagens/tri1.png}
+    \end{figure}
+
+    Note que o cateto de \(1{,}25 \text{m}\) corresponde à distância entre Bruno e a quina esquerda da porta calculada anteriormente.
+
+    \[\Delta H = 1{,}25 \tan h = 2{,}27\text{m}\]
+
+    Adicionando a altura dos olhos de Bruno, é possível obter a altura da projeção de Shaula na porta (coordenada em y da estrela):
+
+    \[H_{\text{Shaula}} = H_{\text{olho}}+\Delta H \]
+
+    \[H_{\text{Shaula}} = 3{,}47\text{m}\]
+
+    Portanto, no momento em que Bruno começava a ver Shaula durante a noite, a estrela estava no \(\boxed{\text{ponto} (0, 3,47)}\) no sistema de coordenadas da porta.
+\end{pssolution*}
 \end{pproblem}
 
 \end{document}
