@@ -1,0 +1,185 @@
+\documentclass[11pt]{article}
+
+\usepackage{maiacustom}
+
+\begin{document}
+
+\psettitle{Mercor Problem - Felipe Maia Silva}
+
+
+% \begin{psidea}{Título da Ideia}{}
+% Ideia
+% \end{psidea}
+
+% \begin{psexample}{Título do Exemplo}{}
+% Exemplo
+% \end{psexample}
+
+% \begin{pssolution*}{}{}
+% Solução
+% \end{pssolution*}
+
+% \begin{psremark*}{Título da Observação}{}
+% Observação
+% \end{psremark*} 
+
+\begin{pproblem}
+\pts{4}
+In this exercise, we will study properties of the eccentricity of orbits and understand how it relates to energy and angular momentum. Denoting $\mu = GM$ and $h=L/m$, do what is asked in the following items.
+
+\begin{center}
+    \textbf{Part I: The Eccentricity Vector}
+\end{center}
+\begin{alternativas}
+    \item Write an expression for Newton's second law in vector format for a body of mass $m$ orbiting a body of mass $M$ at a distance $r$.
+    
+    \item Take the cross product of your expression with $\mathbf{h}$ and prove that:
+    
+    \[\frac{d}{dt}(\dot{\mathbf{r}}\times \mathbf{h}) = \frac{\mu}{r}\mathbf{v} - \frac{\mu \dot{r}}{r^2}\mathbf{r}\]
+
+    Where $\dot{\mathbf{r}}$ represents the radial velocity and $\mathbf{v}$ the velocity.
+
+    \item We can write the right side of the previous equation as:
+    \[\frac{d}{dt}\left(A\mathbf{r}\right)\]
+
+    Find the value of $A$.
+
+    \item Integrate both sides of the found equality and take the scalar product of both sides with $\mathbf{r}$. After that, solve for $r$. Your result should be very similar to what is predicted only by geometry:
+    \[r = \frac{p}{1+e\cos\theta}\]
+
+    Find the values of $p$ and $e$. \textbf{Don't forget the integration constant. Your answers may depend on it.}
+
+    \item In the previous item, $e$ is the eccentricity of the orbit. Returning to the equation initially obtained in item $c)$, after integration, find a way to express $\mathbf{e}$, as a vector with magnitude $e$ that points directly to the orbited body.
+    
+    \item Prove that the relationship found in the previous item can be written as:
+    \[\mu \mathbf{e} = (v^2-\frac{\mu}{r})\mathbf{r} - (\mathbf{r}\cdot\mathbf{v})\mathbf{v}\]
+
+    Where does this vector point?
+\end{alternativas}
+\begin{center}
+    \textbf{Part II: Determining Orbital Elements from the Eccentricity Vector}     
+\end{center}
+Let's define our coordinate system in the following manner. Consider a right-handed system, oriented such that the $xy$ plane coincides with the equatorial plane and with $\mathbf{z}$ pointing to the North pole. Defining the nodal vector as $\mathbf{n} = \mathbf{z} \times \mathbf{h}$.
+\begin{alternativas}
+    \item Find an expression for $\mathbf{h}$ as a function of the components of the vector $\mathbf{r}$ and the vector $\mathbf{v}$. After that, find the vector $\mathbf{n}$ as a function of the components of $\mathbf{h}$.
+
+    \item Draw a celestial sphere and represent on it: the equatorial plane and an arbitrary orbit (with an inclination different from 0). On it, mark the following angles: $i$, the orbital inclination, $\Omega$ the longitude of the ascending node, $\omega$ the argument of periapsis, and $\theta$, the true anomaly. 
+
+    \item Find expressions for all these angles as a function of $\mathbf{e}$, $\mathbf{h}$, $\mathbf{n}$, $\mathbf{r}$ and any of the vectors defined in our $xyz$ coordinate system.
+\end{alternativas}
+
+\begin{pssolution*}{}{}
+    \begin{center}
+        \textbf{Part I}
+    \end{center}
+    \begin{alternativas}
+        \item Using the vector form of the gravitational force, we have:
+        \[-\frac{GMm}{r^3}\mathbf{r} = m\ddot{\mathbf{r}} \rightarrow \boxed{\ddot{\mathbf{r}}= -\frac{\mu}{r^3}\mathbf{r}}\]
+
+        \item Taking the cross product of this expression with $\mathbf{h}$, we have:
+        
+        \[\ddot{\mathbf{r}}\times \mathbf{h} = -\frac{\mu}{r^3}(\mathbf{r}\times\mathbf{h}) = \frac{\mu}{r^3}(\mathbf{h}\times\mathbf{r})\]
+
+        Since $\mathbf{h}$ is constant, the left side of the equation can be written as $d(\dot{\mathbf{r}}\times \mathbf{h})/dt$. For the right side, let's write $\mathbf{h} = \mathbf{r}\times \mathbf{v}$ and use the BAC-CAB rule, which states that $(\mathbf{A} \times \mathbf{B}) \times \mathbf{C} = \mathbf{B}(\mathbf{A}\cdot \mathbf{C}) - \mathbf{C}(\mathbf{A} \cdot \mathbf{B})$. Thus:
+
+        \[\frac{d}{dt}(\dot{\mathbf{r}}\times \mathbf{h}) = \frac{\mu}{r^3}((\mathbf{r}\times\mathbf{v})\times \mathbf{r}) = \frac{\mu}{r^3}(r^2\mathbf{v} - \mathbf{r}(\mathbf{r}\cdot \mathbf{v}))\]
+
+        Note that $\mathbf{r}\cdot\mathbf{v}$ is the multiplication of the components of $\mathbf{r}$ and $\mathbf{v}$ that are in the same direction. Thus, $\mathbf{r}\cdot\mathbf{v} = r\dot{r}$. Substituting into the previous expression:
+
+        \[\boxed{\frac{d}{dt}(\dot{\mathbf{r}}\times \mathbf{h}) = \frac{\mu}{r}\mathbf{v} - \frac{\mu \dot{r}}{r^2}\mathbf{r}}\]
+
+        \item Expanding the expression provided in the statement:
+        
+        \[\frac{d}{dt}(A\mathbf{r}) = \mathbf{r}\frac{d}{dt}A + A \mathbf{v}\]
+
+        Comparing the expressions, it is easy to see that $\boxed{A = \mu/r}$.
+
+        \item Using the information obtained in the previous items, we have:
+        \[\frac{d}{dt}(\dot{\mathbf{r}}\times \mathbf{h}) = \mu\frac{d}{dt}\left(\frac{\mathbf{r}}{r}\right)\]
+
+        Multiplying both sides by $dt$ and integrating, we have:
+
+        \[\dot{\mathbf{r}}\times\mathbf{h} = \frac{\mu}{r}\mathbf{r} + \mathbf{B}\]
+
+        Where $\mathbf{B}$ is a constant integration vector. Now, taking the scalar product with $\mathbf{r}$:
+
+        \[\mathbf{r}\cdot(\dot{\mathbf{r}}\times \mathbf{h}) = \mu r + \mathbf{r}\cdot\mathbf{B}\]
+
+        Using $\mathbf{a}\cdot(\mathbf{b}\times \mathbf{c}) = (\mathbf{a}\times \mathbf{b})\cdot \mathbf{c}$ and defining $\nu$ as the angle between $\mathbf{r}$ and $\mathbf{B}$, we have:
+
+        \[h^2 = \mu r + rB\cos\nu\]
+
+        Solving for $r$, we arrive at:
+
+        \[r = \frac{h^2/\mu}{1+(B/\mu)\cos\nu}\]
+
+        Thus:
+
+        \[\boxed{p = \frac{h^2}{\mu}, \ \ \ \ e = \frac{B}{\mu}}\]
+
+        \item Using $\mathbf{e} = \mathbf{B}/\mu$ and returning to item $d)$, we have:
+        \[\dot{\mathbf{r}}\times \mathbf{h} = \frac{\mu}{r}\mathbf{r}+\mu \mathbf{e}\]
+
+        Solving for $\mathbf{e}$ and noting that $\dot{\mathbf{r}}\times\mathbf{h} = \mathbf{v}\times\mathbf{h}$, we have:
+
+        \[\boxed{\mathbf{e} = \frac{\mathbf{v}\times\mathbf{h}}{\mu} - \frac{\mathbf{r}}{r}}\]
+
+        \item Writing $\mathbf{h} = \mathbf{r}\times\mathbf{v}$, we have:
+        \[\mathbf{e} = \frac{\mathbf{v}\times(\mathbf{r}\times\mathbf{v})}{\mu} - \frac{\mathbf{r}}{r} \]
+
+        Multiplying both sides of the expression by $\mu$, and using BAC-CAB, we have:
+
+        \[\mu\mathbf{e} = v^2\mathbf{r} - \mathbf{v}(\mathbf{v}\cdot\mathbf{r}) - \frac{\mu}{r}\mathbf{r}\]
+
+        Reorganizing the terms:
+
+        \[\boxed{\mu \mathbf{e} = (v^2-\frac{\mu}{r})\mathbf{r} - (\mathbf{r}\cdot\mathbf{v})\mathbf{v}}\]
+
+        Thus, this vector points towards the *periapsis*.
+    \end{alternativas}
+    \begin{center}
+        \textbf{Part II: Determining Orbital Elements from the Eccentricity Vector}     
+    \end{center}
+    \begin{alternativas}
+        \item The vector $\mathbf{h}$ is defined by $\mathbf{h} = \mathbf{r}\times\mathbf{v}$. By definition,
+        
+        $$\mathbf{h}=\mathbf{r}\times\mathbf{v} = 
+        \begin{vmatrix}
+            \hat{x} & \hat{y} & \hat{z} \\
+            r_x & r_y & r_z \\
+            v_x & v_y & v_z \\
+        \end{vmatrix}
+        = (r_yv_z - r_zv_y)\hat{x} + (r_zv_x-r_xv_z)\hat{y} + (r_xv_y-r_yv_z)\hat{z}   $$
+
+        Similarly, $\mathbf{n} = \mathbf{z}\times\mathbf{h}$
+        $$\mathbf{n} = 
+        \begin{vmatrix}
+            \hat{x} & \hat{y} & \hat{z} \\
+            0 & 0 & 1 \\
+            h_x & h_y & h_z \\
+        \end{vmatrix}
+         = -h_y\hat{x} + h_x\hat{y}$$
+
+         \item The drawing should resemble the following figure:
+         \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.7\linewidth]{imagens/elementosorbitais.png}
+            \caption{Source Wikipedia}
+        \end{figure}
+        
+
+        \item To orient ourselves, let's create a coordinate system where the North pole corresponds to the $z$-axis and the $x$-axis points in the direction of the vernal point. Starting with the inclination, it is the angle between the North pole and the perpendicular plane of the orbit. Thus:
+        $$\mathbf{z}\cdot\mathbf{h} = \cos i |z||h|\rightarrow i = \cos^{-1}\left(\frac{\mathbf{z}\cdot\mathbf{h}}{|\mathbf{z}||\mathbf{h}|}\right) $$
+
+        Using similar arguments, we can obtain:
+
+        $$\Omega = \cos^{-1}\left(\frac{\mathbf{x}\cdot\mathbf{n}}{|\mathbf{x}||\mathbf{n}|}\right)$$
+        $$\omega = \cos^{-1}\left(\frac{\mathbf{n}\cdot\mathbf{e}}{|\mathbf{n}||\mathbf{e}|}\right)$$
+        $$\theta = \cos^{-1}\left(\frac{\mathbf{e}\cdot\mathbf{r}}{|\mathbf{e}||\mathbf{r}|}\right)$$
+        
+    \end{alternativas}
+\end{pssolution*}
+\end{pproblem}
+
+    
+\end{document}

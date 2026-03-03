@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.30)  20 MAR 2025 23:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.30)  18 OCT 2025 00:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/femai/OneDrive/Área de Trabalho/Latex Geral/Astronomia/banco de questoes/Listas Por materia/foto/foto.tex"
-(c:/Users/femai/OneDrive/Área de Trabalho/Latex Geral/Astronomia/banco de questoes/Listas Por materia/foto/foto.tex
+**"c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/foto/foto.tex"
+(c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/foto/foto.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-10-09>
 (C:\Users\femai\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -990,17 +990,17 @@ Package rerunfilecheck Info: File `foto.out' has not changed.
 (rerunfilecheck)             Checksum: 68CF3B159A94F1D2E0EDF9A1146D91F6;190.
  ) 
 Here is how much of TeX's memory you used:
- 50142 strings out of 473897
- 1229854 string characters out of 5726461
- 1866028 words of memory out of 5000000
+ 50145 strings out of 473897
+ 1229655 string characters out of 5726461
+ 1866027 words of memory out of 5000000
  72395 multiletter control sequences out of 15000+600000
  564923 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,13n,107p,1193b,1236s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,13n,107p,1171b,1236s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\femai\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on foto.pdf (5 pages, 296494 bytes).
+Output written on foto.pdf (5 pages, 299414 bytes).
 PDF statistics:
- 149 PDF objects out of 1000 (max. 8388607)
- 46 named destinations out of 1000 (max. 500000)
+ 153 PDF objects out of 1000 (max. 8388607)
+ 49 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
