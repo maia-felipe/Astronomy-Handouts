@@ -1,7 +1,7 @@
-PWD c:\Users\femai\OneDrive\Documentos\GitHub\Handouts-Astronomia\banco de questoes\foto
+PWD c:\Users\femai\OneDrive\Documentos\GitHub\Handouts-Astronomia\banco de questoes\mecceleste
 INPUT C:\Users\femai\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\femai\OneDrive\Documentos\GitHub\Handouts-Astronomia\banco de questoes\foto\foto.tex
-OUTPUT foto.log
+INPUT c:\Users\femai\OneDrive\Documentos\GitHub\Handouts-Astronomia\banco de questoes\mecceleste\mecceleste copy.tex
+OUTPUT mecceleste copy.log
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\base\size11.clo
@@ -87,6 +87,7 @@ INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.s
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\puenc.def
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\puenc.def
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\puenc.def
+INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\generic\bitset\bitset.sty
@@ -124,7 +125,6 @@ INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\auxhook\auxhook.sty
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\auxhook\auxhook.sty
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\needspace\needspace.sty
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\needspace\needspace.sty
-INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
@@ -332,10 +332,10 @@ INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\clock\clock.sty
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\clock\clock.tex
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
-INPUT .\foto.aux
-INPUT .\foto.aux
-INPUT foto.aux
-OUTPUT foto.aux
+INPUT .\mecceleste copy.aux
+INPUT .\mecceleste copy.aux
+INPUT mecceleste copy.aux
+OUTPUT mecceleste copy.aux
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -344,23 +344,20 @@ INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstop
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT .\foto.out
-INPUT .\foto.out
-INPUT foto.out
-INPUT foto.out
-OUTPUT foto.pdf
-INPUT .\foto.out
-INPUT .\foto.out
-OUTPUT foto.out
+INPUT .\mecceleste copy.out
+INPUT .\mecceleste copy.out
+INPUT mecceleste copy.out
+INPUT mecceleste copy.out
+INPUT .\mecceleste copy.out
+INPUT .\mecceleste copy.out
+OUTPUT mecceleste copy.out
+OUTPUT mecceleste copy.pdf
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-brazil.trsl
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-brazil.trsl
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-brazil.trsl
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
-INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
@@ -384,27 +381,19 @@ INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
+INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
 INPUT C:\Users\femai\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT .\imagens\fotometria 1.png
-INPUT .\imagens\fotometria 1.png
-INPUT .\imagens\fotometria 1.png
-INPUT .\imagens\fotometria 1.png
-INPUT .\imagens\fotometria 1.png
-INPUT .\imagens\fotometria 1.png
-INPUT .\imagens\fotometria 1.png
-INPUT .\imagens\cherenkov.png
-INPUT .\imagens\cherenkov.png
-INPUT .\imagens\cherenkov.png
-INPUT .\imagens\cherenkov.png
-INPUT .\imagens\cherenkov.png
-INPUT .\imagens\cherenkov.png
-INPUT .\imagens\cherenkov.png
-INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1095.tfm
-INPUT foto.aux
-INPUT .\foto.out
-INPUT .\foto.out
-INPUT C:\Users\femai\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1095.pk
-INPUT C:\Users\femai\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1095.pk
+INPUT .\imagens\elementosorbitais.png
+INPUT .\imagens\elementosorbitais.png
+INPUT .\imagens\elementosorbitais.png
+INPUT .\imagens\elementosorbitais.png
+INPUT .\imagens\elementosorbitais.png
+INPUT .\imagens\elementosorbitais.png
+INPUT .\imagens\elementosorbitais.png
+INPUT mecceleste copy.aux
+INPUT .\mecceleste copy.out
+INPUT .\mecceleste copy.out
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
@@ -413,8 +402,6 @@ INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
-INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
@@ -425,5 +412,3 @@ INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
-INPUT C:\Users\femai\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb

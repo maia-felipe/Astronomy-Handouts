@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1742524599.24965 "c:/Users/femai/OneDrive/Área de Trabalho/Latex Geral/Astronomia/banco de questoes/Listas Por materia/foto/foto.tex" "foto.pdf" "foto" 1742524601.90457 0
-  "C:/Users/femai/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1737858923 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["pdflatex"] 1760759627.84083 "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/foto/foto.tex" "foto.pdf" "foto" 1760759630.85105 0
+  "C:/Users/femai/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1758814173 103694 248d6721ffb7ab772997f68196cfc3c0 ""
   "C:/Users/femai/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1730851663 12668 2ed3ebfe78a8b8a0dace041e7e76ac2e ""
   "C:/Users/femai/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730333339 11948316 c48dc9b332b682011d03c9e0e6e5b637 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm1095.tfm" 993062508 1460 8005ce585ff351dff78998923504da5e ""
@@ -225,10 +225,10 @@
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1695383086 2269 4fe6fb3396214c91f164d45faf9bec45 ""
   "C:/Users/femai/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1695383086 20785 f7d1133a287929598a897c93f8f4c44b ""
-  "c:/Users/femai/OneDrive/Área de Trabalho/Latex Geral/Astronomia/banco de questoes/Listas Por materia/foto/foto.tex" 1742524595 12625 d12556377e7dcdcafecfc1cb20f7a668 ""
-  "foto.aux" 1742524601 1064 65e81ecf8293df88538d0a7ea53a7231 "pdflatex"
-  "foto.out" 1742524601 190 68cf3b159a94f1d2e0edf9a1146d91f6 "pdflatex"
-  "foto.tex" 1742524595 12625 d12556377e7dcdcafecfc1cb20f7a668 ""
+  "c:/Users/femai/OneDrive/Documentos/GitHub/Handouts-Astronomia/banco de questoes/foto/foto.tex" 1760759626 14246 c2e0369df51b0151651c08f8f9fb1ec4 ""
+  "foto.aux" 1760759630 1064 65e81ecf8293df88538d0a7ea53a7231 "pdflatex"
+  "foto.out" 1760759630 190 68cf3b159a94f1d2e0edf9a1146d91f6 "pdflatex"
+  "foto.tex" 1760759626 14246 c2e0369df51b0151651c08f8f9fb1ec4 ""
   "imagens/cherenkov.png" 1736983352 94273 dd41cf6e180a4879b90e07f163571ffe ""
   "imagens/fotometria 1.png" 1730951425 29949 b1a9704d218d9b64b781b5b75b7087ed ""
   "maiacustom.sty" 1741535033 3600 bd7add4f8ff292d1a1f9c50ae8ea1750 ""
