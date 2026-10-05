@@ -4,218 +4,218 @@
 
 \begin{document}
 
-\psettitle{Banco de questões de astronomia}
+\psettitle{Astronomy Question Bank}
 
-Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de preparar os estudantes para o processo seletivo de astronomia no Brasil. Algumas questões não são de autoria própria e estão devidamente sinalizadas por () antes do enunciado. O template do banco de questões é o mesmo do Professor \text{Kevin Zhou}. Seu trabalho é valioso, e diversas ideias desta lista podem ser encontradas em seus Handouts.
+These questions were carefully written or selected to prepare students for the astronomy team selection process in Brazil. Some questions are not original; those are marked with () before the statement. The question-bank template is the same one used by Professor Kevin Zhou. His work is invaluable, and many ideas in this set can be found in his handouts.
 
-% \begin{psidea}{Título da Ideia}{}
-% Ideia
+% \begin{psidea}{Idea title}{}
+% Idea
 % \end{psidea}
 
-% \begin{psexample}{Título do Exemplo}{}
-% Exemplo
+% \begin{psexample}{Example title}{}
+% Example
 % \end{psexample}
 
 % \begin{pssolution*}{}{}
-% Solução
+% Solution
 % \end{pssolution*}
 
-% \begin{psremark*}{Título da Observação}{}
-% Observação
-% \end{psremark*} 
-\section{Astronomia de Posição}
+% \begin{psremark*}{Remark title}{}
+% Remark
+% \end{psremark*}
+\section{Positional Astronomy}
 
-\pts{5} %problema da semana 114
-\begin{pproblem} Após se perderem em uma navegação, você e o professor Klafke naufragam em uma ilha e encontram o seguinte relógio de Sol:
+\pts{5} % problem of the week 114
+\begin{pproblem} After getting lost on a voyage, you and Professor Klafke are shipwrecked on an island and find the following sundial:
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.5\linewidth]{imagens/q6.jpg}
-        \caption{Relógio de Sol}
+        \caption{Sundial}
     \end{figure}
-    Agora é missão de vocês descobrirem propriedades do relógio de Sol.
+    It is now your task to discover properties of the sundial.
     \begin{enumerate}[label=\textbf{\alph*)}]
-        \item Em qual hemisfério vocês se encontraram? Como você chegou a tal conclusão?
-        \item Após várias semanas na ilha, vocês notam que a sombra do relógio parece seguir uma linha reta, sendo \(\phi\) a latitude que vocês se encontraram, determine a declinação do Sol nesse dia e explique o porquê disso só acontecer em \(2\) dias do ano.
-        \item Prove que, quando o Sol possui a declinação encontrada anteriormente, a sombra segue uma linha reta. Isso pode ser feito seguindo os seguintes passos:
+        \item In which hemisphere did you find yourselves? How did you reach that conclusion?
+        \item After several weeks on the island, you notice that the sundial's shadow seems to follow a straight line. Letting \(\phi\) be the latitude at which you found yourselves, determine the Sun's declination on that day and explain why this happens on only \(2\) days of the year.
+        \item Prove that, when the Sun has the declination found above, the shadow follows a straight line. This can be done by the following steps:
         \begin{enumerate}[label=\roman*)]
-            \item Determine a orientação da linha e explique por que ela deve estar nessa orientação;
-            \item Determine o comprimento da sombra para uma dada posição do Sol em coordenadas alt-azimute;
-            \item Derive uma relação entre altitude e azimute, dado que a ponta da sombra está sobre a linha;
-            \item Determine uma quantidade constante e mostre que ela é constante para todas as posições do Sol naquele dia.
+            \item Determine the orientation of the line and explain why it must have that orientation;
+            \item Determine the length of the shadow for a given position of the Sun in alt-azimuth coordinates;
+            \item Derive a relation between altitude and azimuth, given that the tip of the shadow lies on the line;
+            \item Determine a constant quantity and show that it is constant for every position of the Sun on that day.
         \end{enumerate}
     \end{enumerate}
 \end{pproblem}
 
     \pts{5}
-\begin{pproblem} (Adaptado T1 - 2024)
-    A equação do tempo é a diferença entre a ascensão reta do Sol médio e a ascensão reta do Sol verdadeiro. Sabendo disso, vamos calcular algumas de suas propriedades.
+\begin{pproblem} (Adapted from T1 - 2024)
+    The equation of time is the difference between the right ascension of the mean Sun and the right ascension of the true Sun. With that in mind, let us calculate some of its properties.
     \begin{alternativas}
-        \item Determine uma expressão para a equação do tempo, desconsiderando a excentricidade da Terra, i.e.: O Sol possuindo velocidade constante ao longo da eclíptica. Deixe sua resposta em função do tempo desde o equinócio de março \(T_M\), do período da Terra \(T\) e da obliquidade da eclíptica \(\epsilon\).
-        \item Agora, considerando a excentricidade da Terra, a equação do tempo tem forma:
+        \item Find an expression for the equation of time, neglecting Earth's eccentricity, i.e.: the Sun moving at constant speed along the ecliptic. Leave your answer in terms of the time since the March equinox \(T_M\), Earth's period \(T\), and the obliquity of the ecliptic \(\epsilon\).
+        \item Now, taking Earth's eccentricity into account, the equation of time has the form:
         \[E.T. = -2e \cdot \sin(k_1 \cdot M) + \tan^2 \left( \frac{\epsilon}{2} \right) \cdot \sin\left( k_2 \cdot (M + \lambda_P) \right)\]
-        Onde \(M\) é a anomalia média, \(\lambda_P\) a longitude eclíptica do periastro e \(e\) a excentricidade da Terra. Determine as constantes \(k_1\) e \(k_2\). Pense nas situações de simetria envolvendo cada uma das parcelas da equação.
+        where \(M\) is the mean anomaly, \(\lambda_P\) the ecliptic longitude of periapsis, and \(e\) Earth's eccentricity. Determine the constants \(k_1\) and \(k_2\). Think about the symmetries involving each term of the equation.
         \\
-        Agora o objetivo da questão é descobrir a declinação do Sol no ponto de nó do analema. Veja a figura a seguir:
+        The aim of the question is now to find the Sun's declination at the node of the analemma. See the following figure:
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.7\textwidth]{imagens/q16.png}
-            \caption{Representação analema}
+            \caption{Analemma diagram}
         \end{figure}
-        O ponto de nó é o ponto em que a trajetória se cruza.
-        \item Para pequenos valores da declinação do Sol, obtenha uma fórmula para essa em função de \(M\), \(\lambda_P\) e \(\epsilon\). Considere também que a excentricidade e a inclinação da órbita sejam suficientemente pequenas.
-        \item Encontre as duas anomalias médias que tenham a mesma declinação e mesma \(E.T.\).
-        \item Encontre o valor da declinação solar no ponto de nó.
+        The node is the point at which the path crosses itself.
+        \item For small values of the Sun's declination, obtain a formula for it in terms of \(M\), \(\lambda_P\), and \(\epsilon\). Also assume that the eccentricity and the orbital inclination are sufficiently small.
+        \item Find the two mean anomalies that have the same declination and the same \(E.T.\).
+        \item Find the value of the solar declination at the node.
     \end{alternativas}
     \end{pproblem}
 
     
     \pts{5}
     \begin{pproblem}
-        Porílio, após um longo dia de aulas no ITA, no solstício de verão (\(\phi = 23^\circ 11' S, \ \lambda = 45^\circ 53' O\)) deseja ver o por do Sol. No dia em questão, o valor da equação do tempo é \(E.T. = -3\) minutos. Porílio não quer perder o Sol de jeito nenhum e começa a correr para que o (centro do) Sol continue no horizonte.
+        Porílio, after a long day of classes at ITA, on the summer solstice (\(\phi = 23^\circ 11' S, \ \lambda = 45^\circ 53' W\)) wants to watch the sunset. On the day in question, the equation of time is \(E.T. = -3\) minutes. Porílio does not want to miss the Sun under any circumstances and starts running so that the (center of the) Sun stays on the horizon.
     
         \begin{alternativas}
-            \item São José dos Campos, segue o horário de Brasília (UTC-3h), em qual horário, no Tempo Civil, Porílio deve começar sua corrida?
-            \item Se Porílio corre em direção a um dos polos geográficos, qual deve ser a sua velocidade inicial?
-            \item Se Porílio decide subir uma montanha de inclinação \(i = 30^\circ\), a uma velocidade constante de \(v = 1\) m/s, qual o maior tempo com que Porílio consegue deixar o Sol acima do horizonte?
-            \textbf{Dica: } Utilizar aproximações para pequenos ângulos, talvez seja útil.
+            \item São José dos Campos follows Brasília time (UTC-3h). At what civil time should Porílio start his run?
+            \item If Porílio runs toward one of the geographic poles, what should his initial speed be?
+            \item If Porílio decides to climb a mountain of inclination \(i = 30^\circ\) at a constant speed \(v = 1\) m/s, what is the longest time for which Porílio can keep the Sun above the horizon?
+            \textbf{Hint: } Small-angle approximations may be useful.
         \end{alternativas}
 \end{pproblem}
 
 \pts{3}
 \begin{pproblem}
-    Mauí, um renomado astrônomo, deseja passar suas férias de fim de ano em Sergipe \((10^\circ \ 54'\ 33'' S, \ 37^\circ 4'29'' O\)) e deseja saber o horário de nascimento de uma de suas estrelas favoritas, All Kaf al Dij Ma \Romannum{3} \((\delta = +10^\circ \ 56'\ 58'', \ \alpha = 2h \ 58m \ 43s\)), e precisa de sua ajuda para calcular o horário de nascimento dela nas seguintes situações:
+    Mauí, a renowned astronomer, wants to spend his year-end vacation in Sergipe \((10^\circ \ 54'\ 33'' S, \ 37^\circ 4'29'' W)\) and wants to know the rising time of one of his favorite stars, All Kaf al Dij Ma \Romannum{3} \((\delta = +10^\circ \ 56'\ 58'', \ \alpha = 2h \ 58m \ 43s\)), and needs your help to calculate its rising time in the following situations:
     
     \begin{alternativas}
-        \item Calcule o horário de nascimento de All Kaf al Dij Ma \Romannum{3} no solstício de dezembro.
-        \item Quanto tempo a estrela passará acima do horizonte?
-        \item Estime o período de tempo em que a estrela é visível.
+        \item Calculate the rising time of All Kaf al Dij Ma \Romannum{3} at the December solstice.
+        \item How long will the star spend above the horizon?
+        \item Estimate the length of time during which the star is visible.
     \end{alternativas}
 
     \end{pproblem}
 
     \pts{4}
-\begin{pproblem}(Lucas Cavalcante - \href{https://noic.com.br/olimpiadas/astronomia/problemas-da-semana/astronomia-semana-111/}{Semana 111})
-    Considerando um sistema de coordenadas horizontal em que o azimute \(0\) corresponde ao ponto cardeal norte, um asteroide foi observado nas alturas \(h_1\) e \(h_2\) e azimutes \(A_1\) e \(A_2\), enquanto outro asteroide foi observado nas coordenadas \(h_3\), \(h_4\), \(A_3\) e \(A_4\). Encontre as coordenadas dos pontos de encontro entre os asteroides.
+\begin{pproblem}(Lucas Cavalcante - \href{https://noic.com.br/olimpiadas/astronomia/problemas-da-semana/astronomia-semana-111/}{Week 111})
+    Consider a horizontal coordinate system in which azimuth \(0\) corresponds to the north cardinal point. One asteroid was observed at altitudes \(h_1\) and \(h_2\) and azimuths \(A_1\) and \(A_2\), while another asteroid was observed at the coordinates \(h_3\), \(h_4\), \(A_3\), and \(A_4\). Find the coordinates of the points where the asteroids meet.
     
-    \begin{psidea}{Notação de Einstein}{}
-    Durante a resolução dessa questão, utilizarei a Notação de Einstein. Ela é uma ferramenta física para facilitar as contas vetoriais. Explicando, na notação comum, um vetor é representado por
+    \begin{psidea}{Einstein notation}{}
+    While solving this problem, I will use Einstein notation. It is a tool from physics that makes vector calculations easier. In ordinary notation, a vector is written as
     \[\mathbf{a} = (a_1 \hat{\mathbf{e}}_1, \ a_2 \hat{\mathbf{e}}_2, \ a_3 \hat{\mathbf{e}}_3)\]
-    Na notação de Einstein, isso é substituído por:
+    In Einstein notation, this is replaced by:
     \[\mathbf{a} = a_i \hat{\mathbf{e}}_i\]
-    Onde os índices repetidos indicam a soma (\(a_i \hat{\mathbf{e}}_i = a_1 \hat{\mathbf{e}}_1 + a_2 \hat{\mathbf{e}}_2 + a_3 \hat{\mathbf{e}}_3 + ...\))
+    Repeated indices indicate a sum (\(a_i \hat{\mathbf{e}}_i = a_1 \hat{\mathbf{e}}_1 + a_2 \hat{\mathbf{e}}_2 + a_3 \hat{\mathbf{e}}_3 + ...\))
     
-    O produto escalar entre dois vetores, na notação de Einstein, é definido por:
+    The scalar product of two vectors, in Einstein notation, is defined by:
     \[\mathbf{a}\cdot \mathbf{b} = a_i b_j \delta_{ij}\]
-    Onde \(\delta_{ij}\) é a função \textit{Delta de Kronecker} e é definida por:
-    \[\delta_{ij} = \left \{ \begin{matrix} 0, & \mbox{se } i \ne j \\ 
-                                            1, & \mbox{se } i = j\end{matrix} \right.\]
+    where \(\delta_{ij}\) is the \textit{Kronecker delta}, defined by:
+    \[\delta_{ij} = \left \{ \begin{matrix} 0, & \mbox{if } i \ne j \\ 
+                                            1, & \mbox{if } i = j\end{matrix} \right.\]
     
-    Assim, \(\mathbf{a}\cdot \mathbf{b} = a_i b_i \equiv a_1 b_1 + a_2 b_2 + a_3 b_3\)
+    Thus, \(\mathbf{a}\cdot \mathbf{b} = a_i b_i \equiv a_1 b_1 + a_2 b_2 + a_3 b_3\)
 
-    Já para o produto vetorial, temos:
+    For the cross product, we have:
         \[
         \mathbf{a} \times \mathbf{b} = a_i b_j \Epsilon_{ijk} \hat{\mathbf{e}}_k
         \]
-        Aqui, \(\Epsilon_{ijk}\) é denominado \textit{tensor de Levi-Civita}, ou símbolo de Levi-Civita, e é definido como:
+        Here, \(\Epsilon_{ijk}\) is called the \textit{Levi-Civita tensor}, or Levi-Civita symbol, and is defined as:
     
         \[
         \Epsilon_{ijk} = 
         \begin{cases} 
-        +1 & \text{se } (i, j, k) \text{ é uma permutação par de } (1, 2, 3), \\
-        -1 & \text{se } (i, j, k) \text{ é uma permutação ímpar de } (1, 2, 3), \\
-        0 & \text{se dois ou mais índices são iguais}.
+        +1 & \text{if } (i, j, k) \text{ is an even permutation of } (1, 2, 3), \\
+        -1 & \text{if } (i, j, k) \text{ is an odd permutation of } (1, 2, 3), \\
+        0 & \text{if two or more indices are equal}.
         \end{cases}
         \]
 
-        Por exemplo, \(\Epsilon_{123} = \Epsilon_{312} = \Epsilon_{231} = 1\) e \(\Epsilon_{132} = \Epsilon_{213} = \Epsilon_{321} = -1\).
-        Explicitamente 
+        For example, \(\Epsilon_{123} = \Epsilon_{312} = \Epsilon_{231} = 1\) and \(\Epsilon_{132} = \Epsilon_{213} = \Epsilon_{321} = -1\).
+        Explicitly 
         \[\mathbf{a} \times \mathbf{b} = (a_2 b_3 - a_3 b_2) \hat{\mathbf{e}}_1 + (a_3 b_1 - a_1 b_3) \hat{\mathbf{e}}_2 + (a_1 b_2 - a_2 b_1) \hat{\mathbf{e}}_3\]
     \end{psidea}
 \end{pproblem}
 
 
 \pts{5}
-\begin{pproblem} (Lista \(1\) - Vinhedo 2024) Considere um relógio de Sol composto por um mostrador vertical
-    e um gnômon, conforme mostrado na figura.
+\begin{pproblem} (Problem set \(1\) - Vinhedo 2024) Consider a sundial consisting of a vertical dial
+    and a gnomon, as shown in the figure.
     \begin{figure}[H]
         \centering
         \includegraphics{imagens/q20.png}
-        \caption{Esquema relógio de Sol.}
+        \caption{Sundial diagram.}
     \end{figure}
     \begin{alternativas}
-        \item Suponha um relógio de Sol vertical cujo gnômon esteja corretamente apontado para o sul.
-        Seja \(\phi\) a latitude do observador, \(H\) o ângulo horário do Sol e \(\delta\) a declinação solar. Determine
-        a relação entre \(\theta\) e \(\gamma\) em função dessas variáveis.
+        \item Suppose a vertical sundial whose gnomon is correctly pointed south.
+        Let \(\phi\) be the observer's latitude, \(H\) the Sun's hour angle, and \(\delta\) the solar declination. Determine
+        the relation between \(\theta\) and \(\gamma\) in terms of these variables.
         
-        \item Com base no item anterior, qual deve ser o valor de \(\theta\) para que o relógio funcione durante o ano todo?
+        \item From the previous item, what must \(\theta\) be for the sundial to work throughout the year?
 
-        \item Utilizando o valor correto para \(\theta\), determine a relação entre \(\gamma\) e \(H\), em função de \(\phi\) apenas.
+        \item Using the correct value of \(\theta\), determine the relation between \(\gamma\) and \(H\), in terms of \(\phi\) only.
     \end{alternativas}
 \end{pproblem}
 
 
 \pts{2} 
 \begin{pproblem}
-    Qual a menor altura que um gigante (que vive MUITOS), localizado no polo Sul, precisa ter para conseguir ver todas as estrelas do céu?
+    What is the smallest height a giant (who lives a VERY long time), located at the South Pole, must have in order to see every star in the sky?
 \end{pproblem}
 
 
 \pts{3}
 \begin{pproblem}
-    Toleduardo deseja ver o pôr do Sol, mas acabou passando tempo demais na SorveterITA. Toleduardo é um homem \textit{Just in time} e deseja saber quanto tempo o pôr do Sol vai durar, para que ele possa se atrasar com calma. Sabendo que Toleduardo só vai para a SorveterITA nos dias 21 de março ou 22 de setembro, calcule qual é a duração do pôr do Sol na SorveterITA.
+    Toleduardo wants to watch the sunset, but he spent too long at SorveterITA. Toleduardo is a \textit{Just in time} man and wants to know how long the sunset will last, so that he can be late at his leisure. Given that Toleduardo only goes to SorveterITA on March 21 or September 22, calculate the duration of the sunset at SorveterITA.
     \\
-    \textbf{Dados: } Latitude da SorveterITA \(\phi = 23^\circ \ 10' \ 45''S, \ \ \lambda = 45^\circ 53' 14''O\).
+    \textbf{Data: } Latitude of SorveterITA \(\phi = 23^\circ \ 10' \ 45''S, \ \ \lambda = 45^\circ 53' 14''W\).
 \end{pproblem}
 
 
 \pts{3}
-\begin{pproblem} (Lista 2 - Vinhedo 2021)
-    Em fevereiro de 2015, a Lua iniciou um ciclo de ocultações mensais de Aldebaran ($\alpha$ Tau). Ou seja, todo mês a Lua passava na frente de Aldebaran para um observador na Terra. Vale ressaltar que essas ocultações não ocorriam necessariamente para observadores na mesma posição todo mês. 
+\begin{pproblem} (Problem set 2 - Vinhedo 2021)
+    In February 2015, the Moon began a cycle of monthly occultations of Aldebaran ($\alpha$ Tau). That is, every month the Moon passed in front of Aldebaran for an observer on Earth. Note that these occultations did not necessarily occur for observers at the same location every month. 
 
-    Calcule a data (mês e ano) do fim desse ciclo de ocultações mensais. Considere que a órbita da Lua é circular.
+    Calculate the date (month and year) when this cycle of monthly occultations ends. Assume that the Moon's orbit is circular.
 
-    \subsection*{Dados:}
+    \subsection*{Data:}
 
     \begin{itemize}
-        \item Latitude eclíptica de Aldebaran = $5,47^\circ$
-        \item Período de precessão nodal da Lua = 18,6 anos
+        \item Ecliptic latitude of Aldebaran = $5.47^\circ$
+        \item Nodal precession period of the Moon = 18.6 years
     \end{itemize}
 \end{pproblem}
 
 
 \pts{4}
-\begin{pproblem} (Lista 2 - Vinhedo 2021)
-    Miguel vive em uma ilha isolada no Oceano Pacífico Sul, em uma longitude
-    $\lambda = 176^{\circ}09^{\prime}137,7^{\prime\prime}\text{W}$. Ao longo do ano, o local onde o Sol nasce, visto por Miguel, varia $\Delta A = 67^{\circ}03^{\prime}81^{\prime\prime}$ no horizonte. Para os dois primeiros itens, desconsidere a refração atmosférica. Com essas informações, descubra:
+\begin{pproblem} (Problem set 2 - Vinhedo 2021)
+    Miguel lives on an isolated island in the South Pacific Ocean, at longitude
+    $\lambda = 176^{\circ}09^{\prime}137.7^{\prime\prime}\text{W}$. Over the year, the place where the Sun rises, as seen by Miguel, varies by $\Delta A = 67^{\circ}03^{\prime}81^{\prime\prime}$ along the horizon. For the first two items, neglect atmospheric refraction. With this information, find:
 
     \begin{alternativas}
-        \item A latitude $\phi$ e o nome da ilha. (Consulte o Google Earth ou software similar)
-        \item O intervalo de horários em que o Sol nasce na ilha, dado o fuso horário peculiar $UT + 12\frac{3}{4}$.
-        \item Considerando a refração atmosférica, o tamanho do intervalo do item anterior iria diminuir, aumentar ou se manter constante?
+        \item The latitude $\phi$ and the name of the island. (Consult Google Earth or similar software)
+        \item The range of times at which the Sun rises on the island, given the peculiar time zone $UT + 12\frac{3}{4}$.
+        \item Taking atmospheric refraction into account, would the length of the interval in the previous item decrease, increase, or stay constant?
     \end{alternativas}
 
 \end{pproblem}
 
 
 \pts{3}
-\begin{pproblem}(Lista 2 - Vinhedo 2022) 
-    Bruno decidiu alugar uma casa para passar as férias em Cuiabá ($15,3^{\circ} \text{S}$, $56,1^{\circ} \text{O}$). Como um bom astrônomo, Bruno passava suas noites sentado em uma cadeira observando as estrelas por uma porta gigante voltada para o ponto cardeal sul.
+\begin{pproblem}(Problem set 2 - Vinhedo 2022) 
+    Bruno decided to rent a house for his vacation in Cuiabá ($15.3^{\circ} \text{S}$, $56.1^{\circ} \text{W}$). As a good astronomer, Bruno spent his nights sitting in a chair, watching the stars through a giant door facing the south cardinal point.
 
-    A porta tinha 4,00 metros de altura e 1,50 metros de largura. Bruno tinha o costume de sentar a
-    1,00 metro da porta perfeitamente alinhado com o seu centro na horizontal. Ou seja, o segmento
-    de reta entre os olhos de Bruno e o ponto que está exatamente no meio da porta na horizontal e
-    na altura dos olhos forma um ângulo de $90^{\circ}$ com o plano da porta. Os olhos de Bruno ficam a
-    1,20 metros do chão quando ele está sentado na cadeira.
+    The door was 4.00 meters high and 1.50 meters wide. Bruno used to sit
+    1.00 meter from the door, perfectly aligned with its center horizontally. That is, the line
+    segment between Bruno's eyes and the point exactly halfway across the door horizontally and
+    at eye level forms an angle of $90^{\circ}$ with the plane of the door. Bruno's eyes are
+    1.20 meters above the floor when he is sitting in the chair.
     
-    Para facilitar as suas observações, Bruno criou um sistema de coordenadas baseado na posição da
-    porta, de onde ele via as estrelas a partir do local onde estava sentado, utilizando metros como
-    a unidade de referência. A origem do sistema está localizada no canto inferior esquerdo. As coordenadas
-    em $x$ aumentam para a direita e as coordenadas em $y$ aumentam para cima. Dessa forma, uma
-    estrela vista a 1 metro do lado esquerdo da porta e 2 metros acima do chão seria representada
-    pelas coordenadas $(1, 2)$.
+    To make his observations easier, Bruno created a coordinate system based on the position of the
+    door, from which he saw the stars at the place where he was sitting, using meters as
+    the reference unit. The origin of the system is at the lower-left corner. The coordinates
+    in $x$ increase to the right and the coordinates in $y$ increase upward. Thus, a
+    star seen 1 meter in from the left side of the door and 2 meters above the floor would be represented
+    by the coordinates $(1, 2)$.
     
-    Bruno estava bastante interessado em Shaula ($\lambda \ \text{Sco}, \delta = 37,1^{\circ} \text{S}$). Determine as coordenadas de
-    Shaula no instante em que a estrela se tornava visível para Bruno quando observada através da porta. Assuma que Shaula estava abaixo do horizonte quando Bruno começava a observar o céu.
+    Bruno was very interested in Shaula ($\lambda \ \text{Sco}, \delta = 37.1^{\circ} \text{S}$). Determine the coordinates of
+    Shaula at the instant the star became visible to Bruno when observed through the door. Assume that Shaula was below the horizon when Bruno began watching the sky.
 \end{pproblem}
 
 

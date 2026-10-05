@@ -4,81 +4,82 @@
 
 \begin{document}
 
-\psettitle{Banco de questões de astronomia}
+\psettitle{Astronomy Question Bank}
 
-Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de preparar os estudantes para o processo seletivo de astronomia no Brasil. Algumas questões não são de autoria própria e estão devidamente sinalizadas por () antes do enunciado. O template do banco de questões é o mesmo do Professor \text{Kevin Zhou}. Seu trabalho é valioso, e diversas ideias desta lista podem ser encontradas em seus Handouts.
+These questions were carefully written or selected to prepare students for the astronomy team selection process in Brazil. Some questions are not original; those are marked with () before the statement. The question-bank template is the same one used by Professor Kevin Zhou. His work is invaluable, and many ideas in this set can be found in his handouts.
 
-% \begin{psidea}{Título da Ideia}{}
-% Ideia
+% \begin{psidea}{Idea title}{}
+% Idea
 % \end{psidea}
 
-% \begin{psexample}{Título do Exemplo}{}
-% Exemplo
+% \begin{psexample}{Example title}{}
+% Example
 % \end{psexample}
 
 % \begin{pssolution*}{}{}
-% Solução
+% Solution
 % \end{pssolution*}
 
-% \begin{psremark*}{Título da Observação}{}
-% Observação
-% \end{psremark*} 
-\section{Termodinâmica}
+% \begin{psremark*}{Remark title}{}
+% Remark
+% \end{psremark*}
+
+\section{Thermodynamics}
 \pts{3}
 \begin{pproblem}
-    Uma galáxia possuí na ordem de \(10^{10}\) estrelas, por essa quantidade imensa, podemos modelar uma galáxia como sendo uma núvem de gás ideial, onde cada estrela seria equivamente a uma partícula do Gás. 
+    A galaxy contains on the order of \(10^{10}\) stars. Because of this immense number, we can model a galaxy as a cloud of ideal gas, in which each star is equivalent to a particle of the gas.
     
-    O objetivo dessa questão é utilizar esse modelo teórico para estudar algumas propriedades de galáxias. Para isso, vamos fazer as seguintes suposições:
+    The goal of this question is to use this theoretical model to study some properties of galaxies. To that end, we make the following assumptions:
 
     \begin{enumerate}[label=\roman*)]
-        \item A galáxia é esférica e se encontra em equilíbrio hidrostático.
-        \item A densidade de massa da galáxia é constante e tem valor \(\rho\).
-        \item As massas das estrelas são pequenas o suficiente para que as interações interestelares possam ser desconsideradas.
+        \item The galaxy is spherical and in hydrostatic equilibrium.
+        \item The mass density of the galaxy is constant and equal to \(\rho\).
+        \item The stellar masses are small enough that interstellar interactions can be neglected.
     \end{enumerate}
     
     \begin{alternativas}
-        \item Considerando um sistema de gás ideal, encontre uma expressão para a pressão em função da densidade \(\rho\), da temperatura, \(T\), da massa de cada partícula \(\mu\) e constantes físicas.
+        \item Considering an ideal-gas system, find an expression for the pressure in terms of the density \(\rho\), the temperature \(T\), the mass of each particle \(\mu\), and physical constants.
         
-        \item No nosso modelo teórico, não faz sentido pensar em temperatura, então precisamos encontar um substituto para ela. Utilizando o teorema da equipartição de energia, encontre uma expressão para \(T(r)\) e \(P(r)\).
+        \item In our theoretical model it does not make sense to think in terms of temperature, so we need a substitute for it. Using the equipartition theorem, find an expression for \(T(r)\) and \(P(r)\).
     \end{alternativas}
 \begin{pssolution*}{}{}
     \begin{alternativas}
-        \item Partidindo da equação de Clepeiron, 
+        \item Starting from the Clapeyron equation,
         \[PV = Nk_BT\]
 
-        Vamos multiplicar os dois lados por \(\mu\), 
+        Multiply both sides by \(\mu\),
 
         \[P\mu V = N\mu k_B T\]
 
         \[P\mu = \frac{N\mu}{V}k_BT\]
 
-        Mas note que \(N\mu\) equivale a massa total, assim, 
+        Note that \(N\mu\) equals the total mass, so
 
         \[\rho = \frac{N\mu}{V}\]
         
-        E com isso, obtemos, 
+        With this we obtain
 
         \[\boxed{P\mu = \rho k_B T}\]
 
-        Essa expressão será utilizada com bastante frequencia na parte de termodinâmica dessa lista.
+        This expression will be used quite often in the thermodynamics part of this set.
 
-        \item Pelo teorema da equipartição de energia, 
+        \item By the equipartition theorem,
         
         \[\frac{\mu v^2}{2} = \frac{3k_B T}{2}\]
 
-        Logo, 
+        Hence
     
         \[T = \frac{\mu v^2}{3k_B}\]
 
-        Como as estrelas possuem massa e velocidade, essa é uma substituição aceitavel. Podemos calcular \(v\) pela equação vis-viva, considerando órbitas circulares, 
+        Since the stars have mass and speed, this is an acceptable substitution. We can compute \(v\) from the vis-viva equation, assuming circular orbits,
 
         \[v^2 = \frac{GM}{r^2} = \frac{4\pi G\rho r}{3}\]
 
-        Assim, 
+        Thus
 
         \[\boxed{T(r) = \frac{4\pi G \rho \mu r}{9k_B}}\]
 
-        Para \(P(r)\), vamos substituir na fórmula, 
+        For \(P(r)\), substitute into the formula:
 
         \[\boxed{P(r) = \frac{\rho k_B T(r)}{\mu} = \frac{4\pi G \rho^2 r}{9}}\]
     \end{alternativas}
@@ -88,43 +89,43 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
 
 \pts{2}
 \begin{pproblem}
-    Nessa questão, vamos fazer um estudo sobre o coeficiente adiabático de estrelas. Considere uma o exterior de uma estrela se dá por vácuo a temperatura \(T=0\).
+    In this question we study the adiabatic index of stars. Assume that the exterior of a star is a vacuum at temperature \(T=0\).
     \begin{alternativas}
-        \item Todas as estrelas são corpos em equilíbrio hidrostático. Sabendo disso, qual a pressão na superfície de uma estrela de massa \(M\) e raio \(R\).
-        \item Considere agora, que a estrela se expanda em \(\delta R\), como a pressão variaria? Se necessário utilize que \((1+x)^n\approx 1+nx\).
-        \item Agora, conclua qual o valor de \(\gamma\) mínimo, \(\gamma_{min}\) a estrela deve ter para se manter gravitacionalmente ligada (assuma que ela se expande de maneira adiabática)?
+        \item All stars are bodies in hydrostatic equilibrium. Given that, what is the pressure at the surface of a star of mass \(M\) and radius \(R\)?
+        \item Now suppose that the star expands by \(\delta R\). How does the pressure change? If needed, use \((1+x)^n\approx 1+nx\).
+        \item Now conclude what minimum value of \(\gamma\), \(\gamma_{min}\), the star must have in order to remain gravitationally bound (assume that it expands adiabatically).
     \end{alternativas}
 
 \begin{pssolution*}{}{}
     \begin{alternativas}
-        \item Utilizando \(P = F/A\) temos
+        \item Using \(P = F/A\), we have
         \[P(R) = \frac{GM^2}{4\pi R^4}\]
 
-        \item Desse modo 
+        \item Thus
         \[P(R+\delta R)  = \frac{GM^2}{4\pi}(R+\delta R)^{-4} = \frac{GM^2}{4\pi R^4}\left(1+\frac{\delta R}{R}\right)^{-4}\]
 
-        Utilizando a aproximação fornecida pelo enunciado 
+        Using the approximation given in the statement,
 
         \[\boxed{P(R+\delta R) = \frac{GM^2}{4\pi R^4}\left(1-\frac{4\delta R}{R}\right) = P\left(1-\frac{4\delta R}{R}\right)}\]
     
-        \item Na expanssão adiabática, \(PV^\gamma\) é consntate, como \(V\propto R^3\), vale que \(PR^{3\gamma}\) é constante. Desse modo
+        \item In an adiabatic expansion, \(PV^\gamma\) is constant. Since \(V\propto R^3\), it follows that \(PR^{3\gamma}\) is constant. Thus
         
         \[PR^{3\gamma} = (P+\delta P)(R + \delta R)^{3\gamma}\]
 
-        Utilizando o mesmo raciocíio do item anterior
+        Using the same reasoning as in the previous item,
         \[PR^{3\gamma} = (P+\delta P)R^{3\gamma}\left(1 + \frac{\delta R}{R}\right)^{3\gamma}\]
 
         \[P = (P+ \delta P)\left(1+\frac{3\gamma\delta R}{R}\right)\]
 
-        Substituindo \(P+\delta P\) 
+        Substituting \(P+\delta P\),
 
         \[1 = \left(1-\frac{4\delta R}{R}\right)\left(1+\frac{3\gamma\delta R}{R}\right)\]
 
-        Desse modo 
+        Hence
 
         \[\left(1-\frac{4\delta R}{R}\right)^{-1} = 1+\frac{3\gamma\delta R}{R}\]
 
-        Utilizando novamente a aproximação binomial do lado esquerdo da equação e resolvendo para \(\gamma\) obtemos
+        Using the binomial approximation again on the left-hand side and solving for \(\gamma\), we obtain
 
         \[\boxed{\gamma = \frac{4}{3}}\]
     \end{alternativas}
@@ -134,339 +135,339 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
 
 \pts{4}
 \begin{pproblem}
-    Há vários modelos para a atmosfera do nosso planeta, vamos explorá-los e encontrar os efeitos físicos de cada um.
+    There are several models for the atmosphere of our planet. Let us explore them and find the physical effects of each one.
     \begin{alternativas}
-        \item Primeiramente, vamos considerar o modelo isotérmico (\(T=\) cte). Considerando que cada partícula de ar possuí massa \(\mu\), a atmosfera possuí \(P(0) = P_0\), encontre uma fórmula para a pressão em função da altura, \(P(h)\).
-        \item Um modelo mais real da atmosfera é na verdade, adiabática, uma vez que o ar é um péssimo condutor de calor. Considerando que o ar possuí coeficiente de Poisson \(\gamma\), encontre uma fórma para \(P(h)\), no modelo adiabático. Considere que a nivel do mar, a pressão e a temperatura valem \(P(0)\) e \(T(0)\).
-        \item Encontre uma expressão para \(dT/dh\) para o modelo anterior e estime seu valor. O resultado é condizente com a realidade?
+        \item First, consider the isothermal model (\(T=\) const). Given that each air particle has mass \(\mu\) and that the atmosphere has \(P(0) = P_0\), find a formula for the pressure as a function of height, \(P(h)\).
+        \item A more realistic model of the atmosphere is in fact adiabatic, since air is a very poor conductor of heat. Given that the air has Poisson coefficient \(\gamma\), find an expression for \(P(h)\) in the adiabatic model. Assume that at sea level the pressure and the temperature are \(P(0)\) and \(T(0)\).
+        \item Find an expression for \(dT/dh\) for the previous model and estimate its value. Is the result consistent with reality?
     \end{alternativas}
 
 \begin{pssolution*}{}{}
     \begin{alternativas}
-        \item Da relação 
+        \item From the relation
         \[P\mu = \rho k_BT\]
 
-        Assim, como \(T = cte\), 
+        Thus, since \(T = \mathrm{const}\),
 
         \[\frac{P(h)}{P(0)} = \frac{\rho(h)}{\rho(0)}\]
 
-        O gradiente de pressão é dado pela lei de stevin, 
+        The pressure gradient is given by Stevin's law,
 
         \[\frac{dP(h)}{dh} = -g\rho(h)\]
 
-        Substituindo \(\rho(h)\), 
+        Substituting \(\rho(h)\),
 
         \[\frac{dP(h)}{dh} = \frac{-gP(h)\rho(0)}{P(0)}\]
 
-        Separando os termos, 
+        Separating the terms,
 
         \[\frac{dP(h)}{P(h)} = \frac{-g\rho(0)}{P(0)}dh\]
 
-        Integrando dos dois lados, 
+        Integrating both sides,
 
         \[\int_0^h\frac{dP(h)}{P(h)} = \ln\left(\frac{P(h)}{P(0)}\right)\]
 
         \[\int_0^hdh = h\]
 
-        Assim, 
+        Thus
 
         \[P(h) = P(0)e^{-\frac{g\rho(0)}{P(0)}h}\]
 
-        Por fim, vamos eliminar o termo \(\rho(0)\), analisando a relação de clepeyron, 
+        Finally, we eliminate the term \(\rho(0)\) using the Clapeyron relation,
 
         \[P(0)\mu = \rho(0)k_B T \rightarrow \rho(0) = \frac{P(0)\mu}{k_BT}\]
 
-        Substituindo, 
+        Substituting,
 
         \[\boxed{P(h) = P(0)e^{-\frac{\mu g h}{k_BT}}}\]
 
-        \item No modelo adiabático, temos, 
-        \[PV^\gamma = cte\]
+        \item In the adiabatic model we have
+        \[PV^\gamma = \mathrm{const}\]
 
-        Como \(V\propto \rho^{-1}\), 
+        Since \(V\propto \rho^{-1}\),
 
-        \[P\rho^{-\gamma} = cte\]
+        \[P\rho^{-\gamma} = \mathrm{const}\]
 
-        Ou seja, 
+        That is,
 
         \[\rho(h) = \left(\frac{P(0)}{P(h)}\right)^{-1/\gamma}\rho(0) = \left(\frac{P(h)}{P(0)}\right)^{1/\gamma}\rho(0)\]
 
-        Substituindo na expressão do gradiente de pressão, 
+        Substituting into the expression for the pressure gradient,
 
         \[\frac{dP(h)}{dh} = -g\rho(h) = -\left(\frac{P(h)}{P(0)}\right)^{1/\gamma}\rho(0)g\]
 
-        Separando os termos e integrando, 
+        Separating the terms and integrating,
 
         \[\int_0^h P(h)^{-1/\gamma}dP(h) = -P(0)^{-1/\gamma}\rho(0)g\int_0^h dh\]
 
         \[\frac{\gamma}{\gamma-1}(P(h)^{\frac{\gamma-1}{\gamma}}-P(0)^{\frac{\gamma-1}{\gamma}}) = -\frac{\mu g z}{k_B T(0)}P(0)^{\frac{\gamma-1}{\gamma}}\]
 
-        Aqui usamos que, 
+        Here we use
 
         \[P(0)\mu = \rho(0)k_B T(0)\]
 
-        Isolando \(P(h)\)
+        Solving for \(P(h)\),
     
         \[\boxed{P(h) = P(0)\left(1-\frac{\gamma-1}{\gamma}\frac{\mu g h}{k_B T(0)}\right)^{\frac{\gamma}{\gamma-1}}}\]
        
-        \item Para processos adiabáticos, 
+        \item For adiabatic processes,
         
-        \[PV^\gamma = cte\]
+        \[PV^\gamma = \mathrm{const}\]
 
         \[V\propto \frac{T}{P}\]
 
-        Logo, 
+        Hence
 
-        \[P^{1-\gamma} T^\gamma = cte\]
+        \[P^{1-\gamma} T^\gamma = \mathrm{const}\]
 
-        \[T P^\frac{1-\gamma}{\gamma} = cte\]
+        \[T P^\frac{1-\gamma}{\gamma} = \mathrm{const}\]
         
-        Assim, 
+        Thus
 
         \[T = P(0)^\frac{1-\gamma}{\gamma}T(0)P^{\frac{\gamma-1}{\gamma}}\]
 
-        Derivando, 
+        Differentiating,
 
         \[\frac{dT}{dh} = P(0)^\frac{1-\gamma}{\gamma}T(0) \frac{\gamma-1}{\gamma P^{1/\gamma}}\frac{dP}{dh}\]
 
-        Do item anterior, temos a expressão para \(P\) em função de \(h\). Efetivando a derivada, 
+        From the previous item we have the expression for \(P\) as a function of \(h\). Carrying out the derivative,
 
         \[\frac{dP}{dh} = P(0)\frac{d}{dh}\left(1-\frac{\gamma-1}{\gamma}\frac{\mu g h}{k_B T(0)}\right)^{\frac{\gamma}{\gamma-1}}\]
 
-        Utilizando a regra da cadeia, 
+        Using the chain rule,
 
         \[\frac{dP}{dh} = \frac{\gamma}{\gamma-1}P(0)\left(1-\frac{\gamma-1}{\gamma}\frac{\mu g h}{k_B T(0)}\right)^{\frac{1}{\gamma-1}}\left(-\frac{\gamma-1}{\gamma}\frac{\mu g}{k_B T(0)}\right)\]
 
-        Simplfiicando, 
+        Simplifying,
 
         \[\frac{dP}{dh} = -P(0)\left(1-\frac{\gamma-1}{\gamma}\frac{\mu g h}{k_B T(0)}\right)^{\frac{1}{\gamma-1}}\frac{\mu g}{k_B T(0)}\]
 
-        Substituindo na expressão para \(dT/dh\), 
+        Substituting into the expression for \(dT/dh\),
 
         \[\frac{dT}{dh} = -P(0)^\frac{1-\gamma}{\gamma}T(0) \frac{\gamma-1}{\gamma P^{1/\gamma}}P(0)\left(1-\frac{\gamma-1}{\gamma}\frac{\mu g h}{k_B T(0)}\right)^{\frac{1}{\gamma-1}}\frac{\mu g}{k_B T(0)}\]
 
         \[\frac{dT}{dh} = -\frac{\gamma-1}{\gamma}P(0)^\frac{1}{\gamma} P^{-\frac{1}{\gamma}}\left(1-\frac{\gamma-1}{\gamma}\frac{\mu g h}{k_B T(0)}\right)^{\frac{1}{\gamma-1}}\frac{\mu g}{k_B}\]
 
-        Substituindo \(P\), 
+        Substituting \(P\),
 
         \[\frac{dT}{dh} = -\frac{\gamma-1}{\gamma}P(0)^\frac{1}{\gamma} \left(P(0)\left(1-\frac{\gamma-1}{\gamma}\frac{\mu g h}{k_B T(0)}\right)^{\frac{\gamma}{\gamma-1}}\right)^{-\frac{1}{\gamma}}\left(1-\frac{\gamma-1}{\gamma}\frac{\mu g h}{k_B T(0)}\right)^{\frac{1}{\gamma-1}}\frac{\mu g}{k_B}\]
 
-        Continunado a simplificar os termos, obtemos uma expressão fofa, 
+        Continuing to simplify, we obtain a neat expression,
 
         \[\frac{dT}{dh} = -\frac{\gamma-1}{\gamma}\frac{\mu g}{k_B}\]
 
-        Podemos aproximar o ar para um gás diatômico, \(\gamma = \frac{7}{5}\), de massa, \(\mu\approx 30\)u. Fazendo os calculos, obtemos, 
+        We can approximate air as a diatomic gas, \(\gamma = \frac{7}{5}\), of mass \(\mu\approx 30\)u. Carrying out the calculation, we obtain
 
-        \[\boxed{\frac{dT}{dh} \approx - 10,03 \text{ K/km}}\]
+        \[\boxed{\frac{dT}{dh} \approx - 10.03 \text{ K/km}}\]
 
-        O que é um valor bem condizente com a realidade.
+        which is a value quite consistent with reality.
     \end{alternativas}
 \end{pssolution*}
 \end{pproblem}
 
 \pts{5}
 \begin{pproblem}
-    Um dos corpos mais fascinantes do universo são Buracos Negros. Nessa questão, vamos estudar um pouco da Termodinâmica relacionada a esses tipos de objeto. Para essa questao utilizaremos unidades naturais, i.e.: \(c = G = \hbar = k_B = 1\). Nessa convenção, a massa do buraco negro é descrita pela equação:
+    Black holes are among the most fascinating bodies in the universe. In this question we study some of the thermodynamics associated with these objects. For this question we use natural units, i.e.\ \(c = G = \hbar = k_B = 1\). In this convention, the mass of the black hole is described by the equation
 
     \[dM = \frac{\kappa}{8\pi}dA + \Omega dL + \Phi dQ\]
 
-    Aqui, os valores se restringem ao horizonte de eventos, ou seja, \(\kappa\) é a aceleração da gravidade no horizonte de eventos, \(A\), sua área, \(\Omega\) a velocidade angular do buraco negro, \(L\) seu momento de inercia, \(\Phi\) o potencial eletríco e \(Q\) a sua carga.
+    Here the quantities refer to the event horizon: \(\kappa\) is the gravitational acceleration at the event horizon, \(A\) its area, \(\Omega\) the angular velocity of the black hole, \(L\) its moment of inertia, \(\Phi\) the electric potential, and \(Q\) its charge.
 
     \begin{center}
-    \textbf{Parte 1: Termodinâmica Básica}   
+    \textbf{Part 1: Basic Thermodynamics}   
     \end{center}
     
     \begin{alternativas}
-        \item Um dos conceitos fundamentais da termodinâmica é o conceito de entropia, utilizando seus conhecimentos sobre a mesma, explique bravimente a desigualdade:
+        \item One of the fundamental concepts of thermodynamics is entropy. Using what you know about it, briefly explain the inequality
         \[\oint dS \geq 0\]
 
-        \item Dos 3 fatores que regem a massa de um buraco negro(\(dA, \ dL, \ dQ\)), apenas \(dA\) segue a mesma de sigulade da entropia, por que isso se verifica sempre verdade?
+        \item Of the 3 factors that govern the mass of a black hole (\(dA, \ dL, \ dQ\)), only \(dA\) obeys the same inequality as the entropy. Why is this always true?
         
-        Para os próximos itens, considere um buraco negro sem spin e sem carga.
+        For the next items, consider a black hole with no spin and no charge.
 
-        \item Bekenstein e Hawking conseguiram provar a chamada \textit{Entropia Bekenstein-Hawking} que relaciona a entropia com a área do Buraco Negro (lembre-se que estamos utilziando unidades naturais, por isso, algumas dimensões podem não fazer sentido). Bekenstein e Hawking descobriram que para um buraco negro \(S \equiv \frac{A}{4}\). A equação que nós temos então é:
+        \item Bekenstein and Hawking proved the so-called \textit{Bekenstein-Hawking entropy}, which relates the entropy to the area of the black hole (remember that we are using natural units, so some dimensions may not make sense). Bekenstein and Hawking found that for a black hole \(S \equiv \frac{A}{4}\). The equation we then have is
         
         \[dM = \frac{\kappa}{2\pi}d\left(\frac{A}{4}\right)\]
 
-        Fazendo uma analogia a \(dM\) com alguma função de estado, encontre a temperatura do buraco negro em função de \(\kappa\).
+        By analogy between \(dM\) and some state function, find the temperature of the black hole as a function of \(\kappa\).
 
-        Ainda há um termo importante faltando na fórmula anterior, a Pressão relacioanda a densidade de energia escura, \(\Lambda\).
+        An important term is still missing from the previous formula: the pressure associated with the dark-energy density, \(\Lambda\).
 
-        \item A pressão devido a energia escura é dada por:
+        \item The pressure due to dark energy is given by
         \[P = -\frac{\Lambda}{8\pi}\]
 
-        Onde \(\Lambda\) é constante. Isso nos mostra que \(VdP\) é nulo, ou seja, pode ser adicionado livrimente a expressão anterior. Com isso podemos concluir que a massa do buraco negro, na verdade se relaciona com outro potencial termodinâmico, qual é ele? 
+        where \(\Lambda\) is constant. This shows that \(VdP\) vanishes, so it may be added freely to the previous expression. We can therefore conclude that the mass of the black hole is in fact related to another thermodynamic potential. Which one is it?
 
-        \item Note que o volume, \(V=V\) e a entropia, \(S = A/4\) não são mais independentes em buracos negros. Assumindo que o horizonde de eventos do buraco negro é uma esfera, encontre uma relação entre \(S\) e \(V\). Isso é mais uma prova que a energia intera, \(U = U(S, V)\) não é o melhor potencial termodinâmico para trabalharmos.
+        \item Note that the volume, \(V=V\), and the entropy, \(S = A/4\), are no longer independent for black holes. Assuming that the event horizon of the black hole is a sphere, find a relation between \(S\) and \(V\). This is further evidence that the internal energy, \(U = U(S, V)\), is not the best thermodynamic potential to work with.
     \end{alternativas}
 
     \centering
-    \textbf{Parte 2: Ciclo de Carnot Para Buracos Negros}
+    \textbf{Part 2: Carnot Cycle for Black Holes}
     
     \begin{alternativas}
-        \item O objetivo dessa parte da questão é construir um modelo teórico para um ciclo de Carnot dentro de buracos negros. Mas primerio prove um resultado importante, para buracos negros, adiabaticos e isocóricos devem ser equivalentes para buracos negros.
+        \item The goal of this part is to build a theoretical model for a Carnot cycle inside black holes. First, however, prove an important result: for black holes, adiabatic and isochoric processes must be equivalent.
         
-        \item Calcule a capacidade termica a pressão constante de um Buraco negro. Seu resultado deve ser algo bizarro.
+        \item Calculate the heat capacity at constant pressure of a black hole. Your result should be something bizarre.
         
-        \item Use o fato de que \(Q = T \Delta S\) ao longo das isotermas, juntamente com os resultados dos resultados anteriores partes, para calcular a eficiência de uma máquina de Carnot de buraco negro e confirmar que você
-        obtenha a eficiência de Carnot. Maravilhe-se com o quão mais rápido esse cálculo é do que o
-        derivação típica da eficiência de Carnot, e observe que você também inadvertidamente
-        também calculou a eficiência do ciclo Stirling.
+        \item Use the fact that \(Q = T \Delta S\) along the isotherms, together with the results of the previous parts, to calculate the efficiency of a black-hole Carnot engine and confirm that you
+        obtain the Carnot efficiency. Marvel at how much faster this calculation is than the
+        typical derivation of the Carnot efficiency, and note that you have also inadvertently
+        calculated the efficiency of the Stirling cycle.
 
-        Caso voce se interesse pelo assunto, há um artigo interessante que fala especificamente sobre o tema de ciclos em buracos negros e pode ser encontrado \href{https://arxiv.org/pdf/1404.5982}{aqui}.
+        If you are interested in the subject, there is an interesting paper that discusses cycles in black holes specifically, available \href{https://arxiv.org/pdf/1404.5982}{here}.
     \end{alternativas}
 
     \centering
-    \textbf{Parte 3: Tempo de Vida e Evaporação de Buracos Negros}
+    \textbf{Part 3: Lifetime and Evaporation of Black Holes}
     
     \begin{alternativas}
-        \item Como calculado na parte 1, buracos negros possuem uma temperatura. Em decorrencia a isso, eles emitem radiação, como descrita na Lei de Stefan-Boltzmann. Sabendo disso, ache uma relação entre o tempo de vida de um buraco negro e a sua massa \(M\).
+        \item As calculated in part 1, black holes have a temperature. As a result, they emit radiation as described by the Stefan-Boltzmann law. Given that, find a relation between the lifetime of a black hole and its mass \(M\).
     \end{alternativas}
 
     \begin{pssolution*}{}{}
         \begin{center}
-            \textbf{Parte 1: Termodinâmica Básica}
+            \textbf{Part 1: Basic Thermodynamics}
         \end{center}
         \begin{alternativas}
-            \item A desigualdade representa a segunda lei da termodinâmica. De maneira breve, ela nos mostra que a variação de entropia sempre é positiva, ou seja, tudo tende a desordem.
+            \item The inequality represents the second law of thermodynamics. Briefly, it shows that the change in entropy is always positive, that is, everything tends toward disorder.
             
-            \item Note que nenhuma Lei da física impede que um buraco negro perca velocidade angular, \(dL < 0\), ou carga, \(dQ<0\). Mas ao analisarmos a área do buraco negro temos algo interessante. Considerando o horizonte de enventos, dado por uma esfera com o raio de \(R_{sch}\). Como esse é definido pela distância da qual a um objeto se movendo a velocidade luz não consegue mais escapar da atração gravitacional do buraco negro, podemos obtelo por conservação de energia, 
+            \item Note that no law of physics prevents a black hole from losing angular velocity, \(dL < 0\), or charge, \(dQ<0\). When we examine the area of the black hole, however, something interesting appears. Consider the event horizon, given by a sphere of radius \(R_{sch}\). Since this radius is defined as the distance at which an object moving at the speed of light can no longer escape the gravitational attraction of the black hole, we can obtain it from energy conservation,
             
             \[-\frac{GMm}{R_{sch}} + \frac{mc^2}{2} = 0 \rightarrow R_{sch} = \frac{2GM}{c^2}\]
             
-            Logo a área do horizonte de eventos é dada por, 
+            Hence the area of the event horizon is given by
 
             \[A = 4\pi R_{sch}^2 = \frac{8\pi G^2M^2}{c^4}\]
 
-            Em unidades naturais, 
+            In natural units,
 
             \[A = 8\pi M^2\]
 
-            Assim, 
+            Thus
 
             \[dA = 16\pi MdM\]
 
-            Mas, um buraco negro não pode perder massa, uma vez que nada pode escapar do horizonte de eventos. Assim, \(dM>0\) e conseguentemente \(dA>0\). Assim, podemos concluir que tambem é valido, 
-
+            A black hole cannot lose mass, since nothing can escape the event horizon. Thus \(dM>0\) and consequently \(dA>0\). We can therefore conclude that it is also valid that
+            
             \[\oint dA \geq 0\]
 
-            Para buracos negros.
+            for black holes.
 
-            \item Da Relação massa energia, 
+            \item From the mass-energy relation,
             
             \[U = M \rightarrow dU = dM\]
 
-            (Lembrando que estamos utilizando unidades naturias, então \(Mc^2\) = \(M\)). Desse modo, utilizando a primeira Lei da termodinâmica, 
+            (Recall that we are using natural units, so \(Mc^2\) = \(M\).) Thus, using the first law of thermodynamics,
 
             \[dU = TdS - PdV\]
 
-            Logo, 
+            Hence
 
             \[T = \left.\frac{dU}{dS}\right\vert_V = \left.\frac{dM}{dS}\right\vert_V\]
 
-            Utilizando a formula da entropia fornecida pelo enunciado, (análoga a obtida no item anterior). 
+            Using the entropy formula given in the statement (analogous to the one obtained in the previous item),
 
             \[dM = \frac{\kappa}{2\pi}\left(\frac{A}{4}\right) = \frac{\kappa}{2\pi}dS\]
 
-            utilizando a equação do item anterior, podemos perceber que \(\kappa = 1/4M\), Substituindo na fórmula de \(T\),
+            Using the equation from the previous item, we see that \(\kappa = 1/4M\). Substituting into the formula for \(T\),
 
             \[\boxed{T = \frac{1}{8\pi M}}\]
 
-            \item Utilizando a fórmula obtida para \(T\), 
+            \item Using the formula obtained for \(T\),
             
             \[dM = TdS\]
 
-            Adicionando o termo nuleo \(VdP\), temos, 
+            Adding the vanishing term \(VdP\), we have
 
             \[dM = TdS + VdP\]
 
-            Mas note que essa é identica a Entalpia, \(H\):
+            Note that this is identical to the enthalpy, \(H\):
 
             \[H = U + PV \rightarrow dH = (TdS - PdV) +  (PdV - VdP) = TdS - VdP\]
 
-            Desse modo, podemos dizer que a massa equivale a Entalpia.
+            We can therefore say that the mass is equivalent to the enthalpy.
 
-            \item O Volume de uma esfera é dado por, 
+            \item The volume of a sphere is given by
             
             \[V = \frac{4\pi R^3}{3}\]
 
-            Enquando a área é dada por \(A = 4\pi R^2\), então, \(R = \sqrt\frac{A}{4\pi}\equiv \sqrt\frac{S}{\pi}\). Substituindo na fórmula do volume,
+            while the area is given by \(A = 4\pi R^2\), so \(R = \sqrt\frac{A}{4\pi}\equiv \sqrt\frac{S}{\pi}\). Substituting into the volume formula,
             
             \[V = \frac{4\pi}{3}\left(\frac{S}{\pi}\right)^{3/2}\]
 
-            Simplificando, 
+            Simplifying,
 
             \[\boxed{V = \frac{4}{3\sqrt{\pi}}S^{3/2}}\]
 
-            Ou seja, o volume e a entropia são dependentes de si. Como a energia interna é uma função do volume \textbf{e} da entropia, não faz sentido dizer que esta equivale a massa do buraco negro.
+            That is, the volume and the entropy depend on each other. Since the internal energy is a function of the volume \textbf{and} the entropy, it does not make sense to say that it equals the mass of the black hole.
         \end{alternativas}
     
         \begin{center}
-            \textbf{Parte 2: Ciclo de Carnot Para Buracos Negros}
+            \textbf{Part 2: Carnot Cycle for Black Holes}
         \end{center}
 
         \begin{alternativas}
-            \item Utilizando a relação do item anterior, 
+            \item Using the relation from the previous item,
             
             \[dV = \frac{2}{\pi}S dS\]
 
-            Ou seja, um ciclo adiabático (\(dS = 0\)) equivale a um ciclo isocório (\(dV = 0\)).
+            That is, an adiabatic cycle (\(dS = 0\)) is equivalent to an isochoric cycle (\(dV = 0\)).
 
-            \item Para calcular a capacidade térmica a pressão constante, 
+            \item To calculate the heat capacity at constant pressure,
             
             \[C_P = \left.\frac{\partial Q}{\partial T}\right\vert_P = T\left.\frac{\partial S}{\partial T}\right\vert_P = \frac{dM}{dT}\] 
             
-            Usando a fórmula para a temperatura, 
+            Using the formula for the temperature,
 
             \[T = \frac{1}{8\pi M} \rightarrow M = \frac{1}{8\pi T}\]
             \[\boxed{C_P = \frac{dM}{dT} = -\frac{1}{8\pi T^2}}\]
 
-            \item A effinciência de um ciclo é dada por, 
+            \item The efficiency of a cycle is given by
 
             \[\eta = \frac{W}{Q_H} = \frac{Q_C-Q_H}{Q_H} = 1-\frac{Q_C}{Q_H}\]
 
-            Onde \(Q_H\) é o calor que entra no ciclo durante a fase quente e \(Q_C\) é o valor que entra nele durante a fase fria. Assim, definindo \(T_H\) e \(T_C\) como as temperaturas quentes e frias, reespectivamente. Considere que o ciclo opera nas seguintes \(1-2\) temepratura quente e \(3-4\) temperatura fria. Assim, 
+            where \(Q_H\) is the heat that enters the cycle during the hot phase and \(Q_C\) is the amount that enters it during the cold phase. Define \(T_H\) and \(T_C\) as the hot and cold temperatures, respectively. Suppose the cycle operates with \(1-2\) at the hot temperature and \(3-4\) at the cold temperature. Then
 
             \[Q_H = T_H\Delta S_{1\rightarrow 2}\]
 
             \[Q_C = T_C\Delta S_{3\rightarrow 4}\]
 
-            Utilizando a expressão do item \(1.e\), temos,
+            Using the expression from item \(1.e\), we have
 
             \[S = \frac{3\sqrt{\pi}}{4}V^{2/3}\]
 
-            Assim, 
+            Thus
 
             \[\Delta S_{1\rightarrow 2} = \frac{3\sqrt\pi}{4}\left(V^{2/3}_2 - V^{2/3}_1\right)\]
             \[\Delta S_{3\rightarrow 4} = \frac{3\sqrt\pi}{4}\left(V^{2/3}_4 - V^{2/3}_3\right)\]
 
-            Logo, a eficiencia pode ser escrita, 
+            Hence the efficiency can be written as
 
             \[\eta = 1 - \frac{T_C\left(V^{2/3}_4 - V^{2/3}_3\right)}{T_H \left(V^{2/3}_2 - V^{2/3}_1\right)}\]
 
-            Mas como para buracos negros, adabáticas e ispcórias são identicas, \(V_1=V_3\) e \(V_2=V_4\)!, logo, 
+            But since, for black holes, adiabatic and isochoric processes are identical, \(V_1=V_3\) and \(V_2=V_4\), so
 
             \[\boxed{\eta = 1 -\frac{T_C}{T_H}}\]
 
-            Que é a eficiencia de Carnot!
+            which is the Carnot efficiency!
 
             \begin{center}
-                \textbf{Parte 3: Tempo de Vida e evaporação de Buracos Negros}
+                \textbf{Part 3: Lifetime and Evaporation of Black Holes}
             \end{center}
         \end{alternativas}
         \begin{alternativas}
-            \item A Lei de Stefan Boltzmann diz que a luminosidade (Potência) é dado por, 
+            \item The Stefan-Boltzmann law says that the luminosity (power) is given by
             \[L = -\frac{dE}{dt} = - \frac{dM}{dt} = A\sigma T^4 \]
 
-            Mas note que \(A\propto M^2\) e \(T\propto 1/M\), assim, 
+            Note that \(A\propto M^2\) and \(T\propto 1/M\), so
 
             \[\frac{dM}{dt} \propto M^2\left(\frac{1}{M}\right)^4 = \frac{1}{M^2}\]
 
-            Separando as variaveis, 
+            Separating the variables,
 
             \[M^2dM \propto dt\]
 
-            Por fim, integrando, obtemos, 
+            Finally, integrating, we obtain
 
             \[\boxed{t \propto M^3}\]
         \end{alternativas}
@@ -477,47 +478,47 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
 
 \pts{3}
 \begin{pproblem}
-    Considere que um foguete utiliza como combustível um gás ideal diatômico. Seu mecanismo de funcionamento é bem simples: O gás parte de uma camera a temperatura \(T_1\), que possuí área de secção transversal \(A_1\), o gás entao, flui adiabaticamente e é expelido em uma abertura de área \(A_2\), com pressão, \(P_2\) e temperatura \(T_2<T_1\). Considerando que o fluxo é contínuo, determine o empuxo sentido pelo foguete.
+    Consider a rocket that uses an ideal diatomic gas as fuel. Its mechanism is quite simple: the gas starts in a chamber at temperature \(T_1\) with cross-sectional area \(A_1\); the gas then flows adiabatically and is expelled through an opening of area \(A_2\), at pressure \(P_2\) and temperature \(T_2<T_1\). Assuming that the flow is continuous, determine the thrust felt by the rocket.
 \begin{pssolution*}{}{}
-    Como o processo é adiabático, temos
+    Since the process is adiabatic, we have
 
-    \[PV^\gamma \propto P\left(\frac{T}{P}\right)^\gamma = cte\]
+    \[PV^\gamma \propto P\left(\frac{T}{P}\right)^\gamma = \mathrm{const}\]
 
-    Como o gás é diatômico, \(C_P = 7/2 R\) e \(C_V = 5/2 R\), pela definição \(\gamma = C_P/C_V = 7/5\)
+    Since the gas is diatomic, \(C_P = 7/2 R\) and \(C_V = 5/2 R\), and by definition \(\gamma = C_P/C_V = 7/5\).
 
-    Assim, temos 
+    Thus we have
 
     \[P_1\left(\frac{T_1}{P_1}\right)^\gamma = P_2\left(\frac{T_2}{P_2}\right)^\gamma\]
 
-    Substituindo o valor de \(\gamma\)
+    Substituting the value of \(\gamma\),
 
     \[\frac{P_1}{P_2} = \left(\frac{T_1}{T_2}\right)^{7/2}\]
 
-    Sejam \(v_1\) e \(v_2\) a velocidade do gás nos dados momentos, como o fluxo é contínuo, devemos ter
+    Let \(v_1\) and \(v_2\) be the speed of the gas at the given stages. Since the flow is continuous, we must have
 
     \[\rho_1v_1A_1 = \rho_2v_2A_2\]
 
-    E pela lei dos gases ideias
+    And by the ideal gas law,
 
     \[P\mu = \rho R T \rightarrow \rho \propto \frac{P}{T}\]
 
-    Substituindo na expressão anterior, 
+    Substituting into the previous expression,
 
     \[\frac{P_1v_1A_1}{T_1}=\frac{P_2A_2A_2}{T_2}\]
 
-    Combinando está e a primeira equação, temos 
+    Combining this with the first equation, we have
     
     \[\frac{v_1}{v_2} = \frac{A_2}{A_1}\left(\frac{T_2}{T_1}\right)^{5/2}\]
 
-    Utilizando a equação de Bernoulli para gases
+    Using Bernoulli's equation for gases,
 
     \[\frac{1}{2}\mu v_1^2 + C_P RT_1 = \frac{1}{2}\mu v_2^2 + C_P T_2\]
 
-    Resolvendo para \(v_2\)
+    Solving for \(v_2\),
 
     \[v_2^2 = \frac{7R(T_1-T_2)}{\mu(1-(A_1/A_2)^2(T_2/T_1)^5)}\]
 
-    Finalmente, utilizando a segunda Lei de Newton, 
+    Finally, using Newton's second law,
 
     \[F = \frac{dp}{dt} = \frac{dm}{dt}v_2 = \rho_2A_2 v_2^2 = \boxed{\frac{7P_2A_2(T_1-T_2)}{T_2(1-(A_1/A_2)^2(T_2/T_1)^5)}} \]
 
@@ -527,207 +528,207 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
 
 
 \pts{5} 
-\begin{pproblem} (Adaptado Iran Problem Set)
-    Este problema visa calcular o ponto de ebulição de líquidos. 
+\begin{pproblem} (Adapted from Iran Problem Set)
+    This problem aims to calculate the boiling point of liquids.
 
-As partículas de um líquido movem-se com diferentes velocidades dependendo da temperatura, e algumas dessas partículas podem escapar das forças intermoleculares e da gravidade terrestre (que será negligenciada neste problema), deixando a superfície do líquido. Essas partículas transferem seu momento, criando pressão ao colidirem com o ambiente ao redor. Essa pressão é conhecida como pressão de vapor do líquido. O ponto de ebulição é a temperatura na qual a pressão de vapor iguala-se à pressão atmosférica ao redor do líquido.
+Particles in a liquid move at different speeds depending on the temperature, and some of these particles can escape the intermolecular forces and Earth's gravity (which will be neglected in this problem), leaving the surface of the liquid. These particles transfer their momentum, creating pressure when they collide with the surrounding environment. This pressure is known as the vapor pressure of the liquid. The boiling point is the temperature at which the vapor pressure equals the atmospheric pressure around the liquid.
 
 \begin{alternativas}
-\item Usando a distribuição de Maxwell-Boltzmann, encontre uma relação para a velocidade quadrática média $v_{\text{rms}}$.
+\item Using the Maxwell-Boltzmann distribution, find a relation for the root-mean-square speed $v_{\text{rms}}$.
 
-A distribuição de Maxwell-Boltzmann é:
+The Maxwell-Boltzmann distribution is
 \begin{equation}
     n(v) \, dv = n \left(\frac{m}{2\pi k_B T}\right)^{3/2} e^{-\frac{mv^2}{2k_BT}} \, 4\pi v^2 dv
 \end{equation}
 
-A velocidade quadrática média é dada por:
+The root-mean-square speed is given by
 \begin{equation}
     v_{\text{rms}}^2 = \frac{1}{N} \sum_{i=1}^N v_i^2 = \frac{1}{n} \int_0^\infty v^2 n(v) dv
 \end{equation}
 
-\item Suponha que a velocidade da partícula estudada seja igual a $v_{\text{rms}}$. Além disso, suponha que a atmosfera terrestre seja composta por 80\% de nitrogênio e 20\% de oxigênio, e que o líquido estudado seja água.
+\item Suppose that the speed of the particle under study equals $v_{\text{rms}}$. Also suppose that Earth's atmosphere is 80\% nitrogen and 20\% oxygen, and that the liquid under study is water.
 
-Calcule a distância que a partícula escapada percorre na atmosfera antes de colidir, conhecida como comprimento médio livre. Expresse essa distância em termos da densidade numérica da atmosfera e da seção transversal geométrica das partículas.
+Calculate the distance the escaped particle travels in the atmosphere before colliding, known as the mean free path. Express this distance in terms of the number density of the atmosphere and the geometric cross section of the particles.
 
-\item Calcule a taxa de variação do momento de uma partícula escapando. Divida a variação do momento pelo intervalo de tempo do processo. Suponha que as partículas do líquido perdem todo o seu momento ao colidirem com moléculas de ar.
+\item Calculate the rate of change of the momentum of an escaping particle. Divide the change in momentum by the time interval of the process. Assume that the particles of the liquid lose all of their momentum when they collide with air molecules.
 
-O tempo médio para a próxima colisão é o comprimento médio livre dividido pela velocidade da partícula.
+The mean time until the next collision is the mean free path divided by the speed of the particle.
 
-Sabendo que, nesse intervalo de tempo, um momento igual ao momento da partícula do líquido foi transferido para a molécula de ar, use a segunda lei de Newton para calcular a força exercida pela partícula do líquido sobre a molécula de ar. 
+Given that, over this time interval, a momentum equal to the momentum of the liquid particle is transferred to the air molecule, use Newton's second law to calculate the force exerted by the liquid particle on the air molecule.
 
-\item A pressão é a força exercida sobre uma superfície. Encontre uma expressão para a pressão de vapor de um líquido. Você pode deixar a sua responsa em função das seções transversais da água e do ar, \(S_w\) e \(S_a\) reespectivamente.
+\item Pressure is the force exerted on a surface. Find an expression for the vapor pressure of a liquid. You may leave your answer in terms of the cross sections of water and of air, \(S_w\) and \(S_a\), respectively.
 
-\item Usando a relação de equilíbrio hidrostático e assumindo aceleração gravitacional constante, densidade do ar constante e pressão nula nas camadas superiores da atmosfera, encontre uma relação para a pressão próxima à superfície da Terra. Expresse essa relação em termos da densidade do ar, aceleração gravitacional e espessura da atmosfera. 
+\item Using the hydrostatic-equilibrium relation and assuming constant gravitational acceleration, constant air density, and zero pressure in the upper layers of the atmosphere, find a relation for the pressure near Earth's surface. Express this relation in terms of the air density, the gravitational acceleration, and the thickness of the atmosphere.
 
-\item Adicione a condição necessária para a ebulição, igualando a pressão atmosférica próxima à superfície da Terra (obtida acima) à pressão de vapor. Simplifique o resultado até obter:
+\item Impose the condition required for boiling by equating the atmospheric pressure near Earth's surface (obtained above) to the vapor pressure. Simplify the result until you obtain
 \begin{equation}
     T = \frac{mhg S_w}{3k_B S_a}
 \end{equation}
 
-Onde $m$ é o peso médio das moléculas de ar, $g$ é a aceleração gravitacional, $h$ é a espessura da atmosfera, e os outros parâmetros foram descritos nas partes anteriores. 
+where $m$ is the mean mass of the air molecules, $g$ is the gravitational acceleration, $h$ is the thickness of the atmosphere, and the other parameters were described in the previous parts.
 
-\item Determine o peso médio das moléculas de ar para a composição mencionada no início do problema. 
+\item Determine the mean mass of the air molecules for the composition mentioned at the beginning of the problem.
 
-\item Use o conceito do raio de Bohr para estimar a razão entre as seções transversais. Suponha um elétron em órbita circular ao redor de um próton, onde a força dominante é a força de Coulomb. Usando a suposição de Niels Bohr $L = n\hbar$, encontre a distância do elétron ao núcleo em termos de constantes físicas, $n$ e o número atômico $Z$. 
+\item Use the Bohr radius to estimate the ratio of the cross sections. Suppose an electron in a circular orbit around a proton, with the Coulomb force as the dominant force. Using Niels Bohr's assumption $L = n\hbar$, find the distance from the electron to the nucleus in terms of physical constants, $n$, and the atomic number $Z$.
 
-\item Calcule a seção transversal dos átomos de ar e de líquido. Assuma que cada molécula de líquido é composta por dois átomos de hidrogênio e um de oxigênio, e que as partículas de ar consistem em dois átomos de oxigênio e dois de nitrogênio. Encontre a razão entre as seções transversais $S_i/S_a$. 
+\item Calculate the cross section of the air atoms and of the liquid atoms. Assume that each liquid molecule consists of two hydrogen atoms and one oxygen atom, and that the air particles consist of two oxygen atoms and two nitrogen atoms. Find the ratio of the cross sections $S_i/S_a$.
 
-\item Considere $g = 9,8 \, \text{m/s}^2$ e a altura da atmosfera como $100 \, \text{km}$. Determine o ponto de ebulição da água. 
+\item Take $g = 9.8 \, \text{m/s}^2$ and the height of the atmosphere to be $100 \, \text{km}$. Determine the boiling point of water.
 
 \end{alternativas}
 
 \begin{pssolution*}{}{}
     \begin{alternativas}
-    \item Definindo as variáveis 
+    \item Defining the variables,
     \[C = 4\pi n \left(\frac{m}{2\pi k_B T}\right)^{3/2}, \ \ \beta = \frac{1}{k_BT}\]
 
-    Desse modo, podemos expressar 
+    we can write
 
     \[n(v)dv = C e^{-\frac{\beta mv^2}{2}}v^2dv\]
 
-    utilizando a expressão para \(v_{rms}\) fornceida pela questão, 
+    Using the expression for \(v_{rms}\) given in the question,
 
     \[v_{rms}^2 = \frac{C}{n}\int_0^\infty  e^{-\frac{\beta mv^2}{2}}v^4 dv\]
 
-    Para resolver a integral, temos 
+    To evaluate the integral, we have
 
     \[\int_0^{\infty} e^{-av^2}v^4 dv = \frac{d^2}{da^2}\int_0^{\infty} e^{-av^2}dv\] 
 
-    Onde 
+    where
 
     \[a = \frac{\beta m}{2}\]
-    A integral do lado direito é bem conhecida e resulta em \(\frac{1}{2}\sqrt{\frac{\pi}{a}}\). Ou seja
+    The integral on the right-hand side is well known and equals \(\frac{1}{2}\sqrt{\frac{\pi}{a}}\). That is,
 
     \[\int_0^{\infty} e^{-av^2}v^4 dv = \frac{\sqrt{\pi}}{2}\frac{d^2}{da^2}a^{-1/2} = \frac{3}{8}\sqrt{\frac{\pi}{a^5}}\]
 
-    Desse modo, 
+    Thus
 
     \[v_{rms}^2 = \frac{3C}{8n}\sqrt{\frac{\pi}{a^5}}\]
 
-    Substituindo \(C\) e \(a\), temos 
+    Substituting \(C\) and \(a\), we have
 
     \[v_{rms}^2 = \frac{3}{2}\pi  \left(\frac{\beta m}{2\pi}\right)^{3/2}\sqrt{\frac{2^5\pi}{\beta^5m^5}}\]
     
-    Por fim, simplificando 
+    Finally, simplifying,
 
     \[\boxed{v_{rms}^2 = \frac{3}{m\beta} = \frac{3k_B T}{m}}\]
 
-    \item Conisdere \(P(t)\) a probabilidade da partícula \textbf{não} colidir em um tempo \(t\). A propabilidade da particula não colidir em um tempo \(t\) e não coldir no tempo \(dt\) seguinte é dada por \(P(t+dt) = P(t)P(dt)\) (prorpiedade multiplicativa), mas também temos
+    \item Consider \(P(t)\) the probability that the particle does \textbf{not} collide during a time \(t\). The probability that the particle does not collide during a time \(t\) and does not collide during the following time \(dt\) is \(P(t+dt) = P(t)P(dt)\) (multiplicative property), but we also have
     
     \[P(t+dt) \approx P + \frac{dP}{dt}dt\]
 
-    Em um tempo \(dt\) a particula varre um volume \(dV = \sigma v dt\), onde \(\sigma\) é o parâmetro de impato. A propabilidade da perticula colidir em um tempo \(dt\) é dada então por \(P'(dt) = ndV = n\sigma v dt\), desse modo (lembrando P(dt) é a propabilidade da particula \textbf{NÃO} colidir) \(P(dt) = 1-n\sigma vdt\)
+    In a time \(dt\) the particle sweeps out a volume \(dV = \sigma v dt\), where \(\sigma\) is the impact parameter. The probability that the particle collides in a time \(dt\) is then \(P'(dt) = ndV = n\sigma v dt\), so (recalling that \(P(dt)\) is the probability that the particle does \textbf{not} collide) \(P(dt) = 1-n\sigma vdt\).
 
-    Igualando as expressões para \(P+dt\), temos 
+    Equating the expressions for \(P+dt\), we have
 
     \[P + \frac{dP}{dt}dt = P(1-n\sigma v dt)\]
 
-    Trablhando nesta expressão, 
+    Working with this expression,
 
     \[dP = -Pn\sigma vdv \rightarrow \frac{dP}{P} = -n\sigma v dt\]
 
-    Integrando dos dois lados e utilziando que \(P(0)=1\), temos 
+    Integrating both sides and using \(P(0)=1\), we have
 
     \[P(t) = e^{-n\sigma vt}\]
 
-    Então, a probabilidade de uma particula sobreviver um tempo \(t\) e depois colidir no tempo \(dt\) seguinte é 
+    Then the probability that a particle survives for a time \(t\) and then collides in the following time \(dt\) is
 
     \[J(t)dt = P(t)(1-P(dt)) = e^{-n\sigma v t} n\sigma v dt\]
 
-    Assim, o tempo médio entre colisões é 
+    Thus the mean time between collisions is
 
     \[\tau = \int_0^\infty t J(t)dt = \int_0^\infty e^{-n\sigma v t} n\sigma v dt = \frac{1}{n\sigma v}\]
 
-    O livre caminho médio, é dado então por 
+    The mean free path is then given by
 
     \[\lambda = v_{radial}\tau = \frac{1}{\sqrt{2}n\sigma}\]
 
-    Para achar \(\sigma\), vamos definir como \(r_H\) o raio da molécula de agua, e semelhantemente \(r_O\) e \(r_N\). Olhando o seguinte esquema 
+    To find \(\sigma\), define \(r_H\) as the radius of the water molecule, and similarly \(r_O\) and \(r_N\). Looking at the following diagram,
 
     \begin{figure}[H]
         \centering
         \includegraphics[width= 0.7\linewidth]{imagens/secaotransversal.png}
-        \caption{Fonte: Concepts In Thermal Physics, Blundell and Blundell}
+        \caption{Source: Concepts in Thermal Physics, Blundell and Blundell}
     \end{figure}
 
-    Para o nitrogenio, \(\sigma_N = \pi(r_H + r_N)^2\) e para o oxigenio, \(\sigma_O = \pi (r_H + r_O)^2\). Como a atmosfera é feito de \(0,8 N\) e \(0,2 O\), é valido que 
+    For nitrogen, \(\sigma_N = \pi(r_H + r_N)^2\), and for oxygen, \(\sigma_O = \pi (r_H + r_O)^2\). Since the atmosphere consists of \(0.8 N\) and \(0.2 O\), it holds that
 
-    \[\sigma \equiv S_a = 0,2\sigma_O + 0,8\sigma N\]
+    \[\sigma \equiv S_a = 0.2\sigma_O + 0.8\sigma N\]
 
-    Assim, temos 
+    Thus we have
 
-    \[\boxed{\lambda = \frac{1}{\sqrt{2}n(0,8\sigma_0 + 0,2\sigma_0)}}\]
+    \[\boxed{\lambda = \frac{1}{\sqrt{2}n(0.8\sigma_0 + 0.2\sigma_0)}}\]
 
-    \item Assumindo que a particula perde todo seu momento ao colidir com uma molécula de ar, temos \(\delta p = mv_{rms}\). Cada colisção acontece em um tempo \(\delta t =\tau\), assim, 
+    \item Assuming that the particle loses all of its momentum when it collides with an air molecule, we have \(\delta p = mv_{rms}\). Each collision occurs in a time \(\delta t =\tau\), so
     \[F = \frac{\delta p }{\delta t} = \frac{mv_{rms}}{\tau} = nS_a v_{rms}^2 \  \boxed{ = 3nS_a k_BT}\]
 
-    \item Utilizando a definição de pressão 
+    \item Using the definition of pressure,
     
     \[P = \frac{F}{\S_w} = \ \boxed{3n\frac{S_a}{S_w}k_B T} \]
 
-    \item Utilizando a equação do equilíbrio hidrostático 
+    \item Using the hydrostatic-equilibrium equation,
     
     \[\frac{dP}{dr} = -\rho g\]
 
-    Como \(\rho\) e \(g\) são constantes, 
+    Since \(\rho\) and \(g\) are constant,
 
     \[P = -\rho g \int_h^0dh= \ \boxed{\rho g h}\]
 
-    Onde \(h\) é a espessura da atmosfera.
+    where \(h\) is the thickness of the atmosphere.
 
-    \item Igualando as pressões, 
+    \item Equating the pressures,
 
     \[\rho g h = 3\frac{S_a}{S_w}nk_BT\]
 
-    Resolvendo paar \(T\), temos 
+    Solving for \(T\), we have
 
     \[T = \frac{\rho g h}{3nk_B}\frac{S_w}{S_a}\]
 
-    Como \(n\) é a densidade numérica de particulas e \(\rho\) é a densidade de massa, temos \(\rho/n = m\), assim
+    Since \(n\) is the number density of particles and \(\rho\) is the mass density, we have \(\rho/n = m\), so
 
     \[\boxed{T= \frac{m g h}{3k_B}\frac{S_w}{S_a}}\]
 
-    \item Fazendo uma média ponderada, 
+    \item Taking a weighted average,
     
-    \[\boxed{m = 0,8 m_N + 0,2 m_O}\]
+    \[\boxed{m = 0.8 m_N + 0.2 m_O}\]
 
-    \item a força que o eletron sente é dada por, 
+    \item The force felt by the electron is given by
     
     \[F = \frac{Ze^2}{4\pi \epsilon_0r^2}\]
 
-    Igualando esta a força centrípeta
+    Equating this to the centripetal force,
 
     \[\frac{Ze^2}{4\pi \epsilon_0r^2} = m_e \omega^2 r\]
 
-    Porém, pela definição de momento angular, Temos
+    By the definition of angular momentum, we have
 
     \[L = m_er^2\omega \rightarrow \omega = \frac{L}{m_er^2} = \frac{n\hbar}{m_er^2}\]
 
-    Substituindo na expressão anterior 
+    Substituting into the previous expression,
 
     \[\frac{Ze^2}{4\pi\epsilon_0 r^2} = m_e \left(\frac{n\hbar}{m_er^2}\right)^2 r\]
 
-    Resolvendo para \(r\), 
+    Solving for \(r\),
 
     \[r = \frac{4\pi\epsilon_0 n^2\hbar ^2}{Z e^2 m_e}\]
 
-    \item Para a água, temos, \(r_w = 2r_H + r_O\) e para o ar, \(r_a = 2(r_N + r_O)\), como \(S_i \propto r_i^2\), temos 
+    \item For water we have \(r_w = 2r_H + r_O\), and for air \(r_a = 2(r_N + r_O)\). Since \(S_i \propto r_i^2\), we have
     
     \[\frac{S_w}{S_a} = \frac{(2r_H + r_O)^2}{4(r_N + r_O)^2}\]
 
-    Assumindo que todos os elétrons estão no nível mais baixo (\(n=1\)), que \(Z_H = 1, \ Z_N = 7, \ Z_O = 8\) e que \(r\propto 1/Z\), temos 
+    Assuming that all the electrons are in the lowest level (\(n=1\)), that \(Z_H = 1, \ Z_N = 7, \ Z_O = 8\), and that \(r\propto 1/Z\), we have
     
-    \[\boxed{\frac{S_w}{S_a}=\frac{(2/Z_H + 1/Z_O)^2}{4(1/Z_N + 1/Z_O)^2} \approx 15,73}\]
+    \[\boxed{\frac{S_w}{S_a}=\frac{(2/Z_H + 1/Z_O)^2}{4(1/Z_N + 1/Z_O)^2} \approx 15.73}\]
 
-    \item Substituindo na fórmula, 
+    \item Substituting into the formula,
 
-    \[T = \frac{(2\cdot 14 + 2 \cdot 16) \cdot 1,67 \cdot 10^{-27} \cdot 10^{5} \cdot 15,73}{3 \cdot 1,38\cdot 10^{-23}} \ \boxed{\approx 380\text{ K}}\]
+    \[T = \frac{(2\cdot 14 + 2 \cdot 16) \cdot 1.67 \cdot 10^{-27} \cdot 10^{5} \cdot 15.73}{3 \cdot 1.38\cdot 10^{-23}} \ \boxed{\approx 380\text{ K}}\]
 
-    O que é uma estimativa bastante coerente com a relaidade, \(T = 373\) K.
+    which is an estimate quite consistent with reality, \(T = 373\) K.
 \end{alternativas}
     
 
-
+    
 
     
     
@@ -735,38 +736,38 @@ Onde $m$ é o peso médio das moléculas de ar, $g$ é a aceleração gravitacio
 \end{pproblem}
 
 \pts{3}
-\begin{pproblem} (Adaptado Iran Problem Set)
-    Dr. Shahram Abbassi é um dos cientistas iranianos mais reconhecidos no campo dos discos de acreção. Em uma de suas pesquisas recentes sobre a gigantesca nuvem molecular B32, ele descobriu uma estrela semelhante ao Sol no centro dessa nuvem específica. Segundo suas pesquisas, essa nuvem possui uma massa de $10^6 M_\odot$, um raio de $30 \, \text{pc}$ e uma viscosidade muito alta, tão grande que, se a nuvem entrasse em colapso, todo o sistema colapsaria com simetria esférica.
+\begin{pproblem} (Adapted from Iran Problem Set)
+    Dr. Shahram Abbassi is one of the most renowned Iranian scientists in the field of accretion disks. In one of his recent studies of the giant molecular cloud B32, he found a Sun-like star at the center of that cloud. According to his research, the cloud has a mass of $10^6 M_\odot$, a radius of $30 \, \text{pc}$, and a very high viscosity, so high that if the cloud were to collapse, the whole system would collapse with spherical symmetry.
 
-    O mais importante é calcular o calor específico a volume constante ($C_v$) para essa nuvem. Com base nos dados fornecidos e utilizando aproximações razoáveis, determine um limite para $C_v$ de modo que a acreção seja possível. Esses valores variam dependendo da massa e do raio da núvem? O que podemos concluir com o resultado?
+    What matters most is to calculate the specific heat at constant volume ($C_v$) of this cloud. Using the data given and reasonable approximations, determine a bound on $C_v$ such that accretion is possible. Do these values depend on the mass and the radius of the cloud? What can we conclude from the result?
 \begin{pssolution*}{}{}
-    Esse limite será dado pelo teorama do virial, quando, 
+    This bound is given by the virial theorem, when
 
     \[\langle U \rangle = -2 \langle K \rangle\]
 
-    Podemos modelar a nuvem como um gás, de modo que sua energia cinética seja dada por \(\frac{3}{2} N k_B T\). A sua energia potêncial é eneriga potencial de uma esfera, dada por \(U = -3GM^2/5R\). Assim
+    We can model the cloud as a gas, so that its kinetic energy is given by \(\frac{3}{2} N k_B T\). Its potential energy is the potential energy of a sphere, given by \(U = -3GM^2/5R\). Thus
 
     \[\frac{3GM^2}{5R} = 3\frac{M}{m_p}k_B T\]
 
-    Onde \(m\) é a massa de uma partícula da núvem.
+    where \(m\) is the mass of a particle in the cloud.
 
-    Desse modo, 
+    Thus
 
     \[T = \frac{GMm_p}{5k_B R}\]
 
-    Em função do calor específico a volume consatnte, a energia é dada por, 
+    In terms of the specific heat at constant volume, the energy is given by
 
     \[M C_v T\]
 
-    Voltando a igualdade, 
+    Returning to the equality,
 
     \[C_v = \frac{3GM}{5R T}\]
 
-    Substituindo \(T\), 
+    Substituting \(T\),
 
     \[\boxed{C_v = \frac{k_B }{m} \approx 4.1 \cdot 10^3 \text{ J kg\(^{-1}\) K\(^{-1}\)}}\]
 
-    Note que esse valor depende apenas da massa das partículas que compões a núvem de gás. Para uma compostade hidrogênio, o valor é Surpreendentemente proximo do valor da água \(C_{v, agua} = 4,2\cdot 10^{3}\) J/kg K. 
+    Note that this value depends only on the mass of the particles that make up the gas cloud. For a hydrogen composition, the value is surprisingly close to that of water, \(C_{v, \text{water}} = 4.2\cdot 10^{3}\) J/kg K.
 \end{pssolution*}
 \end{pproblem}
 

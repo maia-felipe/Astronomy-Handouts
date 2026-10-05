@@ -1,2 +1,2 @@
-# Handouts-Astronomia
-Exercícios de Astronomia pensados para preparar os estudantes para o processo seletivo das equipes do Brasil para a IOAA e OLAA.
+# Astronomy Handouts
+Astronomy exercises designed to prepare students for the selection process of the Brazilian teams for the IOAA and OLAA.

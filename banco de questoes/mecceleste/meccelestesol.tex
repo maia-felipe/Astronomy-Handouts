@@ -4,340 +4,340 @@
 
 \begin{document}
 
-\psettitle{Banco de questões de astronomia}
+\psettitle{Astronomy Question Bank}
 
-Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de preparar os estudantes para o processo seletivo de astronomia no Brasil. Algumas questões não são de autoria própria e estão devidamente sinalizadas por () antes do enunciado. O template do banco de questões é o mesmo do Professor \text{Kevin Zhou}. Seu trabalho é valioso, e diversas ideias desta lista podem ser encontradas em seus Handouts.
+These questions were carefully written or selected to prepare students for the astronomy team selection process in Brazil. Some questions are not original; those are marked with () before the statement. The question-bank template is the same one used by Professor Kevin Zhou. His work is invaluable, and many ideas in this set can be found in his handouts.
 
-% \begin{psidea}{Título da Ideia}{}
-% Ideia
+% \begin{psidea}{Idea title}{}
+% Idea
 % \end{psidea}
 
-% \begin{psexample}{Título do Exemplo}{}
-% Exemplo
+% \begin{psexample}{Example title}{}
+% Example
 % \end{psexample}
 
 % \begin{pssolution*}{}{}
-% Solução
+% Solution
 % \end{pssolution*}
 
-% \begin{psremark*}{Título da Observação}{}
-% Observação
-% \end{psremark*} 
+% \begin{psremark*}{Remark title}{}
+% Remark
+% \end{psremark*}
 
-\section{Mecânica Celeste}
+\section{Celestial Mechanics}
 \pts{5}    
 \begin{pproblem}
-    Iaum e Sevla, dois físicos renomados, pretendem lançar uma sonda espacial para explorar os limites da física newtoniana e as correções relativísticas necessárias nas proximidades de um buraco negro. Eles precisam da sua ajuda para estudar o \textit{Potencial Efetivo} de tal corpo.
+    Iaum and Sevla, two renowned physicists, intend to launch a space probe to explore the limits of Newtonian physics and the relativistic corrections required near a black hole. They need your help to study the \textit{effective potential} of such a body.
     \begin{enumerate}[label=\textbf{\alph*)}]
-        \item A energia de um corpo de massa \(m\) orbitando um corpo massivo de massa \(M\) pode ser escrita como:
+        \item The energy of a body of mass \(m\) orbiting a massive body of mass \(M\) can be written as:
              \[
              \frac{m\dot r ^2}{2} + V_{eff}(r)
              \]
-             Onde \(\dot r\) é a velocidade radial do corpo. Encontre \(V_{eff}(r)\) em função de \(G\), \(M\), \(L\), \(m\) e \(r\).
+             where \(\dot r\) is the radial velocity of the body. Find \(V_{eff}(r)\) in terms of \(G\), \(M\), \(L\), \(m\), and \(r\).
 
-        \item Segundo a física newtoniana, qual é o menor raio no qual é possível um corpo possuir uma órbita circular em torno de um buraco negro?
+        \item According to Newtonian physics, what is the smallest radius at which a body can have a circular orbit around a black hole?
     
-        \item Qual é a frequência de pequenas oscilações radiais, \(\omega_r\), em torno desse raio?
+        \item What is the frequency of small radial oscillations, \(\omega_r\), about this radius?
 
-        O potencial gravitacional próximo a esses corpos precisa sofrer uma correção relativística e tem a forma:
+        The gravitational potential near these bodies must include a relativistic correction and has the form:
         \[
         V(r) = -\frac{GMm}{r} - \frac{GML^2}{mc^2r^3}
         \]
 
-        \item Explique por que essa correção permite que uma partícula caia no centro de um buraco negro, \(r=0\), e por que isso é impossível na física newtoniana.
+        \item Explain why this correction allows a particle to fall into the center of a black hole, \(r=0\), and why this is impossible in Newtonian physics.
         
-        \item Qual é o menor valor de \(L\) para que uma partícula possa orbitar o buraco negro em uma órbita circular? Qual é o valor do raio nessa condição?
+        \item What is the smallest value of \(L\) for which a particle can orbit the black hole on a circular orbit? What is the value of the radius in this case?
         
-        \item Assumindo \( \lim_{L \to \infty}\), encontre a menor distância que uma partícula em órbita aberta pode se aproximar de um buraco negro.  
+        \item Assuming \( \lim_{L \to \infty}\), find the smallest distance to which a particle on an open orbit can approach a black hole.  
     \end{enumerate}
     \begin{pssolution*}{}{}
         \begin{alternativas}
-            \item Da forma clássica, temos:
+            \item In the classical form, we have:
             \[E = \frac{mv^2}{2}-\frac{GMm}{r}\]
-            Note que podemos escrever \(v^2 = v_\theta^2+ v_r^2\), onde \(v_\theta\) e \(v_r\) são, respectivamente, as velocidades tangenciais e radiais do corpo. Como \(v_r = \dot{r}\), precisamos encontrar uma expressão que relacione \(v_\theta\) com outra grandeza. A melhor maneira de fazer essa relação é utilizando o momento angular, pois:
+            Note that we can write \(v^2 = v_\theta^2+ v_r^2\), where \(v_\theta\) and \(v_r\) are, respectively, the tangential and radial velocities of the body. Since \(v_r = \dot{r}\), we need an expression that relates \(v_\theta\) to another quantity. The best way to make this relation is by using the angular momentum, since:
             \[L = mrv_\theta \rightarrow v_\theta = \frac{L}{mr}\]
-            Substituindo na expressão da energia, temos:
+            Substituting into the energy expression, we have:
             \[E = \frac{m\dot{r}^2}{2}+\frac{L^2}{2mr^2} - \frac{GMm}{r}\]
-            Como queremos uma resposta na forma \(E = m\dot{r}^2/2 + V_{eff}(r)\), por analogia, temos:
+            Since we want an answer of the form \(E = m\dot{r}^2/2 + V_{eff}(r)\), by analogy we have:
             \[\boxed{V_{eff}(r) = -\frac{GMm}{r}+\frac{L^2}{2mr^2}}\]
 
-            \item A maior velocidade limite de um corpo é \(c\), desconsiderando efeitos relativísticos:
+            \item The greatest limiting speed of a body is \(c\), disregarding relativistic effects:
             \[\frac{mc^2}{2}-\frac{GMm}{R} = -\frac{GMm}{2R}\]
-            Isolando \(R\):
+            Isolating \(R\):
             \[\boxed{R = \frac{GM}{c^2}}\]
 
-            \item Para pequenas oscilações, temos a aproximação:
+            \item For small oscillations, we have the approximation:
             \[\omega_r \approx \sqrt{\frac{V_{eff}''(R)}{m}}\]
-            Calculando:
+            Calculating:
             \[V_{eff}'(R) = \frac{GMm}{r^2}-\frac{L^2}{mr^3}\]
             \[V_{eff}''(R) = -\frac{2GMm}{r^3}+\frac{3L^2}{mr^4}\]
-            Utilizando que \(L = mvr\) (órbitas circulares) e que \(v\equiv c\), chegamos a:
+            Using \(L = mvr\) (circular orbits) and \(v\equiv c\), we arrive at:
             \[V_{eff}''(R) = \frac{mc^6}{G^2M^2}\]
-            Com isso, podemos concluir que:
+            With this, we can conclude that:
             \[\omega_r = \frac{c^3}{GM}\]
 
-            \item Quando tomamos o limite de \(\lim_{r\rightarrow 0}V_{eff}(r)\), na física newtoniana, o termo que domina é \(L^2/2mr^2\), ou seja, seria necessária uma energia \(+\infty\) para chegar ao centro do buraco negro. No entanto, após a correção relativística, o termo que domina é \(-GML^2/mc^2r^3\), ou seja, seria necessária uma energia de \(-\infty\) para chegar ao centro do buraco negro. Por isso, não é possível chegar ao centro de um buraco negro na física newtoniana.
+            \item When we take the limit \(\lim_{r\rightarrow 0}V_{eff}(r)\), in Newtonian physics the dominant term is \(L^2/2mr^2\), that is, an energy of \(+\infty\) would be required to reach the center of the black hole. However, after the relativistic correction, the dominant term is \(-GML^2/mc^2r^3\), that is, an energy of \(-\infty\) would be required to reach the center of the black hole. That is why it is not possible to reach the center of a black hole in Newtonian physics.
             
-            \item Em uma órbita circular, \(r\) é constante, o que implica que a força na direção radial é nula, ou seja:
+            \item On a circular orbit, \(r\) is constant, which implies that the force in the radial direction vanishes, that is:
             \[V_{eff}'(r) = 0\]
-            Calculando:
+            Calculating:
             \[V_{eff}'(r) = \frac{GMm}{r^2}-\frac{L^2}{mr^3}+\frac{3GML^2}{mc^2r^4}=0\]
-            Simplificando, temos:
+            Simplifying, we have:
             \[r^2-\frac{L^2}{GMm^2}r+\frac{3L^2}{m^2c^2}=0\]
-            Note que a solução dessa equação precisa ser real, uma vez que \(r\) não pode ser imaginário, o que nos impõe a condição:
+            Note that the solution of this equation must be real, since \(r\) cannot be imaginary, which imposes the condition:
             \[\frac{L^4}{G^2M^2m^4} - \frac{12L^2}{m^2c^2} \geq 0\]
-            Na condição de igualdade, o valor de \(L\) que satisfaz essa equação é:
+            In the equality case, the value of \(L\) that satisfies this equation is:
             \[\boxed{L = \frac{\sqrt{12}GMm}{c}}\]
-            O valor de \(r\) nesse caso é:
+            The value of \(r\) in this case is:
             \[r = \frac{L^2}{2GMm^2} = \boxed{r_{min} = \frac{6GM}{c^2}}\] 
             
-            \item A expressão completa para \(r\) é:
+            \item The complete expression for \(r\) is:
             \[r = \frac{\frac{L^2}{GMm^2}\pm\sqrt{\left(\frac{L^2}{GMm^2}\right)^2-\frac{12L^2}{m^2c^2}}}{2} = \frac{L^2-\sqrt{L^4-12(GMmL/c)^2}}{2GMm^2}\] 
-            No limite de \(L\rightarrow \infty\), temos:
+            In the limit \(L\rightarrow \infty\), we have:
             \[r_{min} = \lim_{L \rightarrow \infty}\frac{L^2-\sqrt{L^4-12(GMmL/c)^2}}{2GMm^2} = \frac{6(GMm/c)^2}{2(GMm^2)} = \boxed{\frac{3GM}{c^2}} \] 
         \end{alternativas}
     \end{pssolution*}
 \end{pproblem}
 
 \pts{3}
-\begin{pproblem} Um ponto importante no estudo de órbitas é o que acontece quando o potencial segue algo incomum. O objetivo desta questão é estudar esse fenômeno. Considere o momento angular \(L\) e a massa do corpo \(m\).
+\begin{pproblem} An important point in the study of orbits is what happens when the potential follows something unusual. The goal of this question is to study that phenomenon. Consider the angular momentum \(L\) and the mass of the body \(m\).
     \begin{alternativas}
-        \item Para uma órbita geral, que possui um potencial \(V(r)\) na forma \(\psi r^k\), encontre o valor \(r_0\) de uma órbita circular para esse potencial.
+        \item For a general orbit that has a potential \(V(r)\) of the form \(\psi r^k\), find the value \(r_0\) of a circular orbit for this potential.
         
-        \item Encontre a frequência de pequenas oscilações, \(\omega_r\), em torno desse raio. 
+        \item Find the frequency of small oscillations, \(\omega_r\), about this radius. 
         
-        \item Seja \(\omega_\theta\) a frequência angular da órbita, encontre o valor da razão \(\frac{\omega_r}{\omega_\theta}\). Uma órbita só pode ser fechada se essa razão for um número inteiro. Por quê? Encontre valores de \(k\) para que a órbita seja fechada.
+        \item Let \(\omega_\theta\) be the angular frequency of the orbit. Find the value of the ratio \(\frac{\omega_r}{\omega_\theta}\). An orbit can be closed only if this ratio is an integer. Why? Find values of \(k\) for which the orbit is closed.
          
     \end{alternativas} 
 
     \begin{pssolution*}{}{}
         \begin{alternativas}
-            \item Como em uma órbita circular \(V_{eff}'(r) = 0\), temos:
+            \item Since on a circular orbit \(V_{eff}'(r) = 0\), we have:
             \[V_{eff}'(r) = -\frac{L^2}{mr^3}+k\psi r^{k-1} = 0\]
             \[k\psi r^{k-1} = \frac{L^2}{mr^3} \rightarrow \boxed{r_0 = \left(\frac{L^2}{k\psi m}\right)^{\frac{1}{k+2}}}\]
         
-            \item Utilizando que \(\omega_r^2=V_{eff}''(r_0)/m\):
+            \item Using \(\omega_r^2=V_{eff}''(r_0)/m\):
             \[V_{eff}''(r) = \frac{3L^2}{mr^4}+k(k-1)\psi r^{k-2}\]
             \[V_{eff}''(r) = r^{-4}\left(\frac{3L^2}{m}+k(k-1)\psi r^{k+2}\right)\]
             \[V_{eff}''(r) = r^{-4}\left(\frac{3L^2}{m}+k(k-1)\psi \frac{L^2}{k\psi m}\right)\]
             \[V_{eff}''(r) = \frac{L^2}{r_0^4m}(k+2)\]
-            Assim, temos:
+            Thus, we have:
             \[\boxed{\omega_r = \frac{L}{r_0^2m}\sqrt{k+2}}\]
 
-            \item Pela definição de \(L\), temos:
+            \item By the definition of \(L\), we have:
             \[L = mr_0^2\omega_\theta \rightarrow \omega_\theta = \frac{L}{mr_0^2}\]
-            Portanto:
+            Therefore:
             \[\frac{\omega_r}{\omega_\theta} = \sqrt{k+2}\]
-            Note que, para a órbita ser uma figura fechada, essa razão deve ser um número inteiro, logo, \(k+2\) deve ser um quadrado perfeito. Qualquer valor \(k = n^2-2 \ \forall \ n \in \mathbb{N}\) satisfaz essa equação.
+            Note that, for the orbit to be a closed figure, this ratio must be an integer, so \(k+2\) must be a perfect square. Any value \(k = n^2-2 \ \forall \ n \in \mathbb{N}\) satisfies this equation.
         \end{alternativas}
     \end{pssolution*}
 \end{pproblem}
 
-\pts{4} %semana 114
+\pts{4} %week 114
 \begin{pproblem}
-    O Hodógrafo é uma das maneiras menos conhecidas de resolver questões de mecânica celeste. Ao usar esse mecanismo, é possível resolver questões complexas (envolvendo encontrar parâmetros orbitais, parâmetros de velocidade e como minimizar a excentricidade de uma órbita, por exemplo). Apesar de o Hodógrafo possuir diversas utilidades, o objetivo deste exercício é provar o Teorema do Hodógrafo, que diz que, em órbitas fechadas, a velocidade forma um círculo no espaço vetorial. Vamos provar esse teorema de duas maneiras.
+    The hodograph is one of the lesser-known ways of solving celestial-mechanics problems. Using this device, one can solve complex problems (involving, for example, finding orbital parameters, velocity parameters, and how to minimize the eccentricity of an orbit). Although the hodograph has many uses, the goal of this exercise is to prove the Hodograph Theorem, which states that, on closed orbits, the velocity forms a circle in vector space. We will prove this theorem in two ways.
     \begin{align*}
-    \textbf{Método 1)}
+    \textbf{Method 1)}
     \end{align*}
     \begin{enumerate}[label=\textbf{\Roman*.}]
-        \item Partindo da Segunda Lei de Newton e da conservação do momento angular, encontre uma expressão para \(d\mathbf{v}/d\theta\). Deixe sua resposta em função do momento angular por unidade de massa, \(h\), e \(\mu\) = \(GM\). 
-        \item Onde o centro desse círculo está localizado? Considerando o corpo central na origem do sistema, determine uma expressão para a distância entre o corpo central e o centro do Hodógrafo. 
+        \item Starting from Newton's second law and the conservation of angular momentum, find an expression for \(d\mathbf{v}/d\theta\). Leave your answer in terms of the angular momentum per unit mass, \(h\), and \(\mu\) = \(GM\). 
+        \item Where is the center of this circle located? Taking the central body at the origin of the system, determine an expression for the distance between the central body and the center of the hodograph. 
     \end{enumerate}
     
     \begin{align*}
-        \textbf{Método 2)}
+        \textbf{Method 2)}
     \end{align*}
-    O método 2 utiliza noções de cálculo mais avançadas e parte da conservação do \textit{vetor de Laplace-Runge-Lenz}, \(\mathbf{A}\).
+    Method 2 uses more advanced notions of calculus and starts from the conservation of the \textit{Laplace-Runge-Lenz vector}, \(\mathbf{A}\).
     \begin{enumerate}[label=\textbf{\Roman*.}]
-        \item O vetor \(\mathbf{A}\) é dado pela expressão:
+        \item The vector \(\mathbf{A}\) is given by the expression:
         \[
         \mathbf{A} = \mathbf{p}\times \mathbf{L} - GMm^2\mathbf{\hat{r}}
         \]
-        O primeiro passo para a demonstração é provar que \(\mathbf{A}\) é constante. Para isso, derive o mesmo em relação ao tempo e tire suas próprias conclusões.
-        \item Como o vetor \(\mathbf{L}\) é constante, \(\mathbf{A}\times\mathbf{L}\) também é uma constante. Utilizando a identidade vetorial \(\mathbf{A}\times(\mathbf{B}\times\mathbf{C}) = \mathbf{B}(\mathbf{A}\cdot\mathbf{C}) - \mathbf{C}(\mathbf{A}\cdot\mathbf{B}) \), prove que \(\mathbf{v}\) forma um círculo no espaço vetorial.    
+        The first step of the proof is to show that \(\mathbf{A}\) is constant. To do so, differentiate it with respect to time and draw your own conclusions.
+        \item Since the vector \(\mathbf{L}\) is constant, \(\mathbf{A}\times\mathbf{L}\) is also a constant. Using the vector identity \(\mathbf{A}\times(\mathbf{B}\times\mathbf{C}) = \mathbf{B}(\mathbf{A}\cdot\mathbf{C}) - \mathbf{C}(\mathbf{A}\cdot\mathbf{B}) \), prove that \(\mathbf{v}\) forms a circle in vector space.    
     \end{enumerate}
     \begin{pssolution*}{}{}
-        \textbf{Método 1)}
+        \textbf{Method 1)}
 
         \begin{enumerate}[label=\textbf{\Roman*.}]
-            \item A Segunda Lei de Newton nos diz que:
+            \item Newton's second law tells us that:
             \[-\frac{GMm}{r^2}\mathbf{\hat{r}} =  m\frac{d\mathbf{v}}{dt}\]
-            Pela definição de momento angular:
+            By the definition of angular momentum:
             \[L = mr^2\frac{d\theta}{dt} \rightarrow \ \  \therefore dt = \frac{mr^2}{L}d\theta\]
-            Substituindo \(dt\) na fórmula da Segunda Lei de Newton:
+            Substituting \(dt\) into Newton's second law:
             \[-\frac{GMm}{r^2}\mathbf{\hat{r}} = m\left(\frac{L}{mr^2}\right)\frac{d\mathbf{v}}{d\theta}\]
 
-            Isolando \(dv/d\theta\), temos:
+            Isolating \(dv/d\theta\), we have:
 
             \[\boxed{\frac{d\mathbf{v}}{d\theta} = -\frac{GMm}{L}\mathbf{\hat{r}} \equiv -\frac{\mu}{h}\mathbf{\hat{r}}}\]
 
-            Note que essa expressão é um círculo no espaço vetorial e possui raio \(R = \mu/h\), uma vez que \(d\mathbf{v}/d\theta\) é constante e aponta na direção radial.
+            Note that this expression is a circle in vector space and has radius \(R = \mu/h\), since \(d\mathbf{v}/d\theta\) is constant and points in the radial direction.
 
-            \item Como vimos no item anterior, o hodógrafo forma um círculo de raio \(R = \mu/h\). Tome como apoio a seguinte imagem:
+            \item As we saw in the previous item, the hodograph forms a circle of radius \(R = \mu/h\). Use the following figure as support:
             \begin{figure}[H]
                 \centering
                 \includegraphics[width=0.4\linewidth]{imagens/hodografo1.png}
-                \caption{Esquema do Hodógrafo}
+                \caption{Diagram of the hodograph}
             \end{figure}
-            O ponto \(O\) representa a origem do sistema (local do corpo central). Note que a menor distância entre \(O\) e o Hodógrafo deve corresponder à menor velocidade (apoastro) e a maior distância deve corresponder à maior velocidade (periastro). Note também que \(v_a + \overline{OC} = v_p - \overline{OC}\). Equacionando, temos:
+            The point \(O\) represents the origin of the system (location of the central body). Note that the smallest distance between \(O\) and the hodograph must correspond to the smallest speed (apastron) and the largest distance must correspond to the largest speed (periastron). Also note that \(v_a + \overline{OC} = v_p - \overline{OC}\). Setting up the equations, we have:
             \[v_a + v_p = 2R \equiv \frac{2\mu}{h}\]
             \[v_p - v_a = 2\overline{OC}\]
 
-            Podemos escrever \(v_p\) e \(v_a\) em função do momento angular:
+            We can write \(v_p\) and \(v_a\) in terms of the angular momentum:
             \[L = ma(1-e)v_p \rightarrow v_p = \frac{h}{a(1-e)}\]
             \[L = ma(1+e)v_a \rightarrow v_a = \frac{h}{a(1+e)}\]
             
-            Substituindo na primeira equação:
+            Substituting into the first equation:
             \[\frac{h}{a}\left(\frac{1}{1+e}+\frac{1}{1-e}\right) = \frac{2\mu}{h}\]
             
-            Aqui, podemos isolar \(a\):
+            Here, we can isolate \(a\):
             \[\frac{h}{a}\left(\frac{2}{(1-e)^2}\right) = \frac{2\mu}{h}\]
 
             \[a = \frac{h^2}{\mu}\frac{1}{(1-e)^2}\]
 
-            Com isso em mente, podemos ir para a segunda expressão:
+            With this in mind, we can move on to the second expression:
             \[\frac{h}{a}\left(\frac{1}{1-e}-\frac{1}{1+e}\right) = 2\overline{OC}\]
             \[h\left(\frac{\mu(1-e)^2}{h^2}\right)\left(\frac{2e}{(1-e)^2}\right) = 2\overline{OC}\]
             
-            Finalmente, resolvendo para \(\overline{OC}\), temos:
+            Finally, solving for \(\overline{OC}\), we have:
             \[\boxed{\overline{OC} = \frac{\mu}{h}e}\]
 
-            Para uma elipse (\(e<1\)), a origem fica dentro da circunferência; para uma parábola (\(e=1\)), a origem fica no limite da circunferência; e para uma hipérbole (\(e>1\)), a origem fica fora da circunferência.
+            For an ellipse (\(e<1\)), the origin lies inside the circle; for a parabola (\(e=1\)), the origin lies on the boundary of the circle; and for a hyperbola (\(e>1\)), the origin lies outside the circle.
         \end{enumerate}
 
     
-        \textbf{Método 2}
+        \textbf{Method 2}
         \begin{enumerate}[label=\textbf{\Roman*.}]
-            \item Derivando \(\mathbf{A}\) em relação ao tempo, temos:
+            \item Differentiating \(\mathbf{A}\) with respect to time, we have:
             \[\frac{d\mathbf{A}}{dt} = \frac{d}{dt}(\mathbf{p}\times\mathbf{L}) - GMm^2\frac{d}{dt}\mathbf{\hat{r}}\] 
-            Quando derivamos um \textit{versor} em relação ao tempo, temos:
+            When we differentiate a \textit{unit vector} with respect to time, we have:
             \[\frac{d\mathbf{\hat{r}}}{dt} = \mathbf{\omega}\times\mathbf{\hat{r}}\]
-            Onde \(\mathbf{\omega}\) é a velocidade com que o versor translada. Assim:
+            where \(\mathbf{\omega}\) is the velocity with which the unit vector translates. Thus:
             \[\frac{d\mathbf{A}}{dt} = \left(\frac{d\mathbf{p}}{dt}\right)\times \mathbf{L} + \mathbf{p}\times\left(\frac{d\mathbf{L}}{dt}\right) - GMm^2(\mathbf{\omega}\times \mathbf{\hat{r}})\]
-            Agora, temos algumas considerações. Primeiramente, note que \(d\mathbf{L}/dt=0\), uma vez que só há forças centrais na órbita. Em segundo lugar, \(d\mathbf{p}/dt = \mathbf{F}\). Além disso, temos que \(\mathbf{L} = mr^2\mathbf{\omega}\). Voltando para a equação:
+            Now we have a few considerations. First, note that \(d\mathbf{L}/dt=0\), since there are only central forces on the orbit. Second, \(d\mathbf{p}/dt = \mathbf{F}\). Furthermore, we have \(\mathbf{L} = mr^2\mathbf{\omega}\). Returning to the equation:
 
             \[\frac{d\mathbf{A}}{dt} = -\frac{GMm}{r^2}\mathbf{\hat{r}}\times(mr^2\mathbf{\omega}) - GMm^2(\mathbf{\omega} \times \mathbf{\hat{r}})\]
             \[\frac{d\mathbf{A}}{dt} = -GMm^2(\mathbf{\hat{r}}\times\mathbf{\omega})- GMm^2(\mathbf{\omega} \times \mathbf{\hat{r}})\]
 
-            Para quaisquer dois vetores, \(\mathbf{i}\) e \(\mathbf{j}\), vale que:
+            For any two vectors, \(\mathbf{i}\) and \(\mathbf{j}\), it holds that:
             \[i\times j = -j\times i\]
 
-            Utilizando tal propriedade, podemos concluir que:
+            Using this property, we can conclude that:
 
             \[\boxed{\frac{d\mathbf{A}}{dt} = 0}\]
 
-            Logo, \(\mathbf{A}\) é constante!
+            Therefore, \(\mathbf{A}\) is constant!
 
-            \item Escrevendo a expressão e utilizando o \textit{BAC-CAB}, temos:
+            \item Writing the expression and using \textit{BAC-CAB}, we have:
             
             \[\mathbf{A}\times\mathbf{L} = (\mathbf{p}\times\mathbf{L})\times\mathbf{L} - GMm^2\mathbf{\hat{r}}\times\mathbf{L}\]
 
             \[(\mathbf{A} +GMm^2\mathbf{\hat{r}})\times\mathbf{L} = - \mathbf{L}\times(\mathbf{p}\times\mathbf{L}) = \mathbf{p}(-\mathbf{L}\cdot\mathbf{L})-\mathbf{L}(-\mathbf{L}\cdot\mathbf{p})\]
 
-            Como \(\mathbf{L}\) e \(\mathbf{p}\) são sempre perpendiculares, \(\mathbf{L}\cdot\mathbf{p}=0\), assim:
+            Since \(\mathbf{L}\) and \(\mathbf{p}\) are always perpendicular, \(\mathbf{L}\cdot\mathbf{p}=0\), so:
 
             \[(\mathbf{A}+GMm^2\mathbf{\hat{r}})\times\mathbf{L} = -mL^2\mathbf{v}\]
 
-            Como tanto \(\mathbf{A}\) quanto \(\mathbf{\hat{r}}\) são perpendiculares a \(\mathbf{L}\) e constantes, \(\mathbf{A}+GMm^2\mathbf{\hat{r}}\) traçam um círculo. O produto vetorial com \(\mathbf{L}\) apenas gira o círculo em \(90^\circ\) e multiplica seu raio por \(\mathbf{L}\). Portanto, \(\mathbf{v}\) traça um círculo no espaço vetorial.
+            Since both \(\mathbf{A}\) and \(\mathbf{\hat{r}}\) are perpendicular to \(\mathbf{L}\) and constant, \(\mathbf{A}+GMm^2\mathbf{\hat{r}}\) traces a circle. The cross product with \(\mathbf{L}\) merely rotates the circle by \(90^\circ\) and multiplies its radius by \(\mathbf{L}\). Therefore, \(\mathbf{v}\) traces a circle in vector space.
             
         \end{enumerate}
     \end{pssolution*}
 \end{pproblem}
 
-\pts{2} %problemas da semana 114
-\begin{pproblem} Um dos fenômenos mais fascinantes do sistema solar são as estrelas de nêutrons. Esses são corpos muito pequenos, super densos e que giram muito rápido. Nesta questão, vamos fazer um modelo teórico para essas estrelas.
+\pts{2} %problems of week 114
+\begin{pproblem} One of the most fascinating phenomena of the Solar System is neutron stars. These are very small, extremely dense bodies that spin very fast. In this question, we will build a theoretical model for these stars.
     \begin{enumerate}[label=\textbf{\alph*)}]
-        \item O Pulsar da Vela, uma estrela de nêutrons localizada na constelação da Vela, possui uma frequência de \(11 \text{Hz}\), ou seja, ela gira em torno de si mesma \(11\) vezes por segundo, raio equatorial \(R_e = 9,6\text{ km}\) e massa \(M = 1,88M_\odot\). Sabendo disso, calcule a razão entre seu raio equatorial e seu raio polar.
-        \item Qual é o menor período de rotação que o Pulsar da Vela pode ter para que ele não se despedace?
-        \item Atualmente, a taxa de variação do período do Pulsar da Vela é \(\frac{\Delta P}{\Delta t} = 1,25 \cdot 10^{-13}\text{s/s}\). Isso faz com que o Pulsar libere uma quantidade absurda de energia. A temperatura superficial do Pulsar é de \(T \sim 10^6\text{ K}\). Calcule a ordem de grandeza da razão entre a potência emitida pelo aumento do período e a potência emitida pela Lei de Stefan-Boltzmann.
+        \item The Vela Pulsar, a neutron star located in the constellation Vela, has a frequency of \(11 \text{Hz}\), that is, it spins about its own axis \(11\) times per second, with equatorial radius \(R_e = 9.6\text{ km}\) and mass \(M = 1.88M_\odot\). Given this, calculate the ratio of its equatorial radius to its polar radius.
+        \item What is the smallest rotation period the Vela Pulsar can have so that it does not break apart?
+        \item Currently, the rate of change of the period of the Vela Pulsar is \(\frac{\Delta P}{\Delta t} = 1.25 \cdot 10^{-13}\text{s/s}\). This causes the pulsar to release an enormous amount of energy. The surface temperature of the pulsar is \(T \sim 10^6\text{ K}\). Calculate the order of magnitude of the ratio between the power emitted due to the increase of the period and the power emitted by the Stefan-Boltzmann law.
     \end{enumerate}
     \begin{pssolution*}{}{}
         \begin{alternativas}
-            \item Uma estrela sempre está em equilíbrio hidrostático, logo, equacionando para um ponto no equador e para um dos polos,
+            \item A star is always in hydrostatic equilibrium, so, writing the balance for a point on the equator and for one of the poles,
             \[-\frac{GM}{r_e}-\frac{1}{2}\omega^2r_e^2 = -\frac{GM}{r_p}\]
 
-            Utilizando que \(\omega = 2\pi f\),
+            Using \(\omega = 2\pi f\),
 
             \[\frac{GM}{r_p} = \frac{GM}{r_e}+2\pi^2f^2r_e^2\]
 
-            \[\boxed{\frac{r_e}{r_p} = 1+\frac{2\pi^2f^2r_e^3}{GM} \approx 1 + 8,4\cdot10^{-6}}\]
+            \[\boxed{\frac{r_e}{r_p} = 1+\frac{2\pi^2f^2r_e^3}{GM} \approx 1 + 8.4\cdot10^{-6}}\]
 
-            Ou seja, uma estrela de nêutrons, mesmo girando absurdamente rápido, ainda é praticamente uma esfera perfeita!
+            That is, a neutron star, even spinning absurdly fast, is still practically a perfect sphere!
 
-            \item Na situação limite para se manter íntegro, temos:
+            \item In the limiting situation in which it remains intact, we have:
             \[\frac{GM}{r_e^2} = \omega^2r_e\]
-            \[\omega^2 = \frac{GM}{r_e^3} \rightarrow \boxed{T_{min} = \frac{2\pi r_e^3}{GM} = 2,2\cdot10^{-8}\text{ s}}\]
+            \[\omega^2 = \frac{GM}{r_e^3} \rightarrow \boxed{T_{min} = \frac{2\pi r_e^3}{GM} = 2.2\cdot10^{-8}\text{ s}}\]
 
-            \item A energia devido à rotação tem a forma:
+            \item The energy due to rotation has the form:
             \[E = \frac{1}{2}I\omega^2\]
-            Onde \(I\) é o momento de inércia da estrela (\(I = \frac{2}{5}Mr^2\)). Portanto, a potência dissipada é:
+            where \(I\) is the moment of inertia of the star (\(I = \frac{2}{5}Mr^2\)). Therefore, the dissipated power is:
             \[P = \frac{dE}{dt} = I\omega\frac{d\omega}{dt}\]
 
-            Como \(\omega = 2\pi/T\),
+            Since \(\omega = 2\pi/T\),
 
             \[\frac{d\omega}{dT} = -\frac{2\pi}{T^2} \rightarrow d\omega = -\frac{2\pi}{T^2}dT\]
             
-            A expressão da potência em função do período se torna:
+            The expression for the power as a function of the period becomes:
 
-            \[P = -\frac{8\pi^2Mr_e^2}{5T^3}\frac{dT}{dt} = -9,1\cdot10^{29} \text{ W}\]
+            \[P = -\frac{8\pi^2Mr_e^2}{5T^3}\frac{dT}{dt} = -9.1\cdot10^{29} \text{ W}\]
 
-            Note que, por conservação de energia, toda essa potência deve ser convertida na forma de luminosidade, então \(L_{rot} = -P = 9,1\cdot10^{29}\text{ W}\). A potência advinda da radiação térmica é dada por:
+            Note that, by conservation of energy, all of this power must be converted into luminosity, so \(L_{rot} = -P = 9.1\cdot10^{29}\text{ W}\). The power coming from thermal radiation is given by:
 
-            \[L_{rad} = 4\pi R^2\sigma T^4 = 6,56 \cdot 10^{25}\text{ W}\]
+            \[L_{rad} = 4\pi R^2\sigma T^4 = 6.56 \cdot 10^{25}\text{ W}\]
 
-            Com isso, podemos concluir que \(99,99\%\) da sua luminosidade advém da rotação.
+            With this, we can conclude that \(99.99\%\) of its luminosity comes from the rotation.
         \end{alternativas}
     \end{pssolution*}    
 \end{pproblem}
 
 \pts{3}
-\begin{pproblem} (Adaptado PPP) Geométrio, Paulinho e Hirata adoram chocolate. Certo dia, ambos estavam explorando uma galáxia quando se depararam com uma bola gigante de chocolate. Os três rapidamente começaram a comer a bola, primeiro fazendo uma linha reta do ponto \(P\) até o centro da bola em \(O\) (esquema \(1\)). Após isso, Hirata cai, colidindo no ponto \(O\), sem frear no caminho. Surpreendentemente, ele continua vivo e é resgatado por Geométrio e Paulinho. Após isso, famintos, eles continuam a comer a esfera gigante de chocolate e deixam um buraco esférico de diâmetro \(\overline{PO}\) (esquema \(2\)). Hirata é muito desastrado e acaba caindo de novo, partindo do ponto \(P\) e indo até \(O\) novamente.
+\begin{pproblem} (Adapted from PPP) Geométrio, Paulinho, and Hirata love chocolate. One day, they were exploring a galaxy when they came across a giant ball of chocolate. The three quickly began to eat the ball, first making a straight line from the point \(P\) to the center of the ball at \(O\) (diagram \(1\)). After that, Hirata falls, colliding at the point \(O\), without braking along the way. Surprisingly, he remains alive and is rescued by Geométrio and Paulinho. After that, still hungry, they continue to eat the giant chocolate sphere and leave a spherical hole of diameter \(\overline{PO}\) (diagram \(2\)). Hirata is very clumsy and ends up falling again, starting from the point \(P\) and going to \(O\) once more.
     \begin{enumerate}[label=\textbf{\alph*)}]
-        \item Encontre a razão entre as velocidades de impacto de Hirata nos casos \(1\) e \(2\).
-        \item Encontre a razão entre os tempos de queda de Hirata nos casos \(1\) e \(2\).
+        \item Find the ratio of Hirata's impact speeds in cases \(1\) and \(2\).
+        \item Find the ratio of Hirata's fall times in cases \(1\) and \(2\).
     \end{enumerate}
     \begin{paracol}{2}
         \begin{figure}[h]
             \centering
             \includegraphics[width=0.31\textwidth]{imagens/q5(1).png}
-            \caption{Esquema \(1\)}
+            \caption{Diagram \(1\)}
         \end{figure}
         \switchcolumn
         \begin{figure}[h]
             \centering
             \includegraphics[width=0.3\textwidth]{imagens/q5(2).png}
-            \caption{Esquema \(2\)}
+            \caption{Diagram \(2\)}
         \end{figure}
     \end{paracol} 
 
     \begin{pssolution*}{}{}
         \begin{alternativas}
-            \item A gravidade dentro de um planeta é dada por:
+            \item The gravity inside a planet is given by:
             \[\oint\mathbf{g}\cdot d\mathbf{S} = -4\pi GM_{int}\]
             \[4\pi r^2g = -4\pi G \rho \frac{4\pi}{3}r^3\]
 
-            Ou seja, para o caso \(1\), \(g \propto -\rho r \rightarrow g = -k\rho r\). Utilizando a Segunda Lei de Newton:
+            That is, for case \(1\), \(g \propto -\rho r \rightarrow g = -k\rho r\). Using Newton's second law:
             \[F = mv\frac{dv}{dr} = -mkr\]
-            Integrando:
+            Integrating:
             \[\int_0^{v_1} v'dv' =-k\rho\int_0^R rdr\]
 
             \[\frac{v_1^2}{2} = k\rho\frac{R^2}{2} \rightarrow \boxed{v_1 = R \sqrt{k\rho}}\]
 
-            Seja \(\mathbf{j}\) o vetor que parte do centro do planeta até o centro da cavidade. Utilizando superposição:
+            Let \(\mathbf{j}\) be the vector from the center of the planet to the center of the cavity. Using superposition:
             \[a = -k\rho\mathbf{r} - k(-\rho)(\mathbf{r}-\mathbf{j}) = -k\rho\mathbf{j}\]
-            Ou seja, no caso \(2\), a aceleração é constante e tem módulo \(|a| = \frac{k\rho R}{2}\).
+            That is, in case \(2\), the acceleration is constant and has magnitude \(|a| = \frac{k\rho R}{2}\).
             
-            Utilizando Torricelli:
+            Using Torricelli:
             \[v_2^2 = 2aR k\rho R^2 \rightarrow \boxed{v_2 = R\sqrt{k\rho}}\]
-            Logo, \(v_1/v_2 = 1\).
+            Therefore, \(v_1/v_2 = 1\).
 
-            \item No primeiro caso, note que temos um M.H.S., uma vez que a força é proporcional a \(r\). O tempo até atingir a parte inferior seria igual a \(1/4\) do período:
+            \item In the first case, note that we have simple harmonic motion, since the force is proportional to \(r\). The time to reach the bottom equals \(1/4\) of the period:
             \[\ddot{r} = -k\rho r \rightarrow \omega^2 = k\rho \rightarrow T = \frac{2\pi}{\sqrt{k\rho}} \rightarrow t_1 = \frac{T}{4} = \frac{\pi}{2\sqrt{k\rho}}\]
 
-            No segundo caso, temos uma aceleração constante, logo:
+            In the second case, we have a constant acceleration, so:
             \[t_2 = \frac{v_2}{a_2} = \frac{2R\sqrt{k\rho}}{k\rho R} = \frac{2}{\sqrt{k\rho}}\]
 
-            Logo, a razão \(t_1/t_2\) é dada por:
+            Therefore, the ratio \(t_1/t_2\) is given by:
             \[\boxed{\frac{t_1}{t_2} = \frac{\pi}{4}}\]
 
         \end{alternativas}
@@ -345,111 +345,111 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
 \end{pproblem}
 
 \pts{5}
-\begin{pproblem} Calcular as velocidades de escape em certas situações pode ser mais complicado do que parece. Um exemplo disso é calcular a velocidade de lançamento que um foguete precisa ter para chegar a determinado local.
+\begin{pproblem} Calculating escape speeds in certain situations can be more complicated than it seems. One example is calculating the launch speed a rocket needs in order to reach a given location.
     \\
-    \textbf{Dica:} Os problemas a seguir exigem que você pense cuidadosamente no referencial mais adequado. Não subestime a questão.
+    \textbf{Hint:} The following problems require you to think carefully about the most appropriate reference frame. Do not underestimate the question.
     \\
-    \textbf{Dados:} Um corpo pode orbitar a superfície da Terra com velocidade \(v_0 = 7,9\text{ km/s}\), a velocidade orbital da Terra em torno do Sol é \(u_0 = 29,7\text{ km/s}\), e o raio da Terra é desprezível em relação à distância Terra-Sol. Considere também que, ao deixar o campo gravitacional da Terra, a distância entre a sonda e o Sol é a mesma distância entre a Terra e o Sol.
+    \textbf{Data:} A body can orbit the surface of the Earth with speed \(v_0 = 7.9\text{ km/s}\), the orbital speed of the Earth around the Sun is \(u_0 = 29.7\text{ km/s}\), and the radius of the Earth is negligible compared with the Earth-Sun distance. Also assume that, upon leaving the Earth's gravitational field, the distance between the probe and the Sun is the same as the distance between the Earth and the Sun.
     \begin{enumerate}[label=\textbf{\alph*)}]
-        \item Qual é a menor velocidade de lançamento que um foguete precisa ter para atingir o Sol, considerando que ele dê apenas um impulso? (Para conferir, \(v = 31,8\) km/s)
-        \item Qual é a menor velocidade de lançamento que um foguete precisa ter para escapar do Sistema Solar? (Para conferir, \(v = 16,7\) km/s)
-        \item Como a resposta do item \textbf{a)} muda se o foguete conseguir realizar um segundo impulso muito pequeno em algum ponto de sua órbita?
+        \item What is the smallest launch speed a rocket needs in order to reach the Sun, assuming that it applies only one impulse? (To check, \(v = 31.8\) km/s)
+        \item What is the smallest launch speed a rocket needs in order to escape the Solar System? (To check, \(v = 16.7\) km/s)
+        \item How does the answer to item \textbf{a)} change if the rocket can apply a second, very small impulse at some point of its orbit?
     \end{enumerate}
 
     \begin{pssolution*}{}{}
         \begin{alternativas}
-            \item Para que isso aconteça, após deixar a Terra, no referencial do Sol, a sonda deve estar parada e, consequentemente, no referencial da Terra, ela deve estar com velocidade \(-u_0\). Utilizando conservação de energia:
+            \item For this to happen, after leaving the Earth, in the Sun's frame the probe must be at rest and, consequently, in the Earth's frame it must have velocity \(-u_0\). Using conservation of energy:
             \[\frac{mv^2}{2}-\frac{GM_\oplus m}{R_\oplus} = \frac{mu_0^2}{2}\]
             \[v^2 = u_0^2+\frac{2GM_\oplus}{R_\oplus}\]
 
-            Note que a velocidade \(v_0\) também pode ser obtida igualando a aceleração centrípeta com a gravitacional:
+            Note that the speed \(v_0\) can also be obtained by equating the centripetal acceleration to the gravitational acceleration:
             \[\frac{mv_0^2}{R_\oplus} = \frac{GM_\oplus m}{R_\oplus^2} \rightarrow v_0^2 = \frac{GM_\oplus}{R_\oplus}\]
 
-            Substituindo,
+            Substituting,
 
-            \[v^2=u_0^2+2v_0^2 \rightarrow \boxed{v = 31,8\text{ km/s}}\]
+            \[v^2=u_0^2+2v_0^2 \rightarrow \boxed{v = 31.8\text{ km/s}}\]
 
-            \item Nesse caso, ao sair do campo gravitacional da Terra, no referencial do Sol, o corpo deve ter uma velocidade \(\sqrt{2}u_0\), logo, no referencial da Terra, deve possuir \((\sqrt{2}-1)u_0\). Novamente, por conservação de energia:
+            \item In this case, upon leaving the Earth's gravitational field, in the Sun's frame the body must have speed \(\sqrt{2}u_0\), so in the Earth's frame it must have \((\sqrt{2}-1)u_0\). Again, by conservation of energy:
             
             \[\frac{mv^2}{2}-\frac{GM_\oplus m}{R_\oplus} = \frac{m(\sqrt{2}-1)^2u_0^2}{2}\]
 
-            \[v^2 = (\sqrt{2}-1)^2u_0^2+2v_0^2 \rightarrow \boxed{v = 16,7 \text{ km/s}}\]
+            \[v^2 = (\sqrt{2}-1)^2u_0^2+2v_0^2 \rightarrow \boxed{v = 16.7 \text{ km/s}}\]
 
-            \item Imagine que façamos a sonda ir para o infinito, ou seja, a lançamos com velocidade \(v=16,7\text{ km/s}\), e, após isso, damos um impulso infinitesimal na direção do Sol. Isso faz com que a sonda percorra todo o caminho de volta e, consequentemente, atinja o Sol.
+            \item Imagine that we send the probe to infinity, that is, we launch it with speed \(v=16.7\text{ km/s}\), and after that we apply an infinitesimal impulse toward the Sun. This makes the probe travel all the way back and, consequently, reach the Sun.
         \end{alternativas}
     \end{pssolution*}
 \end{pproblem}
 
-\pts{3} % problemas da semana 115
-\begin{pproblem} (Kevin Zhou) A equação dos foguetes é dada por:
+\pts{3} % problems of week 115
+\begin{pproblem} (Kevin Zhou) The rocket equation is given by:
     \[
     v = u\ln\left(\frac{M_0}{M}\right)
     \]
-    Onde \(v\) é a velocidade do foguete, \(u\) a velocidade relativa com que o foguete ejeta combustível, \(M_0\) a massa inicial do foguete e \(M\) sua massa atual.
+    where \(v\) is the speed of the rocket, \(u\) the relative speed at which the rocket ejects fuel, \(M_0\) the initial mass of the rocket, and \(M\) its current mass.
     \begin{enumerate}[label=\textbf{\alph*)}]
-        \item Deduza a equação dos foguetes partindo da conservação do momento.
-        \item Considerando \(u\) um valor fixo durante todo o percurso do foguete, qual deve ser o valor de \(u\) para que o foguete vá de \(0\) até \(v\) gastando o menor combustível possível? (Você precisará resolver numericamente para \(v/u\))
-        \item Como a equação dos foguetes deve ser corrigida para uma região do espaço com um campo gravitacional, \(\mathbf{g}\), constante e apontando na direção contrária ao movimento do foguete? Considere \(\eta = dm/dt = \text{constante}\).
+        \item Derive the rocket equation starting from conservation of momentum.
+        \item Assuming \(u\) is fixed throughout the rocket's trip, what must the value of \(u\) be so that the rocket goes from \(0\) to \(v\) using the least possible fuel? (You will need to solve numerically for \(v/u\))
+        \item How must the rocket equation be corrected for a region of space with a constant gravitational field, \(\mathbf{g}\), pointing opposite the rocket's motion? Take \(\eta = dm/dt = \text{constant}\).
     \end{enumerate}
 
     \begin{pssolution*}{}{}
         \begin{alternativas}
-            \item Considere que o foguete possui massa \(M\) e velocidade \(v\). Ele ejeta combustível a uma velocidade relativa \(u\). Seja \(dm\) a massa de gás ejetada:
+            \item Consider that the rocket has mass \(M\) and velocity \(v\). It ejects fuel at a relative speed \(u\). Let \(dm\) be the mass of ejected gas:
             \[dp = (v-u)dm\]
-            Mas, pela definição,
+            But, by definition,
             \[dp = vdm + mdv\]
-            Combinando essas equações:
+            Combining these equations:
             \[mdv = -udm\]
 
-            Integrando,
+            Integrating,
             \[\ln m = -\frac{v}{u} + C\]
 
-            Sabemos que quando \(m = M_0\), temos \(v = 0\), então \(C = \ln M_0\). Assim:
+            We know that when \(m = M_0\), we have \(v = 0\), so \(C = \ln M_0\). Thus:
 
             \[v = u \ln\left(\frac{M_0}{M}\right)\]
 
-            Como esperado.
+            As expected.
 
-            \item A energia cinética do gás é dada por:
+            \item The kinetic energy of the gas is given by:
             
             \[K_{g} =\frac{1}{2}M_gu^2 = \frac{(M_0-M)u^2}{2}\]
 
-            Podemos encontrar uma expressão para \(M\) utilizando a equação dos foguetes:
+            We can find an expression for \(M\) using the rocket equation:
 
             \[\frac{M_0}{M} = e^{v/u} \rightarrow M_0 = Me^{v/u}\]
 
-            Voltando à fórmula anterior:
+            Returning to the previous formula:
             
             \[K_g = \frac{M(e^{v/u}-1)u^2}{2}\]
 
-            Aqui, \(M\) seria o equivalente à massa da "carcaça" do foguete.
+            Here, \(M\) is equivalent to the ``structural'' mass of the rocket.
 
-            Para minimizar a quantidade de energia gasta com combustível, temos:
+            To minimize the amount of energy spent on fuel, we have:
 
             \[\frac{dK_g}{du}=0  \rightarrow -e^{v/u}v +2u(e^{v/u}-1)=0\]
 
-            Definindo \(x=v/u\),
+            Defining \(x=v/u\),
 
             \[e^xx = 2(e^x-1) \rightarrow x = 2(1-e^{-x})\]
 
-            Resolvendo por iteração, encontramos:
+            Solving by iteration, we find:
 
-            \[x \approx 1,59 \rightarrow \boxed{u \approx \frac{v}{1,59}} \]
+            \[x \approx 1.59 \rightarrow \boxed{u \approx \frac{v}{1.59}} \]
 
-            \item Nesse caso, temos:
+            \item In this case, we have:
             
             \[dp = (v-u)dm - mgdt = mdv +vdm\]
             \[\frac{dm}{m} = -\frac{dv}{u} - \frac{g}{u}dt\]
 
-            Integrando,
+            Integrating,
 
             \[\ln\left(\frac{M}{M_0}\right) = -\frac{v}{u} - \frac{gt}{u}\]
 
-            Como \(\eta\) é constante, \(M = M_0 -\eta t \rightarrow t = (M_0-M)/\eta\).
+            Since \(\eta\) is constant, \(M = M_0 -\eta t \rightarrow t = (M_0-M)/\eta\).
 
             \[\ln\left(\frac{M}{M_0}\right) = -\frac{v}{u} - \frac{g}{u\eta}(M_0-M)\]
 
-            Resolvendo para \(v\),
+            Solving for \(v\),
 
             \[\boxed{v = u\ln\left(\frac{M_0}{M}\right)-\frac{g}{\eta}(M_0-M)}\]
         \end{alternativas}
@@ -457,197 +457,197 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
 \end{pproblem}  
 
 \pts{4}
-\begin{pproblem} Um dos propelentes mais comuns em foguetes é uma mistura de hidrogênio líquido com oxigênio líquido. Quando começa a queimar, a seguinte reação química ocorre:
+\begin{pproblem} One of the most common rocket propellants is a mixture of liquid hydrogen and liquid oxygen. When it begins to burn, the following chemical reaction occurs:
     \[
     2H_2 + O_2 \rightarrow 2H_2O
     \] 
-    Para cada mol de hidrogênio, esta reação libera \(241,8 \text{ kJ}\) de energia. Ao longo da questão, suponha que toda essa energia seja utilizada para mover o foguete.
+    For each mole of hydrogen, this reaction releases \(241.8 \text{ kJ}\) of energy. Throughout the question, assume that all of this energy is used to move the rocket.
     \begin{enumerate}[label=\textbf{\alph*)}]
-        \item Uma expedição espacial deseja ser feita de tal maneira que é necessário realizar uma transferência de Hohmann para lançar um foguete da Terra para Marte. Calcule a variação de velocidade total \(\Delta v\) necessária para realizar essa manobra.
-        \item A partir do \(\Delta v\) calculado anteriormente, estime quantas toneladas de propelente devem ser utilizadas para realizar tal manobra para um foguete que ejeta propelente com velocidade \(u = 3,0\) km/s e carcaça com massa \(M = 140\cdot10^3\) kg.
+        \item A space expedition is to be carried out in such a way that a Hohmann transfer is required to launch a rocket from Earth to Mars. Calculate the total velocity change \(\Delta v\) needed to perform this maneuver.
+        \item From the \(\Delta v\) calculated above, estimate how many tons of propellant must be used to perform this maneuver for a rocket that ejects propellant at speed \(u = 3.0\) km/s and has structural mass \(M = 140\cdot10^3\) kg.
     \end{enumerate}
     \begin{pssolution*}{}{}
         \begin{alternativas}
-            \item Para o primeiro impulso, temos:
+            \item For the first impulse, we have:
             \[v_{0,1}^2=\frac{GM}{R_T}\]
             \[v_{f,1}^2 = GM\left(\frac{2}{R_T}-\frac{1}{a}\right)\]
-            A órbita de transferência possui \(a=(R_T+R_M)/2\),
+            The transfer orbit has \(a=(R_T+R_M)/2\),
             \[v_{f,1}^2 = \frac{2GM}{R_T}\left(\frac{R_M}{R_T+R_M}\right)\]
 
-            Já no segundo impulso,
+            For the second impulse,
             \[v_{0,2}^2 = GM\left(\frac{2}{R_M}-\frac{1}{a}\right) = \frac{2GM}{R_M}\left(\frac{R_T}{R_T+R_M}\right)\]
 
             \[v_{f,2}^2 = \frac{GM}{R_M}\]
 
-            Sendo \(\Delta v = \Delta v_1 + \Delta v_2 = (v_{f,1}-v_{0,1})+(v_{f,2}-v_{0,1})\), podemos equacionar:
+            With \(\Delta v = \Delta v_1 + \Delta v_2 = (v_{f,1}-v_{0,1})+(v_{f,2}-v_{0,1})\), we can write:
 
             \[\boxed{\Delta v = \sqrt{\frac{2GM}{R_T}\left(\frac{R_M}{R_T+R_M}\right)}-\sqrt{\frac{GM}{R_T}} + \sqrt{\frac{GM}{R_M}} - \sqrt{\frac{2GM}{R_M}\left(\frac{R_T}{R_T+R_M}\right)}}\]
             
-            Utilizando \(M = M_\odot = 2\cdot10^{30}\) kg, \(R_M = 1,5\) UA e \(R_T = 1\) UA, encontramos o valor numérico de \(\Delta v \approx 5,42 \) km/s.
+            Using \(M = M_\odot = 2\cdot10^{30}\) kg, \(R_M = 1.5\) AU, and \(R_T = 1\) AU, we find the numerical value \(\Delta v \approx 5.42 \) km/s.
 
-            \item Utilizando a equação dos foguetes, temos:
+            \item Using the rocket equation, we have:
             
             \[v = u\ln\left(\frac{M_0}{M}\right) \rightarrow \frac{M_0}{M}  = 1+ \frac{\mu}{M}= e^{v/u}\]
 
-            Onde \(\mu\) é a massa de gás.
+            where \(\mu\) is the mass of gas.
 
-            \[\boxed{\mu = M(e^{v/u}-1) \approx 7,12 \cdot 10^5 \text{ kg}}\]
+            \[\boxed{\mu = M(e^{v/u}-1) \approx 7.12 \cdot 10^5 \text{ kg}}\]
 
-            O que é condizente com a realidade, uma vez que a massa do combustível é \(\approx 83\%\) da massa total do foguete.
+            This is consistent with reality, since the fuel mass is \(\approx 83\%\) of the total mass of the rocket.
         \end{alternativas}
     \end{pssolution*}
 \end{pproblem}
 
-\pts{3} % problemas da semana 115
-\begin{pproblem} Marisso estava estudando um sistema binário com inclinação \(i\). Ele conseguiu descobrir que o maior redshift vindo da estrela \(1\) era \(z_1\). Sabendo disso, ache uma expressão para a massa da estrela \(2\), \(m_2\), deixe sua resposta em função de \(z_1\), do período do binário \(P\), da inclinação \(i\), da razão entre as massas \(\lambda  = m_2/m_1\) e de constantes fundamentais. Considere as órbitas circulares.
+\pts{3} % problems of week 115
+\begin{pproblem} Marisso was studying a binary system with inclination \(i\). He found that the largest redshift coming from star \(1\) was \(z_1\). Given this, find an expression for the mass of star \(2\), \(m_2\). Leave your answer in terms of \(z_1\), the binary period \(P\), the inclination \(i\), the mass ratio \(\lambda  = m_2/m_1\), and fundamental constants. Assume circular orbits.
     \begin{pssolution*}{}{}
-        A velocidade com que \(1\) orbita o CM é:
+        The speed at which \(1\) orbits the CM is:
 
         \[v_1 = \frac{2\pi a_1}{P}\]
 
-        Pela geometria, a velocidade radial é \(v_{r,1}=v_1\sin i\), com isso:
+        By geometry, the radial velocity is \(v_{r,1}=v_1\sin i\), so:
 
         \[z_1 \approx \frac{v_{r,1}}{c} = \frac{2\pi a_1\sin i}{Pc}\]
 
-        Do teorema do centro de massa:
+        From the center-of-mass theorem:
 
         \[m_1a_1=m_2a_2 \rightarrow a_2 = \frac{a_1}{\lambda}\]
 
-        Utilizando a terceira Lei de Kepler:
+        Using Kepler's third law:
 
         \[\frac{(a_1+a_2)^3}{P^2} = \frac{G(m_1+m_2)}{4\pi^2}\]
 
         \[\frac{a_1^3(1+1/\lambda)^3}{P^2} = \frac{Gm_2(1+1/\lambda)}{4\pi^2}\]
 
-        Isolando \(m_2\):
+        Isolating \(m_2\):
 
         \[m_2 = \frac{4\pi^2a_1^3(1+1/\lambda)^2}{GP^2}\]
 
-        \(a_1\) pode ser obtido avaliando a fórmula do redshift, \(a_1 = Pcz_1/2\pi\sin i\):
+        \(a_1\) can be obtained by evaluating the redshift formula, \(a_1 = Pcz_1/2\pi\sin i\):
 
         \[m_2 = \frac{4\pi^2}{GP^2}\left(\frac{z_1Pc}{2\pi\sin i}\right)^3(1+1/\lambda)^2\]
 
-        Por fim, simplificando:
+        Finally, simplifying:
 
         \[\boxed{m_2 = \frac{z_1^3c^3P}{2\pi G \sin^3i}(1+1/\lambda)^2}\]
     \end{pssolution*}
 \end{pproblem}
 
 \pts{2}
-\begin{pproblem} Qual é a razão entre \(a)\) as forças gravitacionais causadas pelo Sol e pela Lua na superfície da Terra? E \(b)\) das forças de maré causadas pelo mesmo?
+\begin{pproblem} What is the ratio between \(a)\) the gravitational forces caused by the Sun and by the Moon on the surface of the Earth? And \(b)\) the tidal forces caused by the same?
     \begin{pssolution*}{}{}
         \begin{alternativas}
-            \item A força gravitacional tem a forma:
+            \item The gravitational force has the form:
             \[F_G = \frac{GMm}{d^2}\]
 
-            Assim,
+            Thus,
 
-            \[\frac{F_\odot}{F_L} = \frac{M_\odot}{M_L}\left(\frac{d_{T-L}}{d_{T-\odot}}\right)^2 \boxed{\approx 178,33}\]
+            \[\frac{F_\odot}{F_L} = \frac{M_\odot}{M_L}\left(\frac{d_{T-L}}{d_{T-\odot}}\right)^2 \boxed{\approx 178.33}\]
 
-            \item Para as forças de maré, temos:
+            \item For the tidal forces, we have:
             
             \[F_M \propto \frac{m}{d^3}\]
 
-            \[\therefore \frac{F_\odot}{F_L} = \frac{M_\odot}{M_L}\left(\frac{d_{T-L}}{d_{T-\odot}}\right)^3 \boxed{\approx 0,456}\]
+            \[\therefore \frac{F_\odot}{F_L} = \frac{M_\odot}{M_L}\left(\frac{d_{T-L}}{d_{T-\odot}}\right)^3 \boxed{\approx 0.456}\]
 
         \end{alternativas}
     \end{pssolution*}
 \end{pproblem}
 
 \pts{4}
-\begin{pproblem} (Morin 7.7) Uma partícula de massa \(m\) viaja em uma órbita hiperbólica com uma massa \(M\) fixa em um dos focos. A velocidade no infinito é \(v_0\) e o parâmetro de impacto é \(b\).
+\begin{pproblem} (Morin 7.7) A particle of mass \(m\) travels on a hyperbolic orbit with a mass \(M\) fixed at one of the foci. The speed at infinity is \(v_0\) and the impact parameter is \(b\).
     \begin{alternativas}
-    \item Mostre que o ângulo de desvio da partícula é dado por:
+    \item Show that the deflection angle of the particle is given by:
     \[
     \phi = \pi-2\tan^{-1}(\gamma b)
     \]
-    Onde \(\gamma \equiv v_0^2/GM\).
-    \item Sendo \(d\sigma\) a seção transversal da partícula (medida quando a mesma se encontra no infinito) que é defletida em um ângulo sólido de tamanho \(d\Omega\). Mostre que:
+    where \(\gamma \equiv v_0^2/GM\).
+    \item Let \(d\sigma\) be the cross section of the particle (measured when it is at infinity) that is deflected into a solid angle of size \(d\Omega\). Show that:
     \[
     \frac{d\sigma}{d\Omega} = \frac{1}{4\gamma^2\sin^4(\phi/2)}
     \] 
-    A título de curiosidade, essa quantidade é chamada de \textit{seção transversal diferencial}.
+    As a point of curiosity, this quantity is called the \textit{differential cross section}.
     \end{alternativas}
 
     \begin{pssolution*}{}{}
         \begin{alternativas}
-            \item O esquema da situação é o seguinte:
+            \item The diagram of the situation is the following:
             
             \begin{figure}[H]
                 \centering
                 \includegraphics[width=0.87\linewidth]{imagens/orbita hiperbolica esquema 1.png}
-                \caption{Esquema da Órbita Hiperbólica}
+                \caption{Diagram of the hyperbolic orbit}
                 \label{fig.1}
             \end{figure}
 
-            Para achar o ângulo de desvio \(\phi\), vamos usar o teorema do Impulso, considerando as componentes horizontais e verticais da força de atração:
+            To find the deflection angle \(\phi\), we will use the impulse theorem, considering the horizontal and vertical components of the attractive force:
 
             \[F_x = -\frac{GMm}{r^2}\cos\theta, \ \ F_y = -\frac{GMm}{r^2}\sin\theta\]
 
-            O teorema do Impulso nos diz que:
+            The impulse theorem tells us that:
             \[\int F_i dt = \Delta p\]
 
-            Onde \(p_i\) é o momento da partícula na direção \(i\).
+            where \(p_i\) is the momentum of the particle in the direction \(i\).
 
-            No eixo \(x\), temos:
+            On the \(x\)-axis, we have:
 
             \[-\int \frac{GMm}{r^2}\cos\theta dt = \Delta p_x \]
 
-            Note que integrar com relação ao tempo deixa as coisas inconvenientes, pois descobrir como \(\theta\) e \(r\) variam no tempo é algo complicado. Por isso, vamos recorrer à definição de momento angular. Utilizando que \(L = mr^2d\theta/dt\), temos:
+            Note that integrating with respect to time makes things inconvenient, because finding how \(\theta\) and \(r\) vary in time is complicated. For this reason, we turn to the definition of angular momentum. Using \(L = mr^2d\theta/dt\), we have:
 
             \[dt = \frac{mr^2}{L}d\theta\]
 
-            Substituindo esse valor na nossa integral:
+            Substituting this value into our integral:
             \[-\int \frac{GMm^2}{L}\cos\theta d\theta = \Delta p_x\]
 
-            Perceba que nossa integral vai de \(\theta = 0\), situação no infinito, até \(\theta = \pi - \phi\), situação no infinito após o desvio. Assim:
+            Notice that our integral goes from \(\theta = 0\), the situation at infinity, to \(\theta = \pi - \phi\), the situation at infinity after the deflection. Thus:
 
             \[-\frac{GMm^2}{L}\int_0^{\pi-\phi}\cos\theta d\theta = -\frac{GMm^2}{L}\sin\theta\big|_0^{\pi-\phi} = -\frac{GMm^2}{L}\sin(\pi-\phi) = \Delta p_x\]
 
-            Analogamente para \(y\):
+            Analogously for \(y\):
 
             \[-\frac{GMm^2}{L}\int_0^{\pi-\phi}\sin\theta d\theta = \Delta p_y\]
             \[=\frac{GMm^2}{L}\cos\theta\big|_0^{\pi-\phi} \equiv -\frac{GMm^2}{L}(1-\cos(\pi-\phi)) = \Delta p_y\]
         
-            Note também que \(\Delta p_x = m(v_{f,x}-v_0), \ \Delta p_y = m(v_{f,y}-0)\). Podemos achar também uma relação de \(\phi\) com as velocidades e, por pura geometria, obtemos:
+            Also note that \(\Delta p_x = m(v_{f,x}-v_0), \ \Delta p_y = m(v_{f,y}-0)\). We can also find a relation between \(\phi\) and the velocities and, by pure geometry, we obtain:
             \[\tan\phi =-\frac{v_{f,y}}{v_{f,x}}\]
-            Como só há forças centrais, \(L\) é um valor constante, e da situação inicial, o mesmo vale \(L = mbv_0\). Agora, indo para as contas:
+            Since there are only central forces, \(L\) is constant, and from the initial situation it equals \(L = mbv_0\). Now, turning to the calculation:
 
             \[-\frac{GM}{bv_0}\sin(\pi-\phi) = v_{f,x}-v_0, \ \ -\frac{GM}{bv_0}(1-\cos(\pi-\phi))=v_y\]
             
-            Com essas duas equações, obtemos:
+            With these two equations, we obtain:
 
             \[\frac{v_{f,y}}{v_{f_x}}= -\frac{GM(1-\cos(\pi-\phi))}{bv_0^2-GM\sin(\pi-\phi)}\]
 
-            Ou seja:
+            That is:
 
             \[\tan\phi = \frac{GM(1-\cos(\pi-\phi))}{bv_0^2-GM\sin(\pi-\phi)}\]
 
-            Resolvendo para \(\phi\), obtemos o resultado esperado. Uma outra maneira de realizar a mesma questão é pensar puramente na geometria da situação:
+            Solving for \(\phi\), we obtain the expected result. Another way to carry out the same question is to think purely about the geometry of the situation:
             \begin{figure}[H]
                 \centering
                 \includegraphics[width=0.7\linewidth]{imagens/morin hiperbole.png}
-                \caption{Fonte: Morin 7.7}
+                \caption{Source: Morin 7.7}
             \end{figure}
 
-            Aqui, é evidente que:
+            Here, it is evident that:
 
             \[\phi = \pi - 2\tan^{-1}\left(\frac{b}{a}\right)\]
 
-            Onde \(b\) é o parâmetro de impacto e \(a\) o semi-eixo da hipérbole. Do conhecimento de cônicas, temos:
+            where \(b\) is the impact parameter and \(a\) the semiaxis of the hyperbola. From the theory of conics, we have:
             \[\frac{b}{a} = \sqrt{e^2-1} = \sqrt\frac{2EL^2}{m(GMm)^2} = \frac{v_0^2b}{GM} \equiv \gamma b\]
 
-            Em ambas as maneiras, chegamos no mesmo resultado:
+            In both approaches, we arrive at the same result:
 
             \[\boxed{\phi = \pi - \tan^{-1}(\gamma b)}\]
 
-            Como desejado.
+            as desired.
 
-            \item Considere um anel de espessura \(db\) e raio \(b\). Agora, considere uma esfera bem grande, com centro em \(M\). Qualquer partícula que passar pela seção transversal do anel de raio \(b\) irá atingir essa esfera fazendo um ângulo \(\phi\) com o eixo \(x\), com uma separação angular \(d\phi\). Usando que \(d\cot x/dx = -1/\sin^2x\), temos:
+            \item Consider a ring of thickness \(db\) and radius \(b\). Now consider a very large sphere, centered at \(M\). Any particle that passes through the cross section of the ring of radius \(b\) will hit this sphere making an angle \(\phi\) with the \(x\)-axis, with an angular separation \(d\phi\). Using \(d\cot x/dx = -1/\sin^2x\), we have:
             
             \[\big|\frac{db}{d\phi}\big| = \frac{1}{2\gamma \sin^2(\phi/2)}\]
 
-            A área de seção transversal é dada por \(d\sigma = 2\pi bdb\) e o ângulo sólido de uma esfera é dado por \(d\Omega = 2\pi \sin\phi d\phi\). Portanto:
+            The cross-sectional area is given by \(d\sigma = 2\pi bdb\) and the solid angle on a sphere is given by \(d\Omega = 2\pi \sin\phi d\phi\). Therefore:
 
             \[\frac{d\sigma}{d\Omega} = \frac{2\pi b}{2\pi \sin \phi}\frac{db}{d\phi} = \left(\frac{(1/\gamma)\cot(\phi/2)}{2\sin(\phi/2)\cos(\phi/2)}\right)\left(\frac{1}{2\gamma\sin^2(\phi/2)}\right)\]
 
@@ -657,22 +657,22 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
 \end{pproblem}
 
 \begin{psidea}{}{}
-    Em certas questões, é válida a utilização de vetores. Um exemplo é a questão abaixo. Para facilitar, na parte de encontrar a inclinação da órbita, observe a seguinte imagem:
+    In certain questions, the use of vectors is appropriate. One example is the question below. To make things easier, when finding the inclination of the orbit, look at the following figure:
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.7\linewidth]{imagens/vetores ecliptica.png}
-        \caption{Vetores}
+        \caption{Vectors}
     \end{figure}
 
-    Aqui, \(C\) representa um corpo, \(T\) a Terra e \(S\) o Sol. Os ângulos \(\lambda\) e \(b\) denotam, respectivamente, a longitude e a latitude eclíptica. \(\vec{r}\) é o vetor entre o Sol e o corpo, \(\vec{r}_T\) o vetor entre o Sol e a Terra, e \(\vec{d}\) o vetor entre a Terra e o corpo.
-    Pela figura,
+    Here, \(C\) represents a body, \(T\) the Earth, and \(S\) the Sun. The angles \(\lambda\) and \(b\) denote, respectively, the ecliptic longitude and the ecliptic latitude. \(\vec{r}\) is the vector between the Sun and the body, \(\vec{r}_T\) the vector between the Sun and the Earth, and \(\vec{d}\) the vector between the Earth and the body.
+    From the figure,
 
     \[\vec{r} = r(\cos b\cos\lambda \hat{x}+ \cos b \sin\lambda \hat{y} + \sin b \hat{z})\]
 
     \[\vec{r}_T = r_T(\cos(\omega_\oplus t)\hat{x}+\sin(\omega_\oplus t)\hat{y})\]
 
-    Assim, \(\vec{d}=\vec{r}-\vec{r}_T\):
+    Thus, \(\vec{d}=\vec{r}-\vec{r}_T\):
 
     \[
     \vec{d} = \big(r \cos b \cos \lambda - r_T \cos (\omega_\oplus t)\big) \hat{x} 
@@ -680,13 +680,13 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
     + r \sin b \, \hat{z}
     \]
 
-    Calculando o módulo do vetor \(\vec{d}\), obtemos que:
+    Calculating the magnitude of the vector \(\vec{d}\), we obtain:
 
     \[
     d = |\vec{d}| = \sqrt{r_T^2 + r^2 - 2 r_T r \cos b \cos (\lambda - \omega_\oplus t)}
     \]
 
-    Portanto:
+    Therefore:
 
     \[
     \boxed{\cos b \cos (\lambda - \omega_\oplus t) = \frac{r_T^2 + r^2 - d^2}{2 r_T r}}
@@ -694,59 +694,59 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
 \end{psidea}
 
 \pts{5}
-\begin{pproblem}(Lista \(1\) - Vinhedo 2024) 
-    CR4b-2023 é uma sonda em órbita heliocêntrica que foi construída e lançada em 2023 pelo jovem prodígio Caranguejo. O objetivo da sonda era estudar as tempestades solares e captar dados para que Caranguejo analisasse em seu observatório no Espírito Santo. CR4b-2023, porém, durante uma de suas expedições ao Sol, foi atingida por uma tempestade solar e sofreu uma danificação grave. Devido a isso, a sonda se desorientou e, assim, teve todos os seus parâmetros orbitais alterados, de maneira que Caranguejo não soubesse mais sua localização.
+\begin{pproblem}(Problem set \(1\) - Vinhedo 2024) 
+    CR4b-2023 is a probe on a heliocentric orbit that was built and launched in 2023 by the young prodigy Caranguejo. The goal of the probe was to study solar storms and collect data for Caranguejo to analyze at his observatory in Espírito Santo. CR4b-2023, however, during one of its expeditions toward the Sun, was hit by a solar storm and suffered serious damage. Because of this, the probe became disoriented and thus had all of its orbital parameters changed, so that Caranguejo no longer knew its location.
 
-    Visando rastrear a posição de CR4b-2023 novamente, Caranguejo utilizou-se de seu observatório para coletar os valores das separações angulares \(\Delta\phi\) entre a sonda e o Sol e os valores do diâmetro angular \(\theta_S\) da sonda, tudo em função do tempo \(t\). A tabela obtida por Caranguejo pode ser vista abaixo.
+    Aiming to track the position of CR4b-2023 again, Caranguejo used his observatory to collect the values of the angular separations \(\Delta\phi\) between the probe and the Sun and the values of the angular diameter \(\theta_S\) of the probe, all as a function of time \(t\). The table obtained by Caranguejo is shown below.
 
     \begin{table}[H]
         \centering
         \begin{tabular}{|c|c|c|}
             \hline
-            \(\Delta\phi\) (Graus) & \(\theta_S\) (mas) & \(t\) (Dias) \\
+            \(\Delta\phi\) (Degrees) & \(\theta_S\) (mas) & \(t\) (Days) \\
             \hline
-            0,000 & 99,27 & 0,00 \\
-            4,889 & 103,67 & 1,79 \\
-            17,354 & 104,72 & 7,43 \\
-            29,015 & 93,06 & 20,62 \\
-            27,793 & 81,18 & 25,41 \\
-            13,460 & 79,77 & 45,98 \\
-            11,539 & 77,97 & 51,61 \\
-            2,466 & 76,44 & 54,53 \\
-            2,656 & 74,84 & 55,31 \\
-            7,177 & 73,90 & 57,19 \\
-            10,800 & 70,63 & 58,43 \\
-            22,464 & 72,92 & 91,67 \\
-            13,823 & 80,50 & 130,48 \\
+            0.000 & 99.27 & 0.00 \\
+            4.889 & 103.67 & 1.79 \\
+            17.354 & 104.72 & 7.43 \\
+            29.015 & 93.06 & 20.62 \\
+            27.793 & 81.18 & 25.41 \\
+            13.460 & 79.77 & 45.98 \\
+            11.539 & 77.97 & 51.61 \\
+            2.466 & 76.44 & 54.53 \\
+            2.656 & 74.84 & 55.31 \\
+            7.177 & 73.90 & 57.19 \\
+            10.800 & 70.63 & 58.43 \\
+            22.464 & 72.92 & 91.67 \\
+            13.823 & 80.50 & 130.48 \\
             \hline
         \end{tabular}
-        \caption{Valores medidos por Caranguejo}
+        \caption{Values measured by Caranguejo}
     \end{table}
 
-    Considere que, no momento inicial \(t_0 = 0\) em que a sonda é atingida pela tempestade solar, o Sol estava exatamente no ponto de Libra e o movimento da sonda era ascendente em relação ao plano da eclíptica. Além disso, considere que o raio da sonda, supostamente esférica, é dado por \(R = 30\) km. Para essa questão, não é necessário fazer análise de erros (apesar de ser importante tentar utilizar métodos visando diminuir erros estatísticos). Com base no que foi apresentado:
+    Assume that, at the initial instant \(t_0 = 0\) when the probe is hit by the solar storm, the Sun was exactly at the point of Libra and the motion of the probe was ascending relative to the ecliptic plane. Also assume that the radius of the probe, supposed spherical, is given by \(R = 30\) km. For this question, an error analysis is not required (although it is important to try to use methods aimed at reducing statistical errors). Based on what was presented:
 
     \begin{enumerate}[label=(\alph*)]
-        \item Calcule os parâmetros orbitais da órbita de CR4b-2023, ou seja, seu semi-eixo maior \(a\), excentricidade \(e\), inclinação \(i\), longitude do nodo ascendente \(\Omega\) e argumento do periélio \(\omega\). Como em todas as questões de análise de dados, você deve fornecer tabelas de dados claramente rotuladas, gráficos claramente rotulados e derivações de fórmulas suficientes para deixar claro o que você mediu e como está derivando seus resultados visando reduzir erros estatísticos.
+        \item Calculate the orbital parameters of the orbit of CR4b-2023, that is, its semimajor axis \(a\), eccentricity \(e\), inclination \(i\), longitude of the ascending node \(\Omega\), and argument of perihelion \(\omega\). As in all data-analysis questions, you must provide clearly labeled data tables, clearly labeled graphs, and enough formula derivations to make clear what you measured and how you are deriving your results in order to reduce statistical errors.
         
-        \item Considerando \((x', y', z')\) como as coordenadas de CR4b-2023 em um sistema cartesiano de mão direita em que o plano \(x'y'\) se localiza no plano da órbita da sonda, o Sol se localiza na origem, e o eixo \(x'\) aponta para o ponto vernal, escreva, em uma tabela, os valores de pelo menos 5 pontos \((x', y', z')\) distintos. Com base nos dados encontrados, esboce, em um gráfico, a órbita de CR4b-2023, indicando as coordenadas de seu centro.
+        \item Taking \((x', y', z')\) as the coordinates of CR4b-2023 in a right-handed Cartesian system in which the \(x'y'\) plane lies in the plane of the probe's orbit, the Sun is at the origin, and the \(x'\) axis points toward the vernal point, write, in a table, the values of at least 5 distinct points \((x', y', z')\). Based on the data found, sketch, on a graph, the orbit of CR4b-2023, indicating the coordinates of its center.
         
-        \item Considerando agora um novo sistema de coordenadas de mão direita \((x, y, z)\), no qual o Sol se localiza na origem, o plano \(xy\) representa o plano da eclíptica, e o eixo \(x\) aponta para o ponto vernal, escreva as coordenadas do centro da órbita de CR4b-2023. Por fim, calcule a distância \(d_{TC}\) entre o centro da órbita terrestre e o centro da órbita da sonda.
+        \item Now considering a new right-handed coordinate system \((x, y, z)\), in which the Sun is at the origin, the \(xy\) plane represents the ecliptic plane, and the \(x\) axis points toward the vernal point, write the coordinates of the center of the orbit of CR4b-2023. Finally, calculate the distance \(d_{TC}\) between the center of Earth's orbit and the center of the probe's orbit.
     \end{enumerate}
 
     \begin{pssolution*}{}{}
         \begin{alternativas}
-            \item A ideia dessa parte da questão é encontrar uma relação entre os dias e a distância da sonda até o Sol. Utilizando trigonometria básica, podemos dizer que a distância da sonda até a Terra é dada por:
+            \item The idea of this part of the question is to find a relation between the days and the distance from the probe to the Sun. Using basic trigonometry, we can say that the distance from the probe to the Earth is given by:
             \[d_{S-\oplus} = R/\tan^{-1}\left(\frac{\theta_S}{2}\right)\]
-            Onde \(R\) é o raio da sonda.
-            Aqui, podemos utilizar a lei dos cossenos para encontrar a relação dessa distância com a distância da sonda até o Sol. Considerando a órbita da Terra circular de raio \(d_{\odot-\oplus}\) e definindo por \(d\) a distância entre a sonda e o Sol, temos:
+            where \(R\) is the radius of the probe.
+            Here, we can use the law of cosines to relate this distance to the distance from the probe to the Sun. Considering the Earth's orbit to be circular with radius \(d_{\odot-\oplus}\) and defining \(d\) as the distance between the probe and the Sun, we have:
             \[d^2 = d_{\odot-\oplus}^2+d_{S-\oplus}^2-2d_{\odot-\oplus}d_{S-\oplus}\cos\Delta\phi\]      
             
-            Com isso, podemos montar a seguinte tabela, com os valores de \(d\) em UA e os valores de \(t\) em dias.
+            With this, we can build the following table, with the values of \(d\) in AU and the values of \(t\) in days.
 
             \[
                 \begin{array}{|c|c|}
                 \hline
-                \text{t (Dias)} & \text{d (UA)} \\
+                \text{t (Days)} & \text{d (UA)} \\
                 \hline
                 0.00 &    0.17 \\
                 1.79 &    0.22 \\
@@ -765,144 +765,144 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
                 \end{array}
             \]
 
-            Plotando um gráfico de \(t\) por \(d\), temos:
+            Plotting a graph of \(t\) versus \(d\), we have:
             
             \begin{figure}[H]
                 \centering
                 \includegraphics[width=0.85\linewidth]{imagens/graficoorbita.png}
             \end{figure}
 
-            Agora, vamos colocar a mão na massa e achar os parâmetros requisitados: semi-eixo maior, \(a\), excentricidade, \(e\), inclinação, \(i\), longitude do nodo ascendente \(\Omega\) e argumento do periélio, \(\omega\). Os dois primeiros podem ser obtidos diretamente dos dados que analisamos até o momento.
+            Now let us get to work and find the requested parameters: semimajor axis, \(a\), eccentricity, \(e\), inclination, \(i\), longitude of the ascending node \(\Omega\), and argument of perihelion, \(\omega\). The first two can be obtained directly from the data we have analyzed so far.
 
-            Analisando os dados, podemos perceber que a menor distância entre a sonda e o Sol é dada por \(a_p = 0.09\) UA e a maior distância é dada por \(a_a = 0,49\) UA. Essas distâncias devem corresponder ao periélio e ao afélio, respectivamente. Utilizando a definição:
-            \[a_p = a(1-e), \ a_a=a(1+e) \rightarrow \frac{a_p}{a_a}=\frac{1-e}{1+e} \approx 0,18\]
+            Analyzing the data, we can see that the smallest distance between the probe and the Sun is given by \(a_p = 0.09\) AU and the largest distance is given by \(a_a = 0.49\) AU. These distances must correspond to perihelion and aphelion, respectively. Using the definition:
+            \[a_p = a(1-e), \ a_a=a(1+e) \rightarrow \frac{a_p}{a_a}=\frac{1-e}{1+e} \approx 0.18\]
             
-            Resolvendo, obtemos \(e \approx 0,67\).
+            Solving, we obtain \(e \approx 0.67\).
 
-            Usando que \(a = \frac{a_p+a_a}{2}\), obtemos \(a\approx 0,30\) UA.
+            Using \(a = \frac{a_p+a_a}{2}\), we obtain \(a\approx 0.30\) AU.
 
-            Para acharmos os fatores angulares, temos que pensar um pouco mais. Começando por \(\Omega\), note que no momento inicial, em \(t=0\), a separação angular entre o Sol e a sonda é \(\Delta \phi = 0\). O enunciado nos diz que nesse momento o Sol se encontra no ponto de Libra, assim, temos que a sonda também se encontra no ponto de Libra e, como seu movimento era ascendente, temos \(\Omega = 0^\circ\).
+            To find the angular factors, we have to think a bit more. Starting with \(\Omega\), note that at the initial instant, at \(t=0\), the angular separation between the Sun and the probe is \(\Delta \phi = 0\). The statement tells us that at this moment the Sun is at the point of Libra, so the probe is also at the point of Libra and, since its motion was ascending, we have \(\Omega = 0^\circ\).
 
-            Para encontrar \(\omega\) e \(i\), vamos nos atentar ao seguinte triângulo esférico:
+            To find \(\omega\) and \(i\), let us look at the following spherical triangle:
 
             \begin{figure}[H]
                 \centering
                 \includegraphics[angle=90, width=0.8\textwidth]{imagens/trigesfericoorbita.jpg}
-                \caption{Esquema}
+                \caption{Diagram}
             \end{figure}
 
-            Da forma polar da elipse, \(r=\frac{a(1-e^2)}{1+e\cos\theta}\), onde \(\theta\) é a anomalia verdadeira da órbita, podemos encontrar \(\omega\). Perceba que no instante inicial, \(t=0\), a sonda está exatamente no ponto de Libra, assim \(\theta = 2\pi-\omega\) conforme o esquema.
+            From the polar form of the ellipse, \(r=\frac{a(1-e^2)}{1+e\cos\theta}\), where \(\theta\) is the true anomaly of the orbit, we can find \(\omega\). Notice that at the initial instant, \(t=0\), the probe is exactly at the point of Libra, so \(\theta = 2\pi-\omega\) as in the diagram.
 
-            Assim, temos:
+            Thus, we have:
 
             \[d(0) = \frac{a(1-e^2)}{1+e\cos(2\pi-\omega)}\]
 
-            Resolvendo para \(\omega\):
+            Solving for \(\omega\):
 
-            \[\omega = 2\pi-\cos^{-1}\left(\frac{a(1-e^2)}{d(0)e}-\frac{1}{e}\right) \approx 267,6^\circ \approx 270^\circ\]
+            \[\omega = 2\pi-\cos^{-1}\left(\frac{a(1-e^2)}{d(0)e}-\frac{1}{e}\right) \approx 267.6^\circ \approx 270^\circ\]
 
-            Substituindo os valores encontrados.
+            substituting the values found.
 
-            Para achar a inclinação, vamos utilizar a lei dos cossenos:
+            To find the inclination, we will use the law of cosines:
 
             \[\cos(\theta-\omega)=\cos\lambda\cos b + \sin\lambda\sin b\cos(\pi/2) = \cos\lambda\cos b\]
             
-            Note que \(\cos(\theta-\omega) \approx \cos(\theta-270^\circ) = \sin \theta\).
+            Note that \(\cos(\theta-\omega) \approx \cos(\theta-270^\circ) = \sin \theta\).
 
-            Reescrevendo,
+            Rewriting,
 
             \[\cos b = \frac{\sin\theta}{\cos\lambda}\]
 
-            Utilizando a relação obtida na ideia anterior,
+            Using the relation obtained in the previous idea,
 
             \[\cos b  = \frac{r_T^2 + r^2 - d^2}{2 r_T r\cos (\lambda - \omega_\oplus t)}\]
 
-            Igualando essas expressões e resolvendo para \(\lambda\),
+            Equating these expressions and solving for \(\lambda\),
 
             \[\lambda = \tan^{-1} \left( 
                 \frac{r_T^2 + r^2 - d^2}{2 r_T r \sin \theta \sin (\omega_\oplus t)} - \cot (\omega_\oplus t)
                 \right)\]
 
-            Onde:
+            where:
 
             \[
             \theta = \arccos \left( \frac{a (1 - e^2)}{e r} - \frac{1}{e} \right)
             \] 
             
-            Com isso, podemos fazer a seguinte tabela, com os valores de \(b\) e \(\lambda\).
+            With this, we can make the following table, with the values of \(b\) and \(\lambda\).
 
             \[
             \begin{array}{|c|c|}
             \hline
-            \lambda \, (\text{Graus}) & b \, (\text{Graus}) \\ \hline
-            0,000     & 0,00     \\ 
-            17,495    & 9,847    \\ 
-            45,905    & 22,521   \\ 
-            78,492    & 29,499   \\ 
-            101,508   & 29,499   \\ 
-            134,095   & 22,521   \\ 
-            163,504   & 9,847    \\ 
-            180,000   & 0,000    \\ 
-            197,495   & -9,847   \\ 
-            216,005   & -18,747  \\ 
+            \lambda \, (\text{Degrees}) & b \, (\text{Degrees}) \\ \hline
+            0.000     & 0.00     \\ 
+            17.495    & 9.847    \\ 
+            45.905    & 22.521   \\ 
+            78.492    & 29.499   \\ 
+            101.508   & 29.499   \\ 
+            134.095   & 22.521   \\ 
+            163.504   & 9.847    \\ 
+            180.000   & 0.000    \\ 
+            197.495   & -9.847   \\ 
+            216.005   & -18.747  \\ 
             270       & -30      \\ 
-            333,435   & -14,478  \\ 
-            17,495    & 9,847    \\ 
-            78,492    & 29,499   \\ 
-            143,994   & 18,747   \\ \hline
+            333.435   & -14.478  \\ 
+            17.495    & 9.847    \\ 
+            78.492    & 29.499   \\ 
+            143.994   & 18.747   \\ \hline
             \end{array}
             \]
 
-            Voltando ao triângulo esférico e utilizando a lei dos quatro elementos, temos:
+            Returning to the spherical triangle and using the four-parts formula, we have:
 
             \[\cos\lambda\cos90^\circ = \sin\lambda\cot b -\sin90^\circ\cot i\]
 
-            Simplificando:
+            Simplifying:
 
             \[\tan b = \tan i \sin \lambda\]
 
-            Note que isso se assemelha a uma função do tipo \(y= A + Bx\). Fazendo uma regressão linear na calculadora, encontramos \(B\approx 0,578\). De modo que \(\tan i = B\), chegamos em:
+            Note that this resembles a function of the type \(y= A + Bx\). Performing a linear regression on a calculator, we find \(B\approx 0.578\). Since \(\tan i = B\), we arrive at:
 
             \[\boxed{i \approx 30^\circ}\]
 
-        \item Como o Sol se localiza na origem, os valores de \(x'\) e \(y'\) podem ser calculados por:
+        \item Since the Sun is at the origin, the values of \(x'\) and \(y'\) can be calculated by:
             \[
             x' = r \sin \theta
             \]
-            e
+            and
             \[
             y' = -r \cos \theta
             \]
 
-            Escrevendo em uma tabela cinco valores diferentes de \(x'\) e \(y'\), obtemos que:
+            Writing five different values of \(x'\) and \(y'\) in a table, we obtain:
 
             \[
-            \text{Tabela 7: Valores de \(x'\) e \(y'\)}
+            \text{Table 7: Values of \(x'\) and \(y'\)}
             \]
 
             \[
             \begin{array}{|c|c|}
             \hline
-            x'\text{ UA} & y'\text{ UA} \\ \hline
-            0,167 & 0,000 \\ \hline
-            0,084 & 0,478 \\ \hline
-            -0,219 & 0,261 \\ \hline
-            -0,203 & 0,074 \\ \hline
-            0,000 & -0,100 \\ \hline
+            x'\text{ AU} & y'\text{ AU} \\ \hline
+            0.167 & 0.000 \\ \hline
+            0.084 & 0.478 \\ \hline
+            -0.219 & 0.261 \\ \hline
+            -0.203 & 0.074 \\ \hline
+            0.000 & -0.100 \\ \hline
             \end{array}
             \]
 
-            Perceba que quaisquer valores, desde que corretos, de \(x'\) e \(y'\) podem ser utilizados. Além do mais, é importante aumentar o espaçamento entre os valores de \(x'\) e \(y'\) visando diminuir os erros associados ao esboço da órbita. Com base nisso, podemos plotar o gráfico:
+            Notice that any values of \(x'\) and \(y'\), provided they are correct, may be used. Furthermore, it is important to increase the spacing between the values of \(x'\) and \(y'\) in order to reduce the errors associated with sketching the orbit. Based on this, we can plot the graph:
 
             \begin{figure}[H]
                 \centering
                 \includegraphics[width=0.7\linewidth]{imagens/graforbt.png}  
-                \caption{Gráfico da órbita} 
+                \caption{Graph of the orbit} 
             \end{figure}
 
-            Observando o gráfico, vemos que as coordenadas \((x', y', z')\) do centro da elipse são \(\boxed{(0;\ 0,2; \ 0)}\).
+            Observing the graph, we see that the coordinates \((x', y', z')\) of the center of the ellipse are \(\boxed{(0;\ 0.2; \ 0)}\).
 
-        \item Aqui, vamos utilizar uma matriz de rotação em torno do eixo \(x\), dada por:
+        \item Here, we will use a rotation matrix about the \(x\)-axis, given by:
         
             \[
             \begin{pmatrix}
@@ -923,7 +923,7 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
             \end{pmatrix}
             \] 
 
-            Para \(\alpha=i=30^\circ\):
+            For \(\alpha=i=30^\circ\):
 
             \[
             \begin{pmatrix}
@@ -944,7 +944,7 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
             \end{pmatrix}
             \]
 
-            Então:
+            Then:
             \[
             x = x'
             \]
@@ -955,17 +955,17 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
             z = -y' \sin 30^\circ + z' \cos 30^\circ
             \]
 
-            Substituindo os valores numéricos, obtemos que as coordenadas \((x, y, z)\) do centro de CR4b-2023 são dadas por:
+            Substituting the numerical values, we obtain that the coordinates \((x, y, z)\) of the center of CR4b-2023 are given by:
             \[
             (0.000, 0.173, -0.100).
             \]
 
-            Por fim, obtemos então que a distância entre o centro da órbita terrestre e o centro da órbita da sonda é dada por:
+            Finally, we obtain that the distance between the center of Earth's orbit and the center of the probe's orbit is given by:
             \[
             d = \sqrt{\lvert x^2 + y^2 + z^2 \rvert}
             \]
 
-            ou seja:
+            that is:
             \[
             \boxed{d = 0.200 \, \text{UA}}
             \]
@@ -975,59 +975,59 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
 
 \pts{5}
 \begin{pproblem} (Iran Problem Set) 
-    Uma partícula de massa \(m\) está orbitando um objeto massivo de massa \(M\). Mostre que o impulso necessário para fazer a órbita girar um ângulo \(\eta\) em torno de um dos focos é dado por:
+    A particle of mass \(m\) is orbiting a massive object of mass \(M\). Show that the impulse required to rotate the orbit by an angle \(\eta\) about one of the foci is given by:
     \[
     \Delta v = \frac{2\mu e}{h}\sin\left(\frac{\eta}{2}\right),
     \]
-    onde:
+    where:
     \begin{itemize}
-        \item \(h\) é o momento angular por unidade de massa;
-        \item \(\mu = GM\), sendo \(G\) a constante gravitacional.
+        \item \(h\) is the angular momentum per unit mass;
+        \item \(\mu = GM\), where \(G\) is the gravitational constant.
     \end{itemize}
     \begin{pssolution*}{}{}
-        Desenhando a órbita e a órbita rotacionada:
+        Drawing the orbit and the rotated orbit:
 
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.7\linewidth]{imagens/esquemarotorb.png}
-            \caption{Esquema da órbita rotacionada.}
+            \caption{Diagram of the rotated orbit.}
         \end{figure}
 
-        Perceba que o impulso só pode ser realizado nos pontos de interseção das duas órbitas e deve ser radial, uma vez que o momento angular deve continuar constante, a fim de manter a órbita idêntica. Vamos definir por \(X\) um ponto na órbita antes do impulso e \(X'\) um ponto na órbita após a rotação.
+        Notice that the impulse can be applied only at the intersection points of the two orbits and must be radial, since the angular momentum must remain constant in order to keep the orbit identical. Let us define \(X\) as a point on the orbit before the impulse and \(X'\) as a point on the orbit after the rotation.
 
-        Vamos às seguintes definições: \(F\) é o foco, \(P\) é o periélio da órbita, e \(A\) é o ponto de interseção onde é realizado o impulso.
+        Let us set the following definitions: \(F\) is the focus, \(P\) is the perihelion of the orbit, and \(A\) is the intersection point at which the impulse is applied.
 
-        Por simetria, note que os ângulos \(AFP\) e \(AFF'\) são iguais e, portanto, têm valor \(\eta/2\).
+        By symmetry, note that the angles \(AFP\) and \(AFF'\) are equal and therefore have the value \(\eta/2\).
 
-        Como as duas órbitas possuem o mesmo momento angular, a velocidade tangencial no ponto \(A\) deve ser equivalente para ambas as órbitas. Além disso, podemos perceber que o ponto \(A\) possui anomalia verdadeira \(\theta = \eta/2\), o que garante que o módulo da velocidade também seja o mesmo para ambas as órbitas.
+        Since the two orbits have the same angular momentum, the tangential velocity at the point \(A\) must be the same for both orbits. Furthermore, we can see that the point \(A\) has true anomaly \(\theta = \eta/2\), which guarantees that the speed is also the same for both orbits.
 
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.7\linewidth]{imagens/rotorbt1.png}
-            \caption{Vetores de velocidade.}
+            \caption{Velocity vectors.}
         \end{figure}
 
-        A única maneira de isso ser possível seria se o impulso radial fosse dado por \(\Delta v = 2v_r\), onde \(v_r\) é a velocidade radial imediatamente antes do impulso.
+        The only way for this to be possible is if the radial impulse is given by \(\Delta v = 2v_r\), where \(v_r\) is the radial velocity immediately before the impulse.
 
-        É claro que \(v_r^2 = v^2 - v_t^2\), onde \(v_t\) é a velocidade tangencial. Partindo de definições básicas:
+        Of course \(v_r^2 = v^2 - v_t^2\), where \(v_t\) is the tangential velocity. Starting from basic definitions:
 
         \[
         h^2 = \mu a (1 - e^2), \quad r = \frac{a(1 - e^2)}{1 - e\cos\theta}, \quad v_t = \frac{h}{r}, \quad v^2 = \mu \left(\frac{2}{r} - \frac{1}{a}\right).
         \]
 
-        Trabalhando com essas equações, chegamos a:
+        Working with these equations, we arrive at:
 
         \[
         v^2 = \frac{\mu^2}{h^2}(1 + 2e\cos\theta + e^2), \quad v_t^2 = \frac{\mu^2}{h^2}(1 + e\cos\theta)^2.
         \]
 
-        Por fim, substituindo em \(v_r^2 = v^2 - v_t^2\), obtemos:
+        Finally, substituting into \(v_r^2 = v^2 - v_t^2\), we obtain:
 
         \[
         v_r^2 = \frac{\mu^2}{h^2}(e^2 - e^2\cos^2\theta) \equiv \frac{\mu^2e^2}{h^2}\sin^2\theta.
         \]
 
-        Substituindo \(\Delta v = 2v_r\) e \(\theta = \eta/2\), chegamos ao resultado desejado:
+        Substituting \(\Delta v = 2v_r\) and \(\theta = \eta/2\), we arrive at the desired result:
 
         \[
         \boxed{\Delta v = \frac{2\mu e}{h}\sin\left(\frac{\eta}{2}\right) \blacksquare}
@@ -1038,59 +1038,59 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
 
 \pts{3}
 \begin{pproblem}
-    Nessa questão, vamos estudar um modelo simplificado para o efeito que confirmou a Teoria da Relatividade Geral de Einstein: as lentes gravitacionais. A presença de um corpo massivo curva o espaço-tempo, fazendo com que estrelas possam servir como lentes no espaço. Alguns telescópios, como o JWST, utilizam esse efeito para conseguir fotografar aglomerados de galáxias muito distantes. Uma das fotos tiradas pelo JWST de uma lente gravitacional pode ser vista a seguir:
+    In this question, we will study a simplified model of the effect that confirmed Einstein's theory of general relativity: gravitational lensing. The presence of a massive body curves spacetime, so that stars can serve as lenses in space. Some telescopes, such as the JWST, use this effect to photograph very distant galaxy clusters. One of the photographs taken by the JWST of a gravitational lens is shown below:
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.7\linewidth]{imagens/fotoJWSTeinstenring.png}
-        \caption{Fonte: National Geographic}
+        \caption{Source: National Geographic}
     \end{figure} 
 
-    Um esquema simplificado das lentes gravitacionais pode ser observado a seguir. Esse "círculo" é conhecido como Anel de Einstein.
+    A simplified diagram of gravitational lensing can be seen below. This ``circle'' is known as the Einstein ring.
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.9\linewidth]{imagens/anelE.png}
-        \caption{Esquema da lente gravitacional}
+        \caption{Diagram of the gravitational lens}
     \end{figure}
-    No esquema, o ponto \(O\) representa o observador, \(L\) o corpo massivo que atua como uma lente, \(S\) a posição real do objeto observado e \(S'\) sua posição aparente, \(\alpha\) é o parâmetro de impacto, \(\beta\) a separação angular entre o corpo observado e a lente, \(\theta_E\) o raio angular do anel de Einstein, \(\varphi\) o desvio angular causado por um corpo massivo. A distância \(\overline{OL}\) vale \(D_L\) e a distância \(\overline{OP}\) vale \(D_S\), de modo que \(D_S-D_L = D_{LS}\).
+    In the diagram, the point \(O\) represents the observer, \(L\) the massive body that acts as a lens, \(S\) the true position of the observed object, and \(S'\) its apparent position. \(\alpha\) is the impact parameter, \(\beta\) the angular separation between the observed body and the lens, \(\theta_E\) the angular radius of the Einstein ring, and \(\varphi\) the angular deflection caused by a massive body. The distance \(\overline{OL}\) equals \(D_L\) and the distance \(\overline{OP}\) equals \(D_S\), so that \(D_S-D_L = D_{LS}\).
 
-    Todos os ângulos são muito pequenos, de modo que \(\sin x \approx \tan x \approx x\). Além disso, por estarem no infinito, as retas \(\overline{OP}\), \(\overline{OS}\) e \(\overline{OS'}\) podem ser aproximadas como paralelas.
+    All the angles are very small, so that \(\sin x \approx \tan x \approx x\). Furthermore, because they lie at infinity, the lines \(\overline{OP}\), \(\overline{OS}\), and \(\overline{OS'}\) may be approximated as parallel.
 
-    É um resultado conhecido da Teoria da Relatividade Geral que o desvio da luz causado por um corpo massivo é dado por:
+    It is a known result of the theory of general relativity that the deflection of light caused by a massive body is given by:
     \[\varphi = \frac{4GM}{\alpha c^2}\]
     \begin{alternativas}
-        \item No limite em que \(\lim_{\alpha \rightarrow 0}\), encontre uma expressão para \(\theta_E\) em função das demais distâncias e ângulos fornecidos.
+        \item In the limit \(\lim_{\alpha \rightarrow 0}\), find an expression for \(\theta_E\) in terms of the other distances and angles provided.
     
-        \item O telescópio JWST obtém imagens no infravermelho, de comprimento de onda \(\lambda_{IV}\). Quão grande deve ser seu diâmetro para que ele possa resolver um anel de Einstein?
+        \item The JWST telescope obtains images in the infrared, of wavelength \(\lambda_{IV}\). How large must its diameter be so that it can resolve an Einstein ring?
     \end{alternativas}
 
     \begin{pssolution*}{}{}
         \begin{alternativas}
-            \item Note que, quando \(\alpha \rightarrow 0\), \(\overline{PL}=\overline{AS}=D_{LS}\). Utilizando \(\tan\theta = \sin\theta=\theta\), temos:
+            \item Note that, when \(\alpha \rightarrow 0\), \(\overline{PL}=\overline{AS}=D_{LS}\). Using \(\tan\theta = \sin\theta=\theta\), we have:
             
             \[(1)\ \overline{PS} = D_S\beta = \alpha, \ \ (2)\ \overline{SS'} = D_{SL}\varphi, \ \ (3)\ \overline{PS'} = D_S\theta_E,\] 
             \[(4)\ \overline{OL} = D_L = \overline{LA}/\theta_E = \alpha\theta_E, \ \ (5)\ \overline{LA}=\overline{PS}, \ \ (6)\ \overline{PS'} = \overline{PS}+\overline{SS'}\]
 
-            Substituindo \((1), \ (2), \ (3)\) em \((6)\), 
+            Substituting \((1), \ (2), \ (3)\) into \((6)\), 
 
             \[D_S\theta_E=D_S\beta+(D_S-D_L)\varphi\]
 
             \[\theta_E-\beta = \frac{D_S-D_L}{D_S}\varphi\]
 
-            Substituindo o valor de \(\varphi\):
+            Substituting the value of \(\varphi\):
 
             \[\theta_E-\beta = \frac{D_S-D_L}{D_S}\frac{4GM}{\alpha c^2}\]
 
-            Utilizando \((4)\), temos \(\alpha=D_L\theta_E\) e substituindo na nossa equação:
+            Using \((4)\), we have \(\alpha=D_L\theta_E\), and substituting into our equation:
 
             \[\theta_E-\beta = \frac{D_S-D_L}{D_S}\frac{4GM}{D_L\theta_E c^2}\]
 
             \[\theta_E^2-\beta\theta_E = \frac{D_S-D_L}{D_S}\frac{4GM}{c^2}\]
 
-            O limite de \(\alpha\rightarrow 0\) implica que \(\beta\rightarrow 0\), assim:
+            The limit \(\alpha\rightarrow 0\) implies that \(\beta\rightarrow 0\), so:
 
             \[\boxed{\theta_E=\sqrt{\frac{D_S-D_L}{D_S}\frac{4GM}{c^2}}}\]
 
-            \item Utilizando o critério de Rayleigh \(\theta = R\frac{\lambda}{D}\), onde \(R\approx 1,22\). Isolando \(D\) e substituindo \(\theta = \theta_E\):
+            \item Using the Rayleigh criterion \(\theta = R\frac{\lambda}{D}\), where \(R\approx 1.22\). Isolating \(D\) and substituting \(\theta = \theta_E\):
             
             \[\boxed{D =\sqrt{\frac{c^2R^2\lambda_{IV}^2}{4GM}\frac{D_S}{D_S-D_L}}}\]
         \end{alternativas}
@@ -1099,122 +1099,122 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
 
 \pts{4}
 \begin{pproblem}
-    Neste exercício, vamos estudar propriedades da excentricidade das órbitas e entender como ela se relaciona com a energia e o momento angular. Denotando \(\mu = GM\) e \(h=L/m\), faça o que se pede nos itens a seguir.
+    In this exercise, we will study properties of the eccentricity of orbits and understand how it relates to energy and angular momentum. Denoting \(\mu = GM\) and \(h=L/m\), do what is asked in the following items.
     \begin{center}
-        \textbf{Parte I: O vetor excentricidade}
+        \textbf{Part I: The eccentricity vector}
     \end{center}
     \begin{alternativas}
-        \item Escreva uma expressão para a segunda lei de Newton no formato vetorial para um corpo de massa \(m\) orbitando um corpo de massa \(M\) a uma distância \(r\).
+        \item Write an expression for Newton's second law in vector form for a body of mass \(m\) orbiting a body of mass \(M\) at a distance \(r\).
         
-        \item Faça o produto vetorial da sua expressão por \(\mathbf{h}\) e prove que:
+        \item Take the cross product of your expression with \(\mathbf{h}\) and prove that:
         
         \[\frac{d}{dt}(\dot{\mathbf{r}}\times \mathbf{h}) = \frac{\mu}{r}\mathbf{v} - \frac{\mu \dot{r}}{r^2}\mathbf{r}\]
 
-        Onde \(\dot{\mathbf{r}}\) representa a velocidade radial e \(\mathbf{v}\) a velocidade.
+        where \(\dot{\mathbf{r}}\) represents the radial velocity and \(\mathbf{v}\) the velocity.
 
-        \item Podemos escrever o lado direito da equação anterior como:
+        \item We can write the right-hand side of the previous equation as:
         \[\frac{d}{dt}\left(A\mathbf{r}\right)\]
 
-        Encontre o valor de \(A\).
+        Find the value of \(A\).
 
-        \item Integre os dois lados da igualdade encontrada e faça a multiplicação escalar de ambos os lados por \(\mathbf{r}\). Após isso, resolva para \(r\). O seu resultado deve ser bem parecido com o previsto somente pela geometria:
+        \item Integrate both sides of the equality you found and take the scalar product of both sides with \(\mathbf{r}\). After that, solve for \(r\). Your result should be very similar to what is predicted by geometry alone:
         \[r = \frac{p}{1+e\cos\theta}\]
 
-        Encontre os valores de \(p\) e \(e\). \textbf{Não esqueça da constante de integração. Suas respostas podem depender dela.}
+        Find the values of \(p\) and \(e\). \textbf{Do not forget the integration constant. Your answers may depend on it.}
 
-        \item No item anterior, \(e\) é a excentricidade da órbita. Voltando à equação obtida inicialmente no item \(c\), após a integração, ache uma forma de expressar \(\mathbf{e}\), como sendo um vetor de módulo \(e\) e que aponta diretamente para o corpo orbitado.
+        \item In the previous item, \(e\) is the eccentricity of the orbit. Returning to the equation initially obtained in item \(c\), after the integration, find a way to express \(\mathbf{e}\) as a vector of magnitude \(e\) that points directly toward the orbited body.
         
-        \item Prove que a relação encontrada no item anterior pode ser escrita como:
+        \item Prove that the relation found in the previous item can be written as:
         \[\mu \mathbf{e} = (v^2-\frac{\mu}{r})\mathbf{r} - (\mathbf{r}\cdot\mathbf{v})\mathbf{v}\]
 
-        Para onde esse vetor aponta?
+        Where does this vector point?
     \end{alternativas}
     \begin{center}
-        \textbf{Parte II: Determinando elementos orbitais a partir do vetor excentricidade}     
+        \textbf{Part II: Determining orbital elements from the eccentricity vector}     
     \end{center}
-    Vamos definir o nosso sistema de coordenadas da seguinte maneira. Considere um sistema de mão direita, orientado de tal forma que o plano \(xy\) coincida com o plano equatorial e com \(\mathbf{z}\) apontando para o polo norte. Definindo o vetor nodal como \(\mathbf{n} = \mathbf{z} \times \mathbf{h}\).
+    Let us define our coordinate system as follows. Consider a right-handed system, oriented so that the \(xy\) plane coincides with the equatorial plane and \(\mathbf{z}\) points toward the north pole. Define the nodal vector as \(\mathbf{n} = \mathbf{z} \times \mathbf{h}\).
     \begin{alternativas}
-        \item Encontre uma expressão para \(\mathbf{h}\) em função das componentes do vetor \(\mathbf{r}\) e do vetor \(\mathbf{v}\). Após isso, encontre o vetor \(\mathbf{n}\) em função das componentes de \(\mathbf{h}\).
+        \item Find an expression for \(\mathbf{h}\) in terms of the components of the vector \(\mathbf{r}\) and of the vector \(\mathbf{v}\). After that, find the vector \(\mathbf{n}\) in terms of the components of \(\mathbf{h}\).
 
-        \item Desenhe uma esfera celeste e represente nela: o plano do equador e uma órbita qualquer (que tenha inclinação diferente de 0). Nela, marque os seguintes ângulos: \(i\), a inclinação orbital, \(\Omega\) a longitude do nodo ascendente, \(\omega\) o argumento do periastro e \(\theta\), a anomalia verdadeira. 
+        \item Draw a celestial sphere and represent on it: the equatorial plane and an arbitrary orbit (with inclination different from 0). On it, mark the following angles: \(i\), the orbital inclination, \(\Omega\) the longitude of the ascending node, \(\omega\) the argument of periastron, and \(\theta\), the true anomaly. 
 
-        \item Encontre expressões para todos esses ângulos em função de \(\mathbf{e}\), \(\mathbf{h}\), \(\mathbf{n}\), \(\mathbf{r}\) e qualquer um dos vetores definidos no nosso sistema de coordenadas \(xyz\).
+        \item Find expressions for all of these angles in terms of \(\mathbf{e}\), \(\mathbf{h}\), \(\mathbf{n}\), \(\mathbf{r}\), and any of the vectors defined in our \(xyz\) coordinate system.
     \end{alternativas}
 
     \begin{pssolution*}{}{}
         \begin{center}
-            \textbf{Parte I}
+            \textbf{Part I}
         \end{center}
         \begin{alternativas}
-            \item Utilizando a forma vetorial da força gravitacional, temos:
+            \item Using the vector form of the gravitational force, we have:
             \[-\frac{GMm}{r^3}\mathbf{r} = m\ddot{\mathbf{r}} \rightarrow \boxed{\ddot{\mathbf{r}}= -\frac{\mu}{r^3}\mathbf{r}}\]
 
-            \item Fazendo o produto vetorial dessa expressão por \(\mathbf{h}\), temos:
+            \item Taking the cross product of this expression with \(\mathbf{h}\), we have:
             
             \[\ddot{\mathbf{r}}\times \mathbf{h} = -\frac{\mu}{r^3}(\mathbf{r}\times\mathbf{h}) = \frac{\mu}{r^3}(\mathbf{h}\times\mathbf{r})\]
 
-            Uma vez que \(\mathbf{h}\) é constante, o lado esquerdo da equação pode ser escrito como \(d(\dot{\mathbf{r}}\times \mathbf{h})/dt\). Para o lado direito, vamos escrever \(\mathbf{h} = \mathbf{r}\times \mathbf{v}\) e utilizar a regra do BAC-CAB, que diz que \((A \times B) \times C = B(A\cdot C) - C(A \cdot B)\). Desse modo:
+            Since \(\mathbf{h}\) is constant, the left-hand side of the equation can be written as \(d(\dot{\mathbf{r}}\times \mathbf{h})/dt\). For the right-hand side, let us write \(\mathbf{h} = \mathbf{r}\times \mathbf{v}\) and use the BAC-CAB rule, which states that \((A \times B) \times C = B(A\cdot C) - C(A \cdot B)\). Thus:
 
             \[\frac{d}{dt}(\dot{\mathbf{r}}\times \mathbf{h}) = \frac{\mu}{r^3}((\mathbf{r}\times\mathbf{v})\times \mathbf{r}) = \frac{\mu}{r^3}(r^2\mathbf{v} - \mathbf{r}(\mathbf{r}\cdot \mathbf{v}))\]
 
-            Note que \(\mathbf{r}\cdot\mathbf{v}\) é a multiplicação das componentes de \(\mathbf{r}\) e \(\mathbf{v}\) que estão na mesma direção. Assim, \(\mathbf{r}\cdot\mathbf{v} = r\dot{r}\). Substituindo na expressão anterior:
+            Note that \(\mathbf{r}\cdot\mathbf{v}\) is the product of the components of \(\mathbf{r}\) and \(\mathbf{v}\) that lie in the same direction. Thus, \(\mathbf{r}\cdot\mathbf{v} = r\dot{r}\). Substituting into the previous expression:
 
             \[\boxed{\frac{d}{dt}(\dot{\mathbf{r}}\times \mathbf{h}) = \frac{\mu}{r}\mathbf{v} - \frac{\mu \dot{r}}{r^2}\mathbf{r}}\]
 
-            \item Abrindo a expressão fornecida pelo enunciado:
+            \item Expanding the expression given in the statement:
             
             \[\frac{d}{dt}(A\mathbf{r}) = \mathbf{r}\frac{d}{dt}A + A \mathbf{v}\]
 
-            Comparando as expressões, é fácil perceber que \(\boxed{A = \mu/r}\).
+            Comparing the expressions, it is easy to see that \(\boxed{A = \mu/r}\).
 
-            \item Utilizando as informações obtidas nos itens anteriores, temos:
+            \item Using the information obtained in the previous items, we have:
             \[\frac{d}{dt}(\dot{\mathbf{r}}\times \mathbf{h}) = \mu\frac{d}{dt}\left(\frac{\mathbf{r}}{r}\right)\]
 
-            Multiplicando ambos os lados por \(dt\) e integrando, temos:
+            Multiplying both sides by \(dt\) and integrating, we have:
 
             \[\dot{\mathbf{r}}\times\mathbf{h} = \frac{\mu}{r}\mathbf{r} + \mathbf{B}\]
 
-            Onde \(B\) é um vetor constante de integração. Agora, fazendo o produto escalar com \(\mathbf{r}\):
+            where \(B\) is a constant vector of integration. Now, taking the scalar product with \(\mathbf{r}\):
 
             \[\mathbf{r}\cdot(\dot{\mathbf{r}}\times \mathbf{h}) = \mu r + \mathbf{r}\cdot\mathbf{B}\]
 
-            Usando que \(a\cdot(b\times c) = (a\times b)\cdot c\) e definindo \(\nu\) como o ângulo entre \(\mathbf{r}\) e \(\mathbf{B}\), temos:
+            Using \(a\cdot(b\times c) = (a\times b)\cdot c\) and defining \(\nu\) as the angle between \(\mathbf{r}\) and \(\mathbf{B}\), we have:
 
             \[h^2 = \mu r + rB\cos\nu\]
 
-            Resolvendo para \(r\), chegamos em:
+            Solving for \(r\), we arrive at:
 
             \[r = \frac{h^2/\mu}{1+(B/\mu)\cos\nu}\]
 
-            Assim:
+            Thus:
 
             \[\boxed{p = \frac{h^2}{\mu}, \ \ \ \ e = \frac{B}{\mu}}\]
 
-            \item Utilizando \(\mathbf{e} = \mu \mathbf{B}\) e voltando ao item \(d)\), temos:
+            \item Using \(\mathbf{e} = \mu \mathbf{B}\) and returning to item \(d)\), we have:
             \[\dot{\mathbf{r}}\times \mathbf{h} = \frac{\mu}{r}\mathbf{r}+\mu \mathbf{e}\]
 
-            Resolvendo para \(\mathbf{e}\) e notando que \(\dot{\mathbf{r}}\times\mathbf{h} = \mathbf{v}\times\mathbf{h}\), temos:
+            Solving for \(\mathbf{e}\) and noting that \(\dot{\mathbf{r}}\times\mathbf{h} = \mathbf{v}\times\mathbf{h}\), we have:
 
             \[\boxed{\mathbf{e} = \frac{\mathbf{v}\times\mathbf{h}}{\mu} - \frac{\mathbf{r}}{r}}\]
 
-            \item Escrevendo \(\mathbf{h} = \mathbf{r}\times\mathbf{v}\), temos:
+            \item Writing \(\mathbf{h} = \mathbf{r}\times\mathbf{v}\), we have:
             \[\mathbf{e} = \frac{\mathbf{v}\times(\mathbf{r}\times\mathbf{v})}{\mu} - \frac{\mathbf{r}}{r} \]
 
-            Multiplicando os dois lados da expressão por \(\mu\), e usando o BAC-CAB, temos:
+            Multiplying both sides of the expression by \(\mu\), and using BAC-CAB, we have:
 
             \[\mu\mathbf{e} = v^2\mathbf{r} - \mathbf{v}(\mathbf{v}\cdot\mathbf{r}) - \frac{\mu}{r}\mathbf{r}\]
 
-            Reorganizando os termos:
+            Rearranging the terms:
 
             \[\boxed{\mu \mathbf{e} = (v^2-\frac{\mu}{r})\mathbf{r} - (\mathbf{r}\cdot\mathbf{v})\mathbf{v}}\]
 
-            Logo, esse vetor aponta para o periastro.
+            Thus, this vector points toward periastron.
         \end{alternativas}
         \begin{center}
-            \textbf{Parte II: Determinando elementos orbitais a partir do vetor excentricidade}     
+            \textbf{Part II: Determining orbital elements from the eccentricity vector}     
         \end{center}
         \begin{alternativas}
-            \item O vetor $\mathbf{h}$ é definido por $\mathbf{h} = \mathbf{r}\times\mathbf{v}$. Por definição,
+            \item The vector $\mathbf{h}$ is defined by $\mathbf{h} = \mathbf{r}\times\mathbf{v}$. By definition,
             
             $$\mathbf{h}=\mathbf{r}\times\mathbf{v} = 
             \begin{vmatrix}
@@ -1224,7 +1224,7 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
             \end{vmatrix}
             = (r_yv_z - r_zv_y)\hat{x} + (r_zv_x-r_xv_z)\hat{y} + (r_xv_y-r_yv_z)\hat{z}   $$
 
-            De maneira similar, $\mathbf{n} = \mathbf{z}\times\mathbf{h}$
+            Similarly, $\mathbf{n} = \mathbf{z}\times\mathbf{h}$
             $$\mathbf{n} = 
             \begin{vmatrix}
                 \hat{x} & \hat{y} & \hat{z} \\
@@ -1233,17 +1233,17 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
             \end{vmatrix}
              = -h_y\hat{x} + h_x\hat{y}$$
 
-             \item O desenho deve se parecer com a figura a seguir:
+             \item The drawing should resemble the following figure:
              \begin{figure}[H]
                 \centering
                 \includegraphics[width=0.7\linewidth]{imagens/elementosorbitais.png}
-                \caption{Fonte Wikipedia}
+                \caption{Source: Wikipedia}
             \end{figure}
 
-            \item Para nos orientar, vamos criar um sistema de coordenadas na qual o polo norte corresponde ao eixo $z$ e o eixo $x$ aponta na direção do ponto vernal. Começando com a inclinação, ela é o ângulo entre o polo norte e o plano perpendicular da órbita. Desse modo
+            \item To orient ourselves, let us create a coordinate system in which the north pole corresponds to the $z$-axis and the $x$-axis points in the direction of the vernal point. Starting with the inclination, it is the angle between the north pole and the plane perpendicular to the orbit. Thus
             $$\mathbf{z}\cdot\mathbf{h} = \cos i |z||h|\rightarrow i = \cos^{-1}\left(\frac{\mathbf{z}\cdot\mathbf{h}}{|z||h|}\right) $$
 
-            Usando argumentos semelhantes, podemos obter, 
+            Using similar arguments, we can obtain
 
             $$\Omega = \cos^{-1}\left(\frac{\mathbf{x}\cdot\mathbf{n}}{|x||n|}\right)$$
             $$\omega = \cos^{-1}\left(\frac{\mathbf{n}\cdot\mathbf{e}}{|n||e|}\right)$$
@@ -1254,34 +1254,34 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
 \end{pproblem}
 
 \pts{5}
-\begin{pproblem}\(\star\star\star\) (Adaptado IPhO 2018) Um dos efeitos mais interessantes da relatividade geral é a emissão de ondas gravitacionais (OG's) por binárias próximas. Um dos efeitos disso é a perda de energia do sistema. Nesta questão, iremos estudar esse efeito a fundo.
+\begin{pproblem}\(\star\star\star\) (Adapted from IPhO 2018) One of the most interesting effects of general relativity is the emission of gravitational waves (GWs) by close binaries. One consequence of this is the loss of energy of the system. In this question, we will study this effect in depth.
 
 \begin{alternativas}
-    \item Considere um sistema formado pelas estrelas 1 e 2, com massas \(M_i\) e distando \(r_i\) do centro de massa. Utilizando a segunda lei de Newton, é possível demonstrar que:
+    \item Consider a system formed by stars 1 and 2, with masses \(M_i\) and at distances \(r_i\) from the center of mass. Using Newton's second law, one can show that:
     \[\mathbf{a_1} = -\alpha \frac{\mathbf{r_1}}{r_1^n}\]
-    Onde \(\mathbf{a_1}\) é o vetor aceleração da estrela 1. Encontre o valor de \(\alpha = \alpha (G, M_1, M_2)\) (lê-se \(\alpha\) em função de \(G, M_1, M_2\)) e de \(n\).
+    where \(\mathbf{a_1}\) is the acceleration vector of star 1. Find the value of \(\alpha = \alpha (G, M_1, M_2)\) (read as \(\alpha\) in terms of \(G, M_1, M_2\)) and of \(n\).
 
-    \item A energia total do sistema binário pode ser expressa como:
+    \item The total energy of the binary system can be expressed as:
     \[E = A(\omega, \mu, L) - \frac{GM\mu}{L}\]
 
-    Onde \(\mu\) é a massa reduzida do sistema, \(M = M_1+M_2\) e \(L = r_1+r_2\). Encontre o valor de \(A\).
+    where \(\mu\) is the reduced mass of the system, \(M = M_1+M_2\), and \(L = r_1+r_2\). Find the value of \(A\).
 
-    \item A expressão anterior pode ser simplificada para:
+    \item The previous expression can be simplified to:
     \[E = \frac{\beta GM\mu}{L}\]
 
-    Onde \(\beta\) é uma constante adimensional. Encontre seu valor.
+    where \(\beta\) is a dimensionless constant. Find its value.
 
-    A teoria correta da gravidade, a Relatividade Geral, foi formulada por Einstein em 1915 e prevê que a gravidade se propaga à velocidade da luz. Os mensageiros que carregam informações sobre a interação são chamados de ondas gravitacionais (OGs). OGs são emitidas sempre que massas são aceleradas, fazendo com que o sistema de massas perca energia.
+    The correct theory of gravity, general relativity, was formulated by Einstein in 1915 and predicts that gravity propagates at the speed of light. The messengers that carry information about the interaction are called gravitational waves (GWs). GWs are emitted whenever masses are accelerated, causing the system of masses to lose energy.
 
-    Considere um sistema de duas partículas pontuais, isoladas do restante do Universo. Einstein provou que, para velocidades suficientemente pequenas, as ondas emitidas: 1) têm uma frequência que é duas vezes maior do que a frequência orbital; 2) podem ser caracterizadas por uma luminosidade, ou seja, um poder emitido \(\mathcal{P}\), que é dominado pela fórmula:
+    Consider a system of two point particles, isolated from the rest of the Universe. Einstein proved that, for sufficiently small speeds, the emitted waves: 1) have a frequency twice the orbital frequency; 2) can be characterized by a luminosity, that is, an emitted power \(\mathcal{P}\), which is dominated by the formula:
 
     \[
     \mathcal{P} = \frac{G}{5c^5} \sum_{i=1}^3 \sum_{j=1}^3 \left( \frac{d^3 Q_{ij}}{dt^3} \right) \left( \frac{d^3 Q_{ij}}{dt^3} \right).
     \]
 
-    Aqui, \( c \) é a velocidade da luz \( c \simeq 3 \times 10^8 \, \mathrm{m/s} \). Para um sistema de duas partículas pontuais orbitando no plano \( x-y \), \( Q_{ij} \) é a seguinte tabela (\( i, j \) indicam o número da linha/coluna):
+    Here, \( c \) is the speed of light \( c \simeq 3 \times 10^8 \, \mathrm{m/s} \). For a system of two point particles orbiting in the \( x-y \) plane, \( Q_{ij} \) is the following table (\( i, j \) indicate the row/column number):
 
-    Os componentes de \( Q_{ij} \) são dados por:
+    The components of \( Q_{ij} \) are given by:
 
     \[
     Q_{11} = \sum_{A=1}^2 \frac{M_A}{3} \left( 2x_A^2 - y_A^2 \right),
@@ -1299,11 +1299,11 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
     Q_{12} = Q_{21} = \sum_{A=1}^2 M_A x_A y_A.
     \]
 
-    E \(Q_{i,j} = 0\) para todas as outras possibilidades. Aqui, \(x_A, y_A\) são as posições da estrela \(A\), com \(A=1,\ 2\) em um plano cartesiano com o centro de massa na origem.
+    And \(Q_{i,j} = 0\) for all other possibilities. Here, \(x_A, y_A\) are the positions of star \(A\), with \(A=1,\ 2\), in a Cartesian plane with the center of mass at the origin.
 
-    \item Escreva as coordenadas (\(x_1, y_1\)) e (\(x_2, y_2\)) em função de \(r_1, r_2, \omega\) e \(t\), com \(t\) sendo o tempo percorrido desde algum ponto específico da órbita.
+    \item Write the coordinates (\(x_1, y_1\)) and (\(x_2, y_2\)) in terms of \(r_1, r_2, \omega\), and \(t\), with \(t\) the time elapsed since some specific point of the orbit.
     
-    \item Para calcular a potência dissipada, a fórmula possui uma soma quádrupla. Resolver essa expressão "na tora" é algo bem complicado e demorado. Porém, felizmente, há um jeito mais bonito e elegante de resolvê-la. Para isso, comece escrevendo \(Q_{i,j}\) como uma matriz 3x3, da seguinte forma:
+    \item To calculate the dissipated power, the formula contains a quadruple sum. Solving this expression by brute force is quite complicated and time-consuming. Fortunately, there is a nicer and more elegant way to solve it. To do so, begin by writing \(Q_{i,j}\) as a 3x3 matrix, of the following form:
     
     \[Q = A\left(\begin{matrix}
         a_{11} & a_{12} & a_{13} \\
@@ -1311,132 +1311,132 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
         a_{31} & a_{23} & a_{33} \\
     \end{matrix}\right)\]
 
-    Encontre o coeficiente \(A = A(\mu, L)\) e complete a matriz \(Q\).
+    Find the coefficient \(A = A(\mu, L)\) and complete the matrix \(Q\).
 
-    \item Do item anterior, você deve obter:
+    \item From the previous item, you should obtain:
     \[Q_{ii} = A(b_i + j_i\cos(k t)), \ \ \ Q_{ij}^{i\neq j}= A(p_{ij} \sin(kt)) \]
 
-    Encontre os valores de \(b_i\), \(j_i\), \(p_{ij}\) e \(k\).
+    Find the values of \(b_i\), \(j_i\), \(p_{ij}\), and \(k\).
 
-    \item Agora, você é capaz de resolver para \(\mathcal{P}\) de maneira mais fluida. A expressão pode ser simplificada para:
+    \item You are now able to solve for \(\mathcal{P}\) more smoothly. The expression can be simplified to:
     \[\mathcal{P} = \xi \frac{G}{c^5}\mu^2L^4\omega^6\]
-    Encontre o valor numérico de \(\xi\).
+    Find the numerical value of \(\xi\).
 
-    \textbf{DICA: } O somatório duplo:
+    \textbf{HINT: } The double sum:
 
     \[\sum_{i=1}^N\sum_{j=1}^N (A_{ij})(A_{ij})\]
 
-    Onde \(A\) é uma matriz \(N\times N\) pode ser simplificado para:
+    where \(A\) is an \(N\times N\) matrix, can be simplified to:
 
     \[\sum_{i=1}^N\sum_{j=1}^N A_{ij}^2\]
 
-    Que representa a soma quadrática de todos os elementos da matriz \(A\).
+    which represents the sum of the squares of all the elements of the matrix \(A\).
 
-    \item Caso não houvesse a emissão de OG's, o sistema continuaria em equilíbrio indeterminadamente, mas devido à sua emissão, a energia do sistema não é conservada, fazendo com que haja uma variação na velocidade angular do sistema, \(\omega\). A fórmula para a variação temporal de \(\omega\) tem a seguinte cara:
+    \item If there were no emission of GWs, the system would remain in equilibrium indefinitely, but because of that emission the energy of the system is not conserved, so that there is a change in the angular velocity of the system, \(\omega\). The formula for the time variation of \(\omega\) has the following form:
     \[\left(\frac{d\omega}{dt}\right)^3 = (3\xi )^3 \frac{\omega^{11}}{c^{15}}(GM_C)^5\]
     
-    Onde \(M_c\) é a chamada Massa \textit{Chirp} e \(M_c = M_c(M, \mu)\). Encontre uma fórmula para \(M_c\).
+    where \(M_c\) is the so-called \textit{chirp} mass and \(M_c = M_c(M, \mu)\). Find a formula for \(M_c\).
 
-    \item Usando as informações obtidas acima, relacione a velocidade angular orbital \(\omega \) com a frequência das ondas gravitacionais \( f_{\text{OG}} \). Sabendo que, para qualquer função suave \( F(t) \) e \( a \neq 1 \):
+    \item Using the information obtained above, relate the orbital angular velocity \(\omega \) to the gravitational-wave frequency \( f_{\text{GW}} \). Given that, for any smooth function \( F(t) \) and \( a \neq 1 \):
 
     \[
     \frac{dF(t)}{dt} = \chi F(t)^a \implies F(t)^{1-a} = \chi (1-a)(t_0 - t),
     \]
     
-    onde \( \chi \) é uma constante e \( t_0 \) é uma constante de integração, mostre que a equação do item anterior implica que a frequência das ondas gravitacionais é:
+    where \( \chi \) is a constant and \( t_0 \) is an integration constant, show that the equation of the previous item implies that the gravitational-wave frequency is:
     
     \[
-    f_{\text{OG}}^{-8/3} = 8\pi^{8/3} \xi \left( \frac{GM_c}{c^3} \right)^{(2/3)+p} (t_0 - t)^{2-p},
+    f_{\text{GW}}^{-8/3} = 8\pi^{8/3} \xi \left( \frac{GM_c}{c^3} \right)^{(2/3)+p} (t_0 - t)^{2-p},
     \]
     
-    e determine a constante \( p \).
+    and determine the constant \( p \).
 
-    Em 14 de setembro de 2015, o evento GW150914 foi registrado pelos detectores LIGO, consistindo de dois braços em forma de L, cada um com 4 km de comprimento. Esses braços mudaram de comprimento relativo de acordo com a Figura abaixo. Os braços do detector respondem linearmente a uma onda gravitacional que passa, e o padrão de resposta imita a onda. Essa onda foi criada por dois buracos negros em órbitas quase circulares; a perda de energia por radiação gravitacional causou a contração da órbita e, eventualmente, a colisão dos buracos negros. O ponto de colisão corresponde, aproximadamente, ao pico do sinal após o ponto D, na Figura abaixo.
+    On September 14, 2015, the event GW150914 was recorded by the LIGO detectors, consisting of two L-shaped arms, each 4 km long. These arms changed their relative length according to the figure below. The detector arms respond linearly to a passing gravitational wave, and the response pattern mimics the wave. This wave was created by two black holes on nearly circular orbits; the loss of energy by gravitational radiation caused the orbit to shrink and, eventually, the black holes to collide. The collision point corresponds, approximately, to the peak of the signal after point D in the figure below.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.7\linewidth]{imagens/grafico OG 1.png}
-        \caption{Deformação, ou seja, variação relativa do tamanho de cada braço, no detector LIGO H1. O eixo horizontal representa o tempo, e os pontos A, B, C, D correspondem a \(t = 0,000\), \(0,009\), \(0,034\), \(0,040\) segundos, respectivamente.}
+        \caption{Strain, that is, the relative change in the length of each arm, in the LIGO H1 detector. The horizontal axis represents time, and the points A, B, C, and D correspond to \(t = 0.000\), \(0.009\), \(0.034\), and \(0.040\) seconds, respectively.}
     \end{figure}
 
-    \item A partir da figura, estime \( f_{OG}(t) \) em:
+    \item From the figure, estimate \( f_{GW}(t) \) at:
 
     \[
-    t_{AB} = \frac{t_B + t_A}{2} \quad \text{e} \quad t_{CD} = \frac{t_D + t_C}{2}.
+    t_{AB} = \frac{t_B + t_A}{2} \quad \text{and} \quad t_{CD} = \frac{t_D + t_C}{2}.
     \]
     
-    Assumindo que a equação para \(f_{OG}\) é válida até a colisão (o que, estritamente falando, não é verdade) e que os dois objetos possuem massas iguais, estime a massa "chirp", \( M_c \), e a massa total do sistema, em termos de massas solares \( M_\odot \simeq 2 \times 10^{30} \, \text{kg}\).
+    Assuming that the equation for \(f_{GW}\) is valid up to the collision (which, strictly speaking, is not true) and that the two objects have equal masses, estimate the chirp mass, \( M_c \), and the total mass of the system, in terms of solar masses \( M_\odot \simeq 2 \times 10^{30} \, \text{kg}\).
 
-    \item Estime a separação orbital mínima entre os dois objetos em \( t_{CD} \). 
-    Assim, estime um tamanho máximo para cada objeto, \( R_{\text{max}} \). 
-    Obtenha \( \frac{R_\odot}{R_{\text{max}}} \) para comparar esse tamanho com o raio do nosso Sol, \( R_\odot \simeq 7 \times 10^5 \, \text{km} \). 
-    Estime também sua velocidade orbital linear no mesmo instante, \( v_{\text{col}} \), comparando-a com a velocidade da luz, \( \frac{v_{\text{col}}}{c} \).
+    \item Estimate the minimum orbital separation between the two objects at \( t_{CD} \). 
+    Then estimate a maximum size for each object, \( R_{\text{max}} \). 
+    Obtain \( \frac{R_\odot}{R_{\text{max}}} \) in order to compare this size with the radius of our Sun, \( R_\odot \simeq 7 \times 10^5 \, \text{km} \). 
+    Also estimate their linear orbital speed at the same instant, \( v_{\text{col}} \), comparing it with the speed of light, \( \frac{v_{\text{col}}}{c} \).
 \end{alternativas}
 
 \begin{pssolution*}{}{}
     \begin{alternativas}
-        \item Da segunda lei de newton, 
+        \item From Newton's second law,
         \[-\frac{GM_1M_2}{(r_1+r_2)^3}\mathbf{d} = M_1\mathbf{a_1}\]
 
-        Onde \(\mathbf{d}\) é um vetor que saí da estrela dois e vai até a estrela um. Portanto, \(|\mathbf{d}| = r_1+r_2\). Utilizando o teorema do centro de massa, temos 
+        where \(\mathbf{d}\) is a vector that leaves star two and goes to star one. Therefore, \(|\mathbf{d}| = r_1+r_2\). Using the center-of-mass theorem, we have
 
         \[r_2 = \frac{M_1r_1}{M_2}\]
 
-        Substituindo e simplificando, 
+        Substituting and simplifying,
 
         \[\mathbf{a_1} = -\frac{GM_2}{r_1^3(1+\frac{M_1}{M_2})^3}\mathbf{d}\]
 
-        Agora trabalhando no vetor \(\mathbf{d}\), note que a sua direção é a mesma direção que \(\mathbf{r_1}\), uma vez que a linha que liga 1 e 2, obrigatóriamente passa pelo CM do sistema. Assim, 
+        Now working with the vector \(\mathbf{d}\), note that its direction is the same as that of \(\mathbf{r_1}\), since the line joining 1 and 2 necessarily passes through the CM of the system. Thus,
 
         \[\mathbf{d} = |\mathbf{d}|\hat{\mathbf{r_1}} = (r_1+r_2)\hat{\mathbf{r_1}} = (1+M_1/M_2)\mathbf{r_1}\]
 
-        Substituindo, 
+        Substituting,
 
         \[\mathbf{a_1} = -\frac{GM_2}{(1+M_1/M_2)^2}\frac{\mathbf{r_1}}{r_1^3}\]
 
-        Com isso, podemos concluir que 
+        With this, we can conclude that
 
         \[\boxed{\alpha = \frac{GM_2}{(1+M_1/M_2)^2}, \ \ \ n = 3 \ }\]
 
-        \item A energia do sistema é dada por, 
+        \item The energy of the system is given by
         \[E = \frac{M_1v_1^2+M_2v_2^2}{2}-\frac{GM_1M_2}{L}\]
 
-        Focando no primeiro termo e utilizando-se de que, \(v_A = r_A\omega\), temos 
+        Focusing on the first term and using \(v_A = r_A\omega\), we have
 
         \[M_1v_1^2+M_2v_2^2 = (M_1r_1^2 + M_2r_2^2)\omega^2 \]
 
-        Pelo teorema do centro de massa 
+        By the center-of-mass theorem
 
         \[(M_1r_1-M_2r_2)^2=0 \rightarrow M_1r_1^2 +M_2r^2_2 = \frac{M_1M_2}{M_1+M_2}L^2\equiv \mu L^2\]
 
-        Para o segundo termo, basta multiplicar em cima e embaixo por \((M_1+M_2)\). Assim, 
+        For the second term, it suffices to multiply the numerator and the denominator by \((M_1+M_2)\). Thus,
 
         \[E = \frac{\mu L^2}{2} - \frac{G}{L}\frac{M_1M_2}{M_1+M_2}(M_1+M_2) \equiv \frac{\mu L^2\omega^2}{2} + \frac{GM\mu }{L}\]
 
-        Desse modo, \(\boxed{A = \frac{\mu L^2\omega^2}{2}}\).
+        Thus, \(\boxed{A = \frac{\mu L^2\omega^2}{2}}\).
 
-        \item Pela terceira lei de kepler, 
+        \item By Kepler's third law,
         
         \[\omega^2 = \frac{GM}{L^3}\]
 
-        Substituindo, 
+        Substituting,
 
         \[E = \frac{GM\mu}{2L} - \frac{GM\mu}{L} = -\frac{GM\mu}{L}\]
 
-        Concluindo assim, que \(\boxed{\beta = -1/2}\).
+        thus concluding that \(\boxed{\beta = -1/2}\).
 
-        \item Seja, \(\theta\) o ângulo que o vetor \(r_1\) faz com o eixo \(x\), desse modo, 
+        \item Let \(\theta\) be the angle that the vector \(r_1\) makes with the \(x\)-axis. Thus,
         \[(x_1, \ y_1) = r_1(\cos\theta, \ \sin\theta)\]
 
-        O vetor \(r_2\) deve fazer um ângulo de \(\pi + \theta\). Utilizando que \(\sin(\pi+\theta) = -\sin(\theta)\) e \(\cos(\pi+\theta) = -\cos\theta\), 
+        The vector \(r_2\) must make an angle of \(\pi + \theta\). Using \(\sin(\pi+\theta) = -\sin(\theta)\) and \(\cos(\pi+\theta) = -\cos\theta\),
 
         \[(x_2, \ y_2) = -r_2(\cos\theta, \sin\theta)\]
 
-        Definindo por \(t\) o tempo decorrido desde que as estrelas cruzaram o eixo \(x\), tem se \(\theta = \omega t\). Logo, 
+        Defining \(t\) as the time elapsed since the stars crossed the \(x\)-axis, one has \(\theta = \omega t\). Therefore,
 
         \[\boxed{(x_1, \ y_1) = r_1 (\cos(\omega t), \ \sin(\omega t)) \ \ \ (x_2, \ y_2) = -r_2 (\cos(\omega t), \ \sin(\omega t))}\]
 
-        \item A matrix terá a seguinte cara, 
+        \item The matrix will have the following form,
         
         \[Q = \left(\begin{matrix}
             Q_{11} & Q_{12} & Q_{13} \\
@@ -1444,7 +1444,7 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
             Q_{31} & Q_{32} & Q_{33} \\
         \end{matrix}\right)\]
 
-        Evocando as fórmulas do enunciado, 
+        Invoking the formulas from the statement,
         \[
         Q_{11} = \sum_{A=1}^2 \frac{M_A}{3} \left( 2x_A^2 - y_A^2 \right),
         \]
@@ -1461,37 +1461,37 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
         Q_{12} = Q_{21} = \sum_{A=1}^2 M_A x_A y_A.
         \]
 
-         Para \(Q_{11}\), temos, 
+         For \(Q_{11}\), we have
 
         \[Q_{11} = \frac{M_1}{3}(2x_1^2-y_1^2) + \frac{M_2}{3}(2x_2^2-y_2^2)\]
 
-        Substituindo \(x\) e \(y\), 
+        Substituting \(x\) and \(y\),
 
         \[Q_{11} = \frac{M_1}{3}r_1^2(2\cos^2(\omega t) - \sin^2(\omega t)) + \frac{M_2r^2_2}{3}(2\cos^2(\omega t) - \sin^2(\omega t))\]
 
         \[Q_{11} = \frac{1}{3}(2\cos^2(\omega t) - \sin^2(\omega t))(M_1r_1^2 + M_2r_2^2)\]  
         \[Q_{11} = \frac{\mu L^2}{3}(2\cos^2(\omega t) - \sin^2(\omega t))\]
 
-        Para \(Q_{22}\), 
+        For \(Q_{22}\),
 
         \[Q_{22} = \frac{M_1r_1^2}{3}(2\sin^2(\omega t) - \cos^2(\omega t)) + \frac{M_2r_2^2}{3}(2\sin^2(\omega t) - \cos^(\omega t))\]
 
         \[Q_{22} = \frac{\mu L^2}{3}(2\sin^2(\omega t) - \cos^2(\omega t))\]
 
 
-        Para \(Q_{33}\)
+        For \(Q_{33}\)
 
         \[Q_{33} = -\frac{M_1r_1^2}{3}(\cos^2(\omega t) + \sin^2(\omega t))-\frac{M_2r_2^2}{3}(\cos^2(\omega t) + \sin^2(\omega t))\]
 
         \[Q_{33} = -\frac{\mu L^2}{3}\]
 
-        Por fim, para \(Q_{12} = Q_{21}\), 
+        Finally, for \(Q_{12} = Q_{21}\),
 
         \[Q_{12} = Q_{21} = M_1r_1^2\cos(\omega t) \sin(\omega t) + M_2r_2^2\cos(\omega t)\sin(\omega t)\]
 
         \[Q_{12} = Q_{21} = \mu L^2 \sin(\omega t)\cos(\omega t) = \frac{\mu L^2}{2}\sin(2\omega t)\]
 
-        Como os de mais termos são \(0\), podemos escolher como \(A\) o valor de\(\mu L^2/2\), assim a nossa matriz \(Q\) toma forma, 
+        Since the remaining terms are \(0\), we can choose as \(A\) the value \(\mu L^2/2\), so our matrix \(Q\) takes the form
 
         \[Q = \frac{\mu L^2}{2}\left(\begin{matrix}
             \frac{4}{3}\cos^2(\omega t) - \frac{2}{3}\sin^2(\omega t)  & \sin(2\omega t) & 0 \\
@@ -1499,25 +1499,25 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
             0 & 0 & -\frac{2}{3} \\
             \end{matrix}\right)\]
 
-        Para os termos \(a_{11}\) e \(a_{22}\), vamos utilizar identidades trigonométricas, começando com \(a_{11}\), 
+        For the terms \(a_{11}\) and \(a_{22}\), we will use trigonometric identities, starting with \(a_{11}\),
         \[\frac{4}{3}\cos^2(\omega t) - \frac{2}{3}\sin^2(\omega t) = \frac{2}{3}(2\cos^2(\omega t) - \sin^2(\omega t))\]
 
-        Usando \(\cos^2(\omega t) = 1-\sin^2(\omega t)\), temos, 
+        Using \(\cos^2(\omega t) = 1-\sin^2(\omega t)\), we have
 
         \[ = \frac{2}{3}\left(2-3\sin^{2}(\omega t)\right)\]
 
-        Usando a forma do arco duplo, temos, 
+        Using the double-angle form, we have
 
         \[\cos(2x) = \cos^2x -\sin^2x = 1-2\sin^2x \rightarrow \sin^2x = \frac{1-\cos(2x)}{2}\]
 
-        Fazendo essa substituição, 
+        Making this substitution,
 
         \[=\frac{2}{3}\left(2 - \frac{3}{2} + \frac{3}{2}\cos(2\omega t)\right) = \frac{1}{3}+\cos(2\omega t)\]
 
-        Utilizando o mesmo processo para \(a_22\), encontramos
+        Using the same process for \(a_{22}\), we find
         \[a_{22} = \frac{1}{3}-\cos(2\omega t)\]
 
-        De modo que nossa matriz pode ser simplificada para, 
+        so that our matrix can be simplified to
 
 
         \[\boxed{Q = \left(\begin{matrix}
@@ -1526,18 +1526,18 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
             0 & 0 & -\frac{2}{3} \\
         \end{matrix}\right)}\]
 
-        \item Analisando a matriz anterior, temos que, 
+        \item Analyzing the previous matrix, we have
         \[\boxed{A = \frac{\mu L^2}{2}}\]
-        E que
+        and
         \[\boxed{b_1 = b_2 = \frac{1}{3}, \ \ b_3 = -\frac{2}{3}, \ \ j_1 = 1, \ \ j_2 = -1, \ \ j_3 = 0, \ \ p_{12}=p_{21} = 2, \ \ k= 2}\]
 
-        \item A fórmula fornecida para a potência foi, 
+        \item The formula provided for the power was
         
         \[
         \mathcal{P} = \frac{G}{5c^5} \sum_{i=1}^3 \sum_{j=1}^3 \left( \frac{d^3 Q_{ij}}{dt^3} \right) \left( \frac{d^3 Q_{ij}}{dt^3} \right).
         \]
 
-        Para começar, vamos derivar a matri \(Q\) com respeito ao tempo, 
+        To begin, let us differentiate the matrix \(Q\) with respect to time,
 
         \[\frac{d^3 Q}{dt^3} = \frac{\mu L^2}{2}\frac{d^3}{dt^3}\left(\begin{matrix}
             \frac{1}{3}+\cos(2\omega t) & \sin(2\omega t) & 0 \\
@@ -1545,7 +1545,7 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
             0 & 0 & -\frac{2}{3} \\
         \end{matrix}\right)\]
 
-        Para derivar uma matriz, basta derivarmos todos os seus elemtentos, ao fazer isso, chegamos em, 
+        To differentiate a matrix, it suffices to differentiate all of its elements. Doing this, we arrive at
 
         \[\frac{d^3Q}{dt^3} = \frac{\mu L^2}{2}\left(\begin{matrix}
             8\omega^3 \sin(2\omega t) & -8\omega ^3\cos(2\omega t) & 0 \\
@@ -1553,7 +1553,7 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
             0 & 0 & 0 \\ 
         \end{matrix}\right)\]
 
-        Deixando o termo em como fora da matriz, 
+        Taking that factor outside the matrix,
 
         \[\frac{d^3Q}{dt^3} = 4\mu\omega^3L^2\left(\begin{matrix}
             \sin(2\omega t) & - \cos(2\omega t) & 0 \\
@@ -1561,154 +1561,154 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
             0 & 0 & 0 \\
         \end{matrix}\right)\]
 
-        Foi fornecido como dica que o termo 
+        It was given as a hint that the term
 
         \[\sum_{i=1}^3 \sum_{j=1}^3 \left( \frac{d^3 Q_{ij}}{dt^3} \right) \left( \frac{d^3 Q_{ij}}{dt^3} \right)\]
 
-        Corresponde a soma quadradica dos membros da matriz, desse modo 
+        corresponds to the sum of the squares of the entries of the matrix, so
 
         \[\sum_{i=1}^3 \sum_{j=1}^3 \left( \frac{d^3 Q_{ij}}{dt^3} \right) \left( \frac{d^3 Q_{ij}}{dt^3} \right) = (4\mu \omega^3 L^2)^2(\sin^2(2\omega t) + 2 \cos^2(\omega t))\]
 
-        Assim, 
+        Thus,
 
         \[\mathcal{P} = \frac{G}{5c^5} \sum_{i=1}^3 \sum_{j=1}^3 \left( \frac{d^3 Q_{ij}}{dt^3} \right) \left( \frac{d^3 Q_{ij}}{dt^3} \right) = \frac{G}{5c^5}(32\mu^2\omega^6 L^4)\]
 
-        Reorganizando, 
+        Rearranging,
 
         \[\mathcal{P} = \frac{32}{5}\frac{G\mu^2\omega^6L^4}{c^5}\]
 
-        Comparando essa expressão com a fornecida pelo enunciado, temos, 
+        Comparing this expression with the one given in the statement, we have
 
         \[\boxed{\xi = \frac{32}{5}}\]
 
-        \item \(\mathcal{P}\) representa a potência que está sendo dissipada pelas OG's, assim, 
+        \item \(\mathcal{P}\) represents the power being dissipated by the GWs, so
         \[\mathcal{P} = -\frac{dE}{dt}\]
 
-        Igualando \(E\) a energia da órbita, 
+        Equating \(E\) to the orbital energy,
 
         \[\mathcal{P} = \frac{GM\mu}{2} \frac{d}{dt}\frac{1}{L}\]
 
-        Podemos escrever \(\omega\) em função de \(L\), para isso, basta utilizar a terceira lei de kepler, 
+        We can write \(\omega\) as a function of \(L\). To do so, it suffices to use Kepler's third law,
 
 
         \[\omega^2 = \frac{GM}{L^3} \rightarrow \frac{1}{L }= (GM)^{-1/3}\omega^{2/3}\]
 
-        Substituindo, 
+        Substituting,
 
         \[\mathcal{P} = \frac{(GM)^{2/3}\mu}{2}\frac{d}{dt}\omega^{2/3} = \frac{(GM)^{2/3}\mu}{2}\frac{d}{d\omega}\omega^{2/3}\frac{d\omega}{dt}\]
 
         \[= \frac{(GM)^{2/3}\mu}{3\omega^{1/3}}\frac{d\omega}{dt}\]
 
-        Igualando a expressão obtida no item anterior, 
+        Equating this to the expression obtained in the previous item,
 
         \[\frac{\xi G\mu^2\omega^6L^4}{c^5} = \frac{(GM)^{2/3}\mu}{3\omega^{1/3}}\frac{d\omega}{dt}\]
 
-        Resolvendo para \(d\omega/dt\), 
+        Solving for \(d\omega/dt\),
         
         \[\frac{d\omega }{dt} = (3\xi)\frac{G\mu \omega^{19/3}L^4}{(GM)^{2/3}c^5}\]
 
-        Substituindo \(L = \left(\frac{GM}{\omega^2}\right)^{1/3}\), temos, 
+        Substituting \(L = \left(\frac{GM}{\omega^2}\right)^{1/3}\), we have
 
         \[\frac{d\omega}{dt} = (3\xi)\frac{G\mu \omega^{19/3}}{(GM)^{2/3}c^5}\left(\frac{GM}{\omega^2}\right)^{4/3}\]
 
-        Elevando ao cubo, 
+        Cubing,
 
         \[\left(\frac{d\omega}{dt}\right)^{3} = (3\xi)^3\frac{G^3\mu^3\omega^{19}}{G^2M^2c^{15}}\frac{G^4M^4}{\omega^8}\]
 
-        Simplificando, 
+        Simplifying,
 
         \[\boxed{\left(\frac{d\omega}{dt}\right)^3 = (3\xi)^3\frac{\omega^{11}}{c^{{15}}}(G^5\mu^3M^2)}\]
 
-        Analisabdo a expressão do enunciado, temos, 
+        Analyzing the expression in the statement, we have
 
         \[\boxed{M_c = (\mu^3 M^2)^{1/5}}\]
 
-        \item Utilizando o fato fornecido pelo enunciado, 
+        \item Using the fact given in the statement,
         
         \[\frac{d F(t)}{dt} = \chi F(t)^a \rightarrow F(t)^{1-a} = \chi (1-a)(t_0-t)\]
 
-        Podemos encontrar uma expressão para \(\omega(t)\).
+        we can find an expression for \(\omega(t)\).
 
         \[\frac{d\omega}{dt} = \frac{3\xi (GM_c)^{3/5}}{c^5}\omega^{11/3} \rightarrow \omega^{1-11/3} = \frac{3\xi (GM_c)^{3/5}}{c^5}(1-11/3)(t_0-t)\]
 
-        Simplificando, 
+        Simplifying,
 
         \[\omega ^{-8/3} = -\frac{3\xi (GM_c)^{3/5}}{c^5}\frac{8}{3}(t_0-t)\]
 
         \[\omega^{-8/3} = \frac{8\xi (GM_c)^{3/5}(t-t_0)}{c^5}\]
 
-        Para encontrar uma expressão para \(f_{OG}\), temos que utilizar que, 
+        To find an expression for \(f_{GW}\), we must use
 
-        \[f_{OG} = 2f_{orbt} = \frac{\omega}{\pi}\rightarrow \omega = \pi f_{OG}\]
+        \[f_{GW} = 2f_{orbt} = \frac{\omega}{\pi}\rightarrow \omega = \pi f_{GW}\]
 
-        Fazendo tal substituição, chegamos em, 
+        Making this substitution, we arrive at
 
 
-        \[f_{OG}^{-8/3} = \frac{8\pi^{8/3}(GM_c)^{3/5}(t-t_0)}{c^5}\]
+        \[f_{GW}^{-8/3} = \frac{8\pi^{8/3}(GM_c)^{3/5}(t-t_0)}{c^5}\]
 
-        Comparando com a forma do enunciado, podemos obter, 
+        Comparing with the form in the statement, we obtain
 
         \[\boxed{p = 1}\]
 
-        \item  A partir da figura, consideramos os dois $\Delta t$ como meias-períodos. Assim, a frequência de onda gravitacional cíclica é $f_{OG} = 1/(2 \Delta t)$. Então, os quatro pontos fornecidos nos permitem calcular a frequência no tempo médio dos dois intervalos como:
+        \item From the figure, we take the two $\Delta t$ as half-periods. Thus, the cyclic gravitational-wave frequency is $f_{GW} = 1/(2 \Delta t)$. The four given points then allow us to calculate the frequency at the mean time of the two intervals as:
 
         \[
         \begin{array}{|c|c|}
         \hline
-        t \, (\text{s}) & f_{OG} \, (\text{Hz}) \\
+        t \, (\text{s}) & f_{GW} \, (\text{Hz}) \\
         \hline
-        t_{AB} = 0.0045 & f_{OG}(t_{AB}) = (2 \times 0.009)^{-1} \\
-        t_{CD} = 0.037 & f_{OG}(t_{CD}) = (2 \times 0.006)^{-1} \\
+        t_{AB} = 0.0045 & f_{GW}(t_{AB}) = (2 \times 0.009)^{-1} \\
+        t_{CD} = 0.037 & f_{GW}(t_{CD}) = (2 \times 0.006)^{-1} \\
         \hline
         \end{array}
         \]
         
-        Agora, temos dois pares de valores $(f_{OG}, t)$ para duas incógnitas $(t_0, M_c)$. Em termos de $t_{AB}$ e $t_{CD}$ e dividindo as duas equações, obtemos:
+        Now we have two pairs of values $(f_{GW}, t)$ for two unknowns $(t_0, M_c)$. In terms of $t_{AB}$ and $t_{CD}$, and dividing the two equations, we obtain:
         
         \[
-        t_0 = \frac{A t_{CD} - t_{AB}}{A - 1}, \quad A = \left( \frac{f_{OG}(t_{AB})}{f_{OG}(t_{CD})} \right)^{-8/3}.
+        t_0 = \frac{A t_{CD} - t_{AB}}{A - 1}, \quad A = \left( \frac{f_{GW}(t_{AB})}{f_{GW}(t_{CD})} \right)^{-8/3}.
         \]
         
-        Substituindo os valores numéricos, $A \simeq 2.95$ e $t_0 \simeq 0.054 \, \text{s}$. Agora podemos usar a equação de \(f_{OG}\) para qualquer um dos valores $t_{AB}$ ou $t_{CD}$ e determinar $M_c$. Obtém-se a massa de chirp:
+        Substituting the numerical values, $A \simeq 2.95$ and $t_0 \simeq 0.054 \, \text{s}$. Now we can use the equation for \(f_{GW}\) at either $t_{AB}$ or $t_{CD}$ and determine $M_c$. One obtains the chirp mass:
         
         \[
         M_c \simeq 6 \times 10^{31} \, \text{kg} \simeq 30 \, M_\odot\]
         
-        Assim, a massa total $M$ é:
+        Thus, the total mass $M$ is:
         
         \[
         M = 4^{3/5} M_c \simeq 69 \, M_\odot
         \]
         
-        Este resultado é, na verdade, notavelmente próximo das melhores estimativas usando a teoria completa da Relatividade Geral! [Mesmo que os objetos reais não tenham massas exatamente iguais e a teoria que acabamos de usar não seja válida muito próximo da colisão.]
+        This result is, in fact, remarkably close to the best estimates that use the full theory of general relativity! [Even though the real objects do not have exactly equal masses and the theory we have just used is not valid very close to the collision.]
     
-        \item Usando a lei de Kepler estabelece que $L = (GM / \Omega^2)^{1/3}$. O segundo par de pontos destacados no gráfico corresponde ao ciclo anterior à fusão. Assim, utilizando que \(f_{OG} = \omega/\pi\), 
+        \item Kepler's law gives $L = (GM / \Omega^2)^{1/3}$. The second pair of points highlighted on the graph corresponds to the cycle before the merger. Thus, using \(f_{GW} = \omega/\pi\),
 
         \[
         \omega_{t_{CD}} \sim 2.6 \times 10^2 \, \text{rad/s}.
         \]
         
-        Em seguida, usando a massa total obtida anteriormente:
+        Next, using the total mass obtained previously:
         
         \[
         L \sim 5 \times 10^2 \, \text{km}
         \]
         
-        Assim, esses objetos possuem um raio máximo de $R_{\text{max}} \sim 250 \, \text{km}$. Portanto, eles têm mais de 30 vezes mais massa e:
+        Thus, these objects have a maximum radius of $R_{\text{max}} \sim 250 \, \text{km}$. Therefore, they have more than 30 times as much mass, and:
         
         \[
         \frac{R_\odot}{R_{\text{max}}} \sim 3 \times 10^3,
         \]
         
-        eles são 3000 vezes menores que o Sol!
+        they are 3000 times smaller than the Sun!
         
-        A velocidade linear é:
+        The linear speed is:
         
         \[
         v_{\text{col}} = \frac{L}{2} \omega \simeq 7 \times 10^4 \, \text{km/s}. 
         \]
         
-        Eles estão se movendo a mais de 20\% da velocidade da luz!
+        They are moving at more than 20\% of the speed of light!
         
         \[
         \boxed{
@@ -1725,153 +1725,153 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
 \end{pproblem}
 
 \pts{3}
-\begin{pproblem}(Barra 2024) Durante sua estadia no Hotel Fazenda Ribeirão, Hugo observava a estrela Plo I com seu telescópio. Comparando o seu espectro com o de outras estrelas, ele descobre que Plo I é uma estrela de nêutrons e estima sua massa como sendo \( M_1 = 2M_{\odot} \). Ele também observa que Plo I possui variações senoidais em sua velocidade radial ao longo do tempo e conclui que Plo I deve fazer parte de um sistema binário com outro corpo celeste, Plo II. Observando a curva de velocidade de Plo I, Hugo também determina que Plo I possui uma órbita circular de período \( P \) e velocidade radial máxima \( K \). Porém, ele não sabe qual é a massa \( M_2 \) de Plo II e nem qual é a inclinação \( i \) do plano orbital do binário em relação ao plano do céu, representada na figura a seguir.
+\begin{pproblem}(Barra 2024) During his stay at Hotel Fazenda Ribeirão, Hugo was observing the star Plo I with his telescope. Comparing its spectrum with those of other stars, he discovers that Plo I is a neutron star and estimates its mass to be \( M_1 = 2M_{\odot} \). He also observes that Plo I has sinusoidal variations in its radial velocity over time and concludes that Plo I must be part of a binary system with another celestial body, Plo II. Observing the velocity curve of Plo I, Hugo also determines that Plo I has a circular orbit of period \( P \) and maximum radial velocity \( K \). However, he does not know the mass \( M_2 \) of Plo II, nor the inclination \( i \) of the binary's orbital plane with respect to the plane of the sky, shown in the following figure.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.8\linewidth]{imagens/figurabarra.png}
-        \caption{Representação da órbita}
+        \caption{Representation of the orbit}
     \end{figure}
 
     \begin{alternativas}
-        \item A partir da 3ª lei de Kepler e da 2ª lei de Newton, encontre uma expressão para a \textbf{função de massa} do sistema binário formado por Plo I e Plo II em termos de \( P \), \( K \) e constantes universais. Você pode utilizar que a função de massa é dada por:
+        \item From Kepler's third law and Newton's second law, find an expression for the \textbf{mass function} of the binary system formed by Plo I and Plo II in terms of \( P \), \( K \), and universal constants. You may use that the mass function is given by:
         \[
             f = \frac{M_2^3 \sin^3 i}{(M_1 + M_2)^2}
         \]
     
-        \item Utilizando suas medidas, Hugo calcula que a função de massa do binário é \( f = 46,2M_{\odot} \). Desejamos encontrar o valor mínimo \( M_{2,\text{min}} \) para a massa de Plo II, sabendo que ele corresponde ao caso em que \( i = 90^\circ \). Suponha \( M_{2,\text{min}} > M_1 \). A partir disso, determine \( M_{2,\text{min}} \). Seu resultado é condizente com a hipótese? Responda SIM ou NÃO, justificando com cálculos.
+        \item Using his measurements, Hugo calculates that the mass function of the binary is \( f = 46.2M_{\odot} \). We wish to find the minimum value \( M_{2,\text{min}} \) of the mass of Plo II, knowing that it corresponds to the case \( i = 90^\circ \). Assume \( M_{2,\text{min}} > M_1 \). From this, determine \( M_{2,\text{min}} \). Is your result consistent with the hypothesis? Answer YES or NO, justifying with calculations.
         
-        \item Com base em sua resposta do item anterior, conclua: é mais provável que Plo II seja um exoplaneta, uma anã branca, uma estrela de nêutrons ou um buraco negro?
+        \item Based on your answer to the previous item, conclude: is it more likely that Plo II is an exoplanet, a white dwarf, a neutron star, or a black hole?
     \end{alternativas}
     \begin{pssolution*}{}{}
         \begin{alternativas}
-            \item Primeiramente, note que \(v_{r, aparente} = |\mathbf{\omega}\times\mathbf{r}| = \omega r \sin i = v_r \sin i\), logo \(K = v_r\sin i = \frac{2\pi a_1}{T}\sin i\). Defindino \(a=a_1+a_2\) e \(M = M_1+M_2\) onde \(a_i\) e \(M_i\) representam a distância entre a estrela \(i\) e o CM e a massa da estrela \(i\), temos a terceira lei de kepler como, 
+            \item First, note that \(v_{r,\ \mathrm{apparent}} = |\mathbf{\omega}\times\mathbf{r}| = \omega r \sin i = v_r \sin i\), so \(K = v_r\sin i = \frac{2\pi a_1}{T}\sin i\). Defining \(a=a_1+a_2\) and \(M = M_1+M_2\), where \(a_i\) and \(M_i\) represent the distance between star \(i\) and the CM and the mass of star \(i\), we have Kepler's third law as
             \[\frac{a^3}{T^2} = \frac{GM}{4\pi^2}\]
 
             \[a^3 = \frac{GM}{4\pi^2}T^2 \rightarrow T = 2\pi \sqrt{\frac{a^3}{GM}}\]
 
-            Substituindo $T = \frac{2\pi a_1}{v_1}$
+            Substituting $T = \frac{2\pi a_1}{v_1}$
 
             $$(a_1+a_2)^3= \frac{G(M_1+M_2)a_1^2}{v_1^2}$$
 
             $$(1+a_2/a_1)^2 = \frac{G(M_1+M_2)}{(a_1+a_2)v_1^2}$$
 
-            Também, usando o teorema do centro de massa, 
+            Also, using the center-of-mass theorem,
 
             $$\frac{a_1}{a_2} = \frac{M_2}{M_1}$$
 
-            Trabalhando na função de massa, 
+            Working with the mass function,
 
             $$\frac{1}{f} = \frac{(1+M_1/M_2)^2}{M_2\sin^3 i} = \frac{(1+a_2/a_1)^2}{M_2\sin^3i}$$
 
-            Substituindo $(1+a_2/a_1)$
+            Substituting $(1+a_2/a_1)$
 
             $$\frac{1}{f} = \frac{G(M_1+M_2)}{(a_1+a_2)M_2v_1^2\sin^3i} = \frac{G(1+M_1/M_2)}{(a_1+a_2)v_1^2\sin^3i} = \frac{G(1+a_2/a_1)}{(a_1+a_2)v_1^2\sin^3i}$$
 
-            Substituindo $(1+a_2/a_1)$ novamente, 
+            Substituting $(1+a_2/a_1)$ again,
 
             $$\frac{1}{f} = \frac{G}{v_1^3\sin^3i}\sqrt{\frac{G(M_1+M_2)}{(a_1+a_2)^3}}$$
 
-            Mas olhe a similaridade do termo dentro da raiz com a terceira lei de kepler! Assim, 
+            But look at the similarity between the term inside the square root and Kepler's third law! Thus,
 
             $$\frac{1}{f} = \frac{2\pi G }{T v_1^3\sin^2i}$$
 
-            Finalmente, substituindo K e reajeitando, 
+            Finally, substituting \(K\) and rearranging,
 
             $$\boxed{f = \frac{TK^3}{2\pi G}}$$
 
-            \item Suponto $i = 90^\circ$, temos 
+            \item Assuming $i = 90^\circ$, we have
             
             $$f = \frac{M_2^3}{(M_1+M_2)^2}$$
 
-            Usando unidades de massas solares e $M_1 = 2M_\odot$, temos, 
+            Using units of solar masses and $M_1 = 2M_\odot$, we have
 
-            $$46,2 = \frac{M_2^3}{(2+M_2)^2}$$
+            $$46.2 = \frac{M_2^3}{(2+M_2)^2}$$
 
-            $$M_2 = \left(46,2 (2+M_2)^2\right)^{1/3}$$
+            $$M_2 = \left(46.2 (2+M_2)^2\right)^{1/3}$$
 
-            Usando iteração podemos encontrar $\boxed{M_2 = 49,7 M_\odot }$
+            Using iteration we can find $\boxed{M_2 = 49.7 M_\odot }$
 
-            \item Como a massade \(M_2\) é muito grande, é mais provavel de que o mesmo se trate de um buraco negro
+            \item Since the mass of \(M_2\) is very large, it is more likely that it is a black hole.
         \end{alternativas}
     \end{pssolution*}
 \end{pproblem}
 
 \pts{3}
-\begin{pproblem} Juventino está localizado na sua base (não tão) secreta no Polo Norte terrestere. Após uma chama de emergencia de deduardo letodo, o mesmo precisa mandar um missél para o equador, afim de explodir a base de seu arqui inimigo: Raposo. 
+\begin{pproblem} Juventino is located at his (not so) secret base at the terrestrial North Pole. After an emergency call from Deduardo Letodo, he needs to send a missile to the equator in order to blow up the base of his archenemy: Raposo. 
     \begin{alternativas}
-        \item Junvetino não está na sua melhor forma, e com toda a sua força, ele só consegue arremessar o foguete na primeira velocidade cósmica (a velocidade orbital para corpos próximos da superfície terrestre). Nessas condições, qual é o semi eixo da órbita do foguete lançado por Juventino?
-        \item Qual a maior altura que o foguete chega?
-        \item Qual o intervalo de tempo entre o Juventino lançar o foguete e a base de Raposo ser explodida?
+        \item Junvetino is not in his best form, and with all his strength he can only throw the rocket at the first cosmic velocity (the orbital speed for bodies near Earth's surface). Under these conditions, what is the semimajor axis of the orbit of the rocket launched by Juventino?
+        \item What is the greatest height the rocket reaches?
+        \item What is the time interval between Juventino launching the rocket and Raposo's base being blown up?
     \end{alternativas}
 
     \begin{pssolution*}{}{}
         \begin{alternativas}
-            \item Utilizando conservação de energia, 
+            \item Using conservation of energy,
             
             \[-\frac{GM_\oplus m}{R_\oplus} + \frac{mv_0^2}{2} = -\frac{GM_\oplus m}{2a}\]
 
-            Resolvendo para \(a\), 
+            Solving for \(a\),
 
             \[a = \frac{GM_\oplus}{2GM_\oplus - v_0^2 R_\oplus}R_\oplus\]
 
-            Substituindo \(v_0^2 = \frac{GM_\oplus}{R_\oplus}\), obtemos 
+            Substituting \(v_0^2 = \frac{GM_\oplus}{R_\oplus}\), we obtain
 
             \[\boxed{a = R_\oplus}\]
 
-            \item Esquematizando a órbita do foguete, 
+            \item Sketching the rocket's orbit,
             
             \begin{figure}[H]
                 \centering
                 \includegraphics[width=0.7\linewidth]{imagens/orbitapn-eq.png}                
             \end{figure}
 
-            Por geometria, podemos dizer que \(\overline{AO} = \overline{BO} = \frac{\overline{CD}}{2} = R_\oplus\). Usando trigonometria básica, obtemos \(\overline{AB} = R_\oplus \sqrt 2\). A maior altura que o foguete chega é dado por \(\overline{OD}-R_\oplus\).
+            By geometry, we can say that \(\overline{AO} = \overline{BO} = \frac{\overline{CD}}{2} = R_\oplus\). Using basic trigonometry, we obtain \(\overline{AB} = R_\oplus \sqrt 2\). The greatest height the rocket reaches is given by \(\overline{OD}-R_\oplus\).
 
-            Usando a propriedade da elipse que a somda das distância de um ponto até os dois focos é dada por \(2a\). Como \(O\) é um dos focos, temo que o outro foco, \(O'\) também dista \(R_\oplus\) de \(A\) e de \(B\). Nessas condições, o ponto \(O'\) deve distar \(R_\oplus\sqrt 2\) de \(O\) e estar contido na linha \(\overline{CD}\). Desse modo, \(AOBO'\) forma um quadrado de lado \(R_\oplus\).
+            Using the property of the ellipse that the sum of the distances from a point to the two foci is \(2a\). Since \(O\) is one of the foci, the other focus, \(O'\), is also a distance \(R_\oplus\) from \(A\) and from \(B\). Under these conditions, the point \(O'\) must lie a distance \(R_\oplus\sqrt 2\) from \(O\) and on the line \(\overline{CD}\). Thus, \(AOBO'\) forms a square of side \(R_\oplus\).
 
-            O centro da linha \(\overline{OO'}\) é o centro da elipse. Portanto, \(\overline{AB} = 2b = 2a\sqrt{1-e^2}\). Substituindo o valor de \(\overline{AB}\), temos, 
+            The midpoint of the segment \(\overline{OO'}\) is the center of the ellipse. Therefore, \(\overline{AB} = 2b = 2a\sqrt{1-e^2}\). Substituting the value of \(\overline{AB}\), we have
             
             \[R_\oplus\sqrt 2 = 2 R_\oplus \sqrt{1-e^2}\]
 
-            Resolvendo para \(e\), 
+            Solving for \(e\),
 
             \[e = \frac{1}{\sqrt{2}}\]
 
-            Portanto, \(\overline{OO'} = 2c = 2R_\oplus/\sqrt2\). Seja \(\overline{OC} = x\). Por simetria, \(\overline{OC} = \overline{O'D}\). Equacionando, 
+            Therefore, \(\overline{OO'} = 2c = 2R_\oplus/\sqrt2\). Let \(\overline{OC} = x\). By symmetry, \(\overline{OC} = \overline{O'D}\). Setting up the equation,
 
             \[\overline{CD} = \overline{CO}+\overline{OO'}+\overline{O'D} = 2x + \frac{2}{\sqrt2}R_\oplus = 2R_\oplus\]
 
             \[x = R_\oplus\left(1 - \frac{1}{\sqrt2}\right)\]
 
-            Agora, podemos usar que \(\overline{OD} = \overline{CD} - \overline{OC} = R_\oplus\left(1+1/\sqrt2\right)\) e portanto, a maior altura que o foguete chega é 
+            Now we can use \(\overline{OD} = \overline{CD} - \overline{OC} = R_\oplus\left(1+1/\sqrt2\right)\), and therefore the greatest height the rocket reaches is
 
             \[\boxed{h = \overline{OD}-R_\oplus = \frac{R_\oplus}{\sqrt2}}\]
 
-            \item O ponto \(A\) tem anomalia verdadeira, \(\theta_A = \frac{\pi}{2}+\frac{\pi}{4} = \frac{3\pi}{4}\). Por simetria, o tempo de ir de \(C\) até \(A\) é o mesmo do tempo para ir de \(B\) até \(C\). Portanto, o tempo de ir de \(A\) até \(B\) é o perído da órbita menos duas vezes o tempo de \(O\) até \(A\). Para calcular esse último, vamos usar a equação de Kepler, 
+            \item The point \(A\) has true anomaly \(\theta_A = \frac{\pi}{2}+\frac{\pi}{4} = \frac{3\pi}{4}\). By symmetry, the time to go from \(C\) to \(A\) is the same as the time to go from \(B\) to \(C\). Therefore, the time to go from \(A\) to \(B\) is the orbital period minus twice the time from \(O\) to \(A\). To calculate this last quantity, we will use Kepler's equation,
             
             \[M = E - e\sin E\]
 
-            onde \(E\) é a anomalia excentrica, dedinida por 
+            where \(E\) is the eccentric anomaly, defined by
 
             \[r(E)= a(1-e\cos E)\]
 
             \[E = \cos^{-1}\left(\frac{1-r/a}{e}\right)\]
 
-            Substituindo \(a = R_\oplus\), podemos encontrar \(E_A\). Quando o foguete está no ponto \(A\), \(r(A)=R_\oplus\), assim, 
+            Substituting \(a = R_\oplus\), we can find \(E_A\). When the rocket is at the point \(A\), \(r(A)=R_\oplus\), so
 
             \[E_A=\frac{\pi}{2}\]
 
-            Assim, 
+            Thus,
 
             \[M_A = \frac{\pi}{2}-\frac{1}{\sqrt{2}}\]
 
-            Finalmente, o tempo de ir de \(A\) até \(B\), é 
+            Finally, the time to go from \(A\) to \(B\) is
 
             \[t_{AB} = T - 2t_{CA} = T\left(1 - \frac{M_A}{\pi}\right)\]
             \[t_{AB} = T\left(1-\frac{1}{2}+\frac{1}{\pi\sqrt2}\right)\]
 
-            Utilizando a terceira Lei de Kepler, 
+            Using Kepler's third law,
 
             \[t_{AB} = \left(\frac{1}{2}+\frac{1}{\pi\sqrt2}\right)\sqrt{\frac{4\pi^2R_{\oplus}^3}{GM_\oplus}} \]
 
@@ -1885,157 +1885,157 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
 
 \pts{5}
 \begin{pproblem}
-    Nesse problema, nosso objetivo será calcular o período de precessão da Terra. Para isso, vamos considerar a Terra como um elipsoide, com raio polar $R_p$, raio equatiorial $R_e$, com período de rotação em torno do eixo polar $T = 23^h56^m4^s$ e massa $M_\oplus$ uniformemente distribuida. Para o nosso modelo, considere que apenas o Sol e a Lua exercem forças gravitacionais relevantes para o problema.
+    In this problem, our goal is to calculate the precession period of the Earth. To do so, we will consider the Earth as an ellipsoid, with polar radius $R_p$, equatorial radius $R_e$, rotation period about the polar axis $T = 23^h56^m4^s$, and uniformly distributed mass $M_\oplus$. For our model, consider that only the Sun and the Moon exert gravitational forces relevant to the problem.
     \begin{alternativas}
-        \item Considerando que $R_p = R_\oplus\approx 6371 \text{ km}$, qual o valor numérico de $R_e$?
+        \item Assuming that $R_p = R_\oplus$, what is the numerical value of $R_e$?
         
-        \item O momento de inercía de um corpo, pode ser calculado por $I = \int r^2 dm$. Sabendo disso, calcule o momento de inercia no eixo x e no eixo z de um elipsoide dado pela equação 
-        $$\frac{x^2}{R_e^2} + \frac{y^2}{R_e^2} + \frac{z^2}{R_p^2}= 1$$
-        Com os momentos de inercia calculados, para a Terra, vamos definir o eixo $x$ como o eixo que contem o equador e o eixo $y$ como aquele que contem os polos. Calcule a quantidade, 
+        \item The moment of inertia of a body can be calculated by $I = \int r^2 dm$. Given this, calculate the moment of inertia about the x-axis and about the y-axis of an ellipsoid given by the equation 
+        $$\frac{x^2}{R_e^2} + \frac{y^2}{R_p^2} + \frac{z^2}{R_p^2}= 1$$
+        With the moments of inertia calculated, for the Earth let us define the $x$-axis as the axis that contains the equator and the $y$-axis as the one that contains the poles. Calculate the quantity 
         $$\frac{I_p}{(I_p-I_e)}$$
 
-        Onde $I_p$ é o momento de inercia polar (no eixo y) e $I_e$ o momento de inceria equatorial (no eixo y). Assuma que a terra seja homogênea. Devido a assompção de uma Terra homogênea, a sua quantia será 93\% do que a quantidade real. 
+        where $I_p$ is the polar moment of inertia (about the y-axis) and $I_e$ the equatorial moment of inertia (about the y-axis)
         
 
-        \item Encontre uma expressão para o torque exercicios pelo sistema Sol-Lua na Terra. (Dica, devido a simetria, muitos termos dentro de integrais irão zerar e o torque final terá componente em apenas uma direção no sistema de coordenadas definidos anteriormente)
-        \item Por fim, utilizando a equação, 
-        $$\vec{\tau} = \Omega \times \mathbf{L} $$
-        Onde $\mathbf{L}$ é o momento angular e $\Omega$ é a frequencia de precessão, encontre o período de precessão da Terra.
+        \item Find an expression for the torque exerted by the Sun-Moon system on the Earth. (Hint: because of symmetry, many terms inside the integrals will vanish, and the final torque will have a component in only one direction in the coordinate system defined previously.)
+        \item Finally, using the equation 
+        $$\mathbf{\tau } = \Omega \times \mathbf{L} $$
+        where $\mathbf{L}$ is the angular momentum and $\Omega$ is the precession frequency, find the precession period of the Earth.
     \end{alternativas}
 
     \begin{pssolution*}{}{}
         \begin{alternativas}
-            \item Como a Terra está em equilíbrio hidrostático, 
+            \item Since the Earth is in hydrostatic equilibrium,
             
             \[\frac{GM_\oplus}{r_p} = \frac{GM_\oplus}{r_e}+\frac{1}{2}\omega^2 r_e^2\]
         
-            Resolvendo para \(r_e\), 
+            Solving for \(r_e\),
 
             \[r_e = \frac{T}{2\pi}\sqrt{2GM_\oplus\left(\frac{1}{r_p}-\frac{1}{r_e}\right)}\]
 
-            Iterando, podemos obter, 
+            Iterating, we can obtain
 
             \[r_e \approx 6382 \text{ km}\]
 
-            \item Dada a definição do elipsoide, \(x\) e \(y\) estão no plano equatorial e \(z\) passa pelo centro da Terra e pelo polo norte celeste. Calculando os momentos de inércia, 
+            \item Given the definition of the ellipsoid, \(x\) and \(y\) lie in the equatorial plane and \(z\) passes through the center of the Earth and the north celestial pole. Calculating the moments of inertia,
             
             \[I_{zz} = \int(y^2+z^2)dm = \rho \iiint (x^2+y^2)dxdydz\]
 
-            Usando a transformação, 
+            Using the transformation,
 
             \[x = R_e u \, \ y = R_e v \, \ z = R_p w\]
 
-            De modo que \(u^2+v^2+w^2=1\), temos, 
+            so that \(u^2+v^2+w^2=1\), we have
 
             \[I_{zz} = \rho\iiint (R_e^2u^2+R_e^2v^2) R_e^2R_pdudvdw = \rho R_e^4R_p \iiint (u^2+v^2)dudvdw\]
 
-            Como \(u^2+v^2+w^2=1\) descreve uma esfera unitária, temos simetria, o que garante, 
+            Since \(u^2+v^2+w^2=1\) describes a unit sphere, we have symmetry, which guarantees
 
             \[\iiint u^2d\Omega = \iint v^2d\Omega = \iint w^2d\Omega = \frac{1}{3}\iiint(u^2+v^2+w^2)d\Omega\]
 
-            Podemos simplificar, 
+            We can simplify
 
             \[\frac{1}{3}\iiint(u^2+v^2+w^2)d\Omega = \frac{1}{3}\int_0^{2\pi}\int_{0}^{\pi}\int_0^1 r^4\sin\theta drd\theta d\phi = \frac{4\pi}{15}\]
 
-            Resolvendo para \(I_{zz}\), 
+            Solving for \(I_{zz}\),
 
             \[I_{zz} = \rho R_e^4 R_p \left(\frac{4\pi}{15}+\frac{4\pi}{15}\right)\]
 
-            Substituindo \(\rho = 3M_\oplus/4\pi R_e^2R_p\), obtemos, 
+            Substituting \(\rho = 3M_\oplus/4\pi R_e^2R_p\), we obtain
 
             \[I_{zz} = \frac{2}{5}M_\oplus R_e^2\]
 
-            Fazendo a mesma coisa para 
+            Doing the same for
 
             \[I_{xx} = \rho R_e^2R_p\iiint ((R_ev)^2+(R_pw)^2)dudvdw\]
 
-            Vamos obter 
+            we obtain
 
             \[I_{xx} = \frac{1}{5}M_\oplus(R_e^2+R_p^2)\]
 
-            Note também que \(I_{zz} \equiv I_p\) e \(I_{xx}\equiv I_e\). Desse modo, 
+            Also note that \(I_{zz} \equiv I_p\) and \(I_{xx}\equiv I_e\). Thus,
 
             \[\boxed{\frac{I_e}{I_p-I_e} \approx 580}\]
 
-            Como o nosso valor é \(93\%\) maior do que esperado, temos que na realidade essa quantida deve equivaler há \(\approx 300\). Vamos chamar essa quandidade de \(f\) e seguir com ela daqui pra frente.
+            Since our value is \(93\%\) larger than expected, in reality this quantity must correspond to \(\approx 300\). Let us call this quantity \(f\) and proceed with it from here on.
 
-            \item Como o torque é tal que
+            \item Since the torque is such that
             
             \[\tau \propto \frac{M}{r^3}\]
 
-            Temos 
+            we have
 
-            \[\frac{\tau_{lua}}{\tau_\odot} = \frac{M_{lua}}{M_\odot}\frac{d_\odot}{d_{lua}}\approx 2,17\]
+            \[\frac{\tau_{\mathrm{Moon}}}{\tau_\odot} = \frac{M_{\mathrm{Moon}}}{M_\odot}\frac{d_\odot}{d_{\mathrm{Moon}}}\approx 2.17\]
 
-            Agora, para encontrar o torque do Sol, vamos primeiro calcular a força que ele exerce em um diferencial de massa \(dm\) na Terra. Vamos definir \(\mathbf R\) como o vetor posição do Sol e \(\mathbf r\) o vetor posição do diferencial de massa.
+            Now, to find the torque due to the Sun, we first calculate the force it exerts on a mass element \(dm\) in the Earth. Let us define \(\mathbf R\) as the position vector of the Sun and \(\mathbf r\) as the position vector of the mass element.
 
             \[d\mathbf F = -\frac{GM_\odot}{|\mathbf R - \mathbf r|^3}(\mathbf R - \mathbf r)dm\]
 
-            Com relação ao centro da Terra, o torque é 
+            With respect to the center of the Earth, the torque is
 
             \[d\vec\tau = \mathbf r \times d\mathbf F = \frac{GM_\odot}{|\mathbf R - \mathbf r|^3}(\mathbf R \times \mathbf r)dm\]
 
-            Usando que \(R>>r\) e a aproximação \((1+x)^n\approx 1+nx\) obtemos, 
+            Using \(R>>r\) and the approximation \((1+x)^n\approx 1+nx\), we obtain
 
             \[d\vec\tau \approx \frac{GM_\oplus}{R^3}\left(1+3\frac{\mathbf R \cdot \mathbf r}{R^2}\right)(\mathbf R \times \mathbf r )dm\]
 
-            Expandindo o produto vetorial, 
+            Expanding the cross product,
 
             \[\mathbf R \times \mathbf r = (R_yr_z - R_z r_y )\mathbf{\hat x} + (R_zr_x - R_xr_z)\mathbf {\hat y} + (R_xr_y - R_yr_x) \mathbf{\hat z}\]
 
-            Dessa maneira, 
+            In this way,
 
             \[\tau_x = \frac{GM_\oplus}{R^3}\int \left(1+3\frac{R_xr_x+R_yr_y+R_zr_z}{R^2}\right)(R_yr_z-R_zr_y)dm\]
 
-            Porém quando resolvemos a integral, podemos perceber que todos os termos na forma \(\int r_i dm \) e \(\int r_ir_jdm\) são nulos, devidos a simetria. Por tanto a nossa integral se reduz para 
+            However, when we evaluate the integral, we can see that all terms of the form \(\int r_i dm \) and \(\int r_ir_jdm\) vanish, due to symmetry. Therefore our integral reduces to
 
             \[\tau_x = \frac{3GM_\oplus}{R^5}R_yR_z\left(\int r_y^2dm + \int r_z^2dm\right)\]
 
-            As integrais restantes são os momentos de inercia em \(y\) e \(z\). Similarmente para \(\tau_y\) e \(\tau_z\) obtemos, 
+            The remaining integrals are the moments of inertia about \(y\) and \(z\). Similarly, for \(\tau_y\) and \(\tau_z\) we obtain
 
             \[\tau_x = \frac{3GM_\oplus}{R^5}R_yR_z (I_{yy}-I{zz})\]
             \[\tau_y = \frac{3GM_\oplus}{R^5}R_zR_x (I_{zz}-I{xx})\]
             \[\tau_z = \frac{3GM_\oplus}{R^5}R_xR_y (I_{xx}-I{yy})\]
 
-            Podemos descrever \(R_i\) usando o sistema de coordenadas elípticas.
+            We can describe \(R_i\) using elliptical coordinates.
 
             \[R_x = R\sin\lambda \cos\epsilon\]
             \[R_y = R\cos\lambda\]
             \[R_z = R\sin\lambda\sin\epsilon\]
 
-            Onde \(\lambda\) é a longitude ecliptica do Sol. Assim, 
+            where \(\lambda\) is the ecliptic longitude of the Sun. Thus,
 
             \[\tau_x = \frac{3GM_\oplus}{R^3}\sin\lambda\cos\lambda\sin\epsilon (I_{yy}-I_{zz})\]
             \[\tau_y = \frac{3GM_\oplus}{R^3} \sin^2\lambda\sin\epsilon\cos\epsilon(I_{zz}-I_{xx})\]
             \[\tau_z = \frac{3GM_\oplus}{R^3} \sin\lambda\cos\lambda\cos\epsilon(I_{xx}-I_{yy})\]
 
-            Para o efeito de precessão, o importante é o valor médio do torque, porém note que \[\langle\sin\lambda\cos\lambda\rangle = 0\]. Assim, o único toruqe que se mantém é o do eixo \(y\).
+            For the precession effect, what matters is the average value of the torque, but note that \[\langle\sin\lambda\cos\lambda\rangle = 0\]. Thus, the only torque that remains is that about the \(y\)-axis.
 
             \[\vec\tau  = \langle\tau_y\rangle\mathbf{\hat{y}} = \frac{3GM_\oplus}{2R^3}\sin\epsilon\cos\epsilon (I_{zz}-I_{xx})\mathbf{\hat{y}}\]
 
-            Essa é apenas a contribuição do Sol. Adicionando a da Lua temos, 
+            This is only the contribution of the Sun. Adding that of the Moon, we have
 
-            \[\boxed{\vec\tau_{total} = \frac{4,75GM_\oplus}{R^3}\sin\epsilon\cos\epsilon (I_{p}-I_{e})\mathbf{\hat{y}}}\]
+            \[\boxed{\vec\tau_{total} = \frac{4.75GM_\oplus}{R^3}\sin\epsilon\cos\epsilon (I_{p}-I_{e})\mathbf{\hat{y}}}\]
 
-            \item Utilizando a relação dada, 
+            \item Using the given relation,
             
             \[\vec\tau_{total} = \vec\Omega \times \vec L = \Omega L_\perp\]
 
-            O valor de \(L_\perp\) é \(I_p\omega\sin\epsilon\). Assim, 
+            The value of \(L_\perp\) is \(I_p\omega\sin\epsilon\). Thus,
 
-            \[\frac{4,75GM_\oplus}{R^3}\sin\epsilon\cos\epsilon (I_{p}-I_{e}) = \frac{2\pi}{T}I_p\omega\sin\epsilon\]
+            \[\frac{4.75GM_\oplus}{R^3}\sin\epsilon\cos\epsilon (I_{p}-I_{e}) = \frac{2\pi}{T}I_p\omega\sin\epsilon\]
 
-            Resolvendo para \(T\), 
+            Solving for \(T\),
 
-            \[\boxed{T = \frac{2\pi}{4,75}\frac{R^3\omega}{GM_\oplus\cos\epsilon}\frac{I_p}{I_p-I_e}\approx 25300\text{ anos}}\]
+            \[\boxed{T = \frac{2\pi}{4.75}\frac{R^3\omega}{GM_\oplus\cos\epsilon}\frac{I_p}{I_p-I_e}\approx 25300\text{ years}}\]
 
-            O que é uma estimativa com apenas \(2\%\) de erro :)
+            which is an estimate with an error of only \(2\%\) :)
         
         \end{alternativas}
     \end{pssolution*}
 
     \begin{pproblem}{}
-        (Apostila Magna) 
+        (Magna notes)
         
     \end{pproblem}
 \end{pproblem}

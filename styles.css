@@ -8,7 +8,7 @@
 }
 
 /* ------------------------------ */
-/*        CONFIGURAÇÕES GERAIS    */
+/*        GENERAL SETTINGS        */
 /* ------------------------------ */
 html {
   scroll-behavior: smooth;
@@ -16,8 +16,8 @@ html {
 
 body {
   font-family: "Open Sans", Arial, sans-serif;
-  background-color: #1e1e1e; /* Fundo escuro */
-  color: #f0f0f0;            /* Texto claro */
+  background-color: #1e1e1e; /* dark background */
+  color: #f0f0f0;            /* light text */
   line-height: 1.6;
 }
 
@@ -25,13 +25,13 @@ body {
 /*           LINKS                */
 /* ------------------------------ */
 a {
-  color: #458aff; /* Cor de destaque para links */
+  color: #458aff; /* link accent color */
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #7ba8ff; /* Tom mais claro ao passar o mouse */
+  color: #7ba8ff; /* lighter shade on hover */
 }
 
 /* ------------------------------ */
@@ -40,11 +40,11 @@ a:hover {
 .container {
   max-width: 1000px;
   margin: 2rem auto;
-  padding: 1rem 3rem; /* Espaço lateral para afastar o conteúdo das bordas */
+  padding: 1rem 3rem; /* side padding so content stays off the edges */
 }
 
 /* ------------------------------ */
-/*          NAVBAR (TOPO)         */
+/*          NAVBAR (TOP)          */
 /* ------------------------------ */
 .navbar {
   width: 100%;
@@ -113,7 +113,7 @@ a:hover {
 }
 
 /* ------------------------------ */
-/*           BIO / SOBRE MIM      */
+/*           BIO / ABOUT ME       */
 /* ------------------------------ */
 .bio {
   background-color: #2b2b2b;
@@ -139,7 +139,7 @@ a:hover {
 }
 
 /* ------------------------------ */
-/*          SESSÕES GERAIS        */
+/*          GENERAL SECTIONS      */
 /* ------------------------------ */
 .section {
   margin: 2rem 0;
@@ -184,7 +184,7 @@ ul {
 }
 
 /* ------------------------------ */
-/*            RODAPÉ              */
+/*            FOOTER              */
 /* ------------------------------ */
 footer {
   background-color: #2b2b2b;
@@ -199,7 +199,7 @@ footer p {
 }
 
 /* ------------------------------ */
-/*   ESTILOS OPCIONAIS EXTRAS     */
+/*   OPTIONAL EXTRA STYLES        */
 /* ------------------------------ */
 .btn {
   display: inline-block;
