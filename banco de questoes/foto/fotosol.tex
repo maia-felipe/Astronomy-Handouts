@@ -4,55 +4,55 @@
 
 \begin{document}
 
-\psettitle{Banco de questões de astronomia}
+\psettitle{Astronomy Question Bank}
 
-Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de preparar os estudantes para o processo seletivo de astronomia no Brasil. Algumas questões não são de autoria própria e estão devidamente sinalizadas por () antes do enunciado. O template do banco de questões é o mesmo do Professor \text{Kevin Zhou}. Seu trabalho é valioso, e diversas ideias desta lista podem ser encontradas em seus Handouts.
+These questions were carefully written or selected to prepare students for the astronomy team selection process in Brazil. Some questions are not original; those are marked with () before the statement. The question-bank template is the same one used by Professor Kevin Zhou. His work is invaluable, and many ideas in this set can be found in his handouts.
 
-% \begin{psidea}{Título da Ideia}{}
-% Ideia
+% \begin{psidea}{Idea title}{}
+% Idea
 % \end{psidea}
 
-% \begin{psexample}{Título do Exemplo}{}
-% Exemplo
+% \begin{psexample}{Example title}{}
+% Example
 % \end{psexample}
 
 % \begin{pssolution*}{}{}
-% Solução
+% Solution
 % \end{pssolution*}
 
-% \begin{psremark*}{Título da Observação}{}
-% Observação
-% \end{psremark*} 
-\section{Fotometria e Física Moderna}
+% \begin{psremark*}{Remark title}{}
+% Remark
+% \end{psremark*}
+\section{Photometry and Modern Physics}
 
 \pts{3} 
 \begin{pproblem}
-    O objetivo dessa questão é deduzir uma expressão para a \textit{profundidade óptica}. Imagine que um feixe de luz passe por uma região do espaço, com uma determiada quantidade de partículas. Se \(I_0\) é a intensidade da luz antes de passar por tal região de espaço e \(I\) é a intensidade da luz após, a profundidade óptica é definida como:
+    The goal of this question is to derive an expression for the \textit{optical depth}. Imagine that a beam of light passes through a region of space containing a certain number of particles. If \(I_0\) is the intensity of the light before it passes through that region of space and \(I\) is the intensity afterward, the optical depth is defined as:
     \[I = I_0e^{-\tau}\]
-    Onde \(\tau\) é a profundidade óptica.
+    where \(\tau\) is the optical depth.
     \\
-    Considere uma região do espaço possuí densidade numérica de partículas \(n\).
+    Consider a region of space with particle number density \(n\).
     \begin{alternativas}
-        \item Qual o número de partículas em uma área \(A\) e espessura \(dz\)?
-        \item Supondo que cada partícula possua sessão transversal \(\sigma\), qual é a área tampada pelas parículas?
-        \item Encontre a fórmula para \(\tau\). 
+        \item What is the number of particles in an area \(A\) and thickness \(dz\)?
+        \item Assuming that each particle has cross section \(\sigma\), what is the area blocked by the particles?
+        \item Find the formula for \(\tau\). 
     \end{alternativas}
 
 \begin{pssolution*}{}{}
     \begin{alternativas}
-        \item A densidade volumétrica de partículas é \(n\), sendo assim temos que o número \(dN\) de partículas em um volume \(dV\) é dado por
+        \item The volume number density of particles is \(n\), so the number \(dN\) of particles in a volume \(dV\) is
         \[\boxed{dN = ndV \equiv nAdz}\]
 
-        \item Se cada particula ocupa uma área \(\sigma\), a área ocupada por \(dN\) particulas é
+        \item If each particle occupies an area \(\sigma\), the area occupied by \(dN\) particles is
         \[\boxed{dS = \sigma dN = \sigma nAdz}\]
 
-        \item É esperado que a área ocupadas pelas particulas seja um empecilho para a passagem da luz. Como a Intensidade é proporcional a área disponível para a passagem da luz, nós temos
+        \item The area occupied by the particles is expected to obstruct the passage of light. Since the intensity is proportional to the area available for the light to pass through, we have
         \[\frac{dI}{I} = -\frac{dS}{A} = -n\sigma dz\]
-        Integrando, obtemos
+        Integrating, we obtain
 
         \[I = I_0 e^{-n\sigma z}\]
 
-        Ou seja, 
+        That is,
 
         \[\boxed{\tau = n\sigma z}\]
     \end{alternativas}
@@ -60,122 +60,123 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
 \end{pproblem}
 
 \pts{2}
-\begin{pproblem} A Galáxia do Triângulo, \(M33\), é a terceira maior galáxia do grupo local, ela está a uma distância \(d=970 \text{ kpc}\) de nós e possuí magnitude aparente de \(5,72\). Sabendo que ela possuí aproximadamente \(40\) bilhões de estrelas, encontre a luminosidade média das estrelas de \(M33\). Sua estimativa parece condizer com a realidade? Por que?
+\begin{pproblem} The Triangulum Galaxy, \(M33\), is the third-largest galaxy in the Local Group. It lies at a distance \(d=970 \text{ kpc}\) from us and has an apparent magnitude of \(5.72\). Given that it contains approximately \(40\) billion stars, find the average luminosity of the stars in \(M33\). Does your estimate seem consistent with reality? Why?
 \begin{pssolution*}{}{}
-    Utilizando a equação de Pogson
+    Using Pogson's equation
 
-    \[m-M_\odot = -2,5\log \left(\frac{L_{g}}{L_\odot}\left(\frac{10 \text{ pc}}{d}\right)^2\right)\]
+    \[m-M_\odot = -2.5\log \left(\frac{L_{g}}{L_\odot}\left(\frac{10 \text{ pc}}{d}\right)^2\right)\]
 
-    Resolendo para \(L_g\), 
+    Solving for \(L_g\),
 
-    \[L_g = L_\odot \left(\frac{d}{10\text{ pc}}\right)^2 10^{-0,4(m-M_\odot)}\]
+    \[L_g = L_\odot \left(\frac{d}{10\text{ pc}}\right)^2 10^{-0.4(m-M_\odot)}\]
 
-    Temos também, que \(L_g = \overline{L_\star} N\) e assim
+    We also have \(L_g = \overline{L_\star} N\), and thus
 
-    \[\overline{L_\star} = \frac{L_\odot}{N} \left(\frac{d}{10\text{ pc}}\right)^2 10^{-0,4(m-M_\odot)}\]
+    \[\overline{L_\star} = \frac{L_\odot}{N} \left(\frac{d}{10\text{ pc}}\right)^2 10^{-0.4(m-M_\odot)}\]
 
-    Utilizando os valores da tabela de constantes, obtemos:
+    Using the values from the table of constants, we obtain
 
-    \[\overline{L_\star} \approx 0,1L_\odot\]
+    \[\overline{L_\star} \approx 0.1L_\odot\]
 
-    No entando, essa estimativa não condiz com a realidade, uma vez que há fatores como a extinção interestelar que contribuem para o aumento da magnitude aparente de \(M33\), uma estimativa condizente estaria na mesma ordem de grandeza da Luminosidade do Sol.
+    This estimate does not match reality, since factors such as interstellar extinction increase the apparent magnitude of \(M33\). A consistent estimate would be of the same order of magnitude as the luminosity of the Sun.
 
 \end{pssolution*}
 \end{pproblem}
 
 \pts{4}
 \begin{pproblem}
-    Considere que o universo possuí densidade numérica de estrelas, isto é, numero de estrelas por unidade de volume, constante e de valor \(n\). Assumindo que todas elas tenham \(L = L_\odot\) e que existam um total de \(N_0\) estrelas no universo.
+    Consider a universe with a constant stellar number density, that is, a number of stars per unit volume, of value \(n\). Assume that every star has \(L = L_\odot\) and that the universe contains a total of \(N_0\) stars.
     
     \begin{alternativas}
-    \item qual a probrabilidade da magnitude absoluta de uma estrela, vista do centro do universo, ter magnitude entre \(m\) e \(m+dm\), onde \(dm\) é uma porção infinitesimal de magnitude? Deixe sua resposta em termos de \(m\) e da maior magnitude possivél, \(m_{lim}\), de uma estrela na "borda" do universo.
+    \item What is the probability that the absolute magnitude of a star, seen from the center of the universe, lies between \(m\) and \(m+dm\), where \(dm\) is an infinitesimal interval of magnitude? Leave your answer in terms of \(m\) and the largest possible magnitude, \(m_{lim}\), of a star at the "edge" of the universe.
 
-    \item Qual a probabilidade de uma estrela poder ser observada a olho nu?
+    \item What is the probability that a star can be observed with the naked eye?
     
-    \textbf{Dados:} \[\int_{-\infty}^{6}10^{0,6(x-A)}dx \approx 2881.6 e^{-1.381 A}\]
-    \end{alternativas}\begin{pssolution*}{}{}
+    \textbf{Data:} \[\int_{-\infty}^{6}10^{0.6(x-A)}dx \approx 2881.6 e^{-1.381 A}\]
+    \end{alternativas}
+\begin{pssolution*}{}{}
     \begin{alternativas}
-    \item A magnite aparente de uma estrela é dada por, 
+    \item The apparent magnitude of a star is given by
 
-    \[m = -2,5\log F + C\]
+    \[m = -2.5\log F + C\]
 
-    Onde \(C\) é uma constante. Escrevendo \(F = L/4\pi r^2\), temos, 
+    where \(C\) is a constant. Writing \(F = L/4\pi r^2\), we have
 
-    \[m = -2,5\log\left(\frac{L}{4\pi r^2}\right) + C = 5\log r -2,5 \log \left(\frac{L}{4\pi}\right)+ C\]
+    \[m = -2.5\log\left(\frac{L}{4\pi r^2}\right) + C = 5\log r -2.5 \log \left(\frac{L}{4\pi}\right)+ C\]
 
-    Mas como \(L\) é constante para todas as estrelas, podemos absorver o segundo termo para a constante. Assim, 
+    Since \(L\) is the same for every star, we can absorb the second term into the constant. Thus
 
-    \[m=5\log r + C \rightarrow r = 10^{0,2(m-C)}\]
+    \[m=5\log r + C \rightarrow r = 10^{0.2(m-C)}\]
 
-    Derivando a expressão de \(m\), temos, 
+    Differentiating the expression for \(m\), we have
 
     \[\frac{dm}{dr} = \frac{5}{r\ln 10}\]
 
-    Agora, vamos achar a probabilidade de uma estrela estar a uma distância \(r\).
+    Now we find the probability that a star lies at a distance \(r\).
 
-    O numero de estrelas contidas entre \(r\) e \(r+dr\) é 
+    The number of stars between \(r\) and \(r+dr\) is
 
     \[dN(r) = 4\pi n r^2dr\]
 
-    Dividindo por \(N_0\), temos que a probabildiade de uma estrela estar nessa distância é 
+    Dividing by \(N_0\), the probability that a star lies at that distance is
 
     \[dP(r) = \frac{dN(r)}{N_0} = \frac{4\pi n r^2}{N_0}dr \rightarrow dr = \frac{N_0}{4\pi n r^2} dP(r)\]
 
-    Substituindo a expressão para \(dr\), 
+    Substituting the expression for \(dr\),
 
     \[\frac{r\ln 10}{5}dm = \frac{N_0}{4\pi n r^2}dP(r)\]
 
-    Isolando \(dP(r)\), 
+    Isolating \(dP(r)\),
 
     \[dP(r) = \frac{4\pi \ln 10 n r^3}{5 N_0}dm\]
 
-    Substituindo a expressão de \(r\), podemos realizar a mudança de variável \(r\rightarrow m\)em \(dP\)
+    Substituting the expression for \(r\), we change variables \(r\rightarrow m\) in \(dP\):
 
-    \[dP(m) = \frac{4\pi n \ln 10  }{5 N_0}10^{0,6(m-C)}dm\]
+    \[dP(m) = \frac{4\pi n \ln 10  }{5 N_0}10^{0.6(m-C)}dm\]
 
-    Para achar o valor de \(C\), vamos comparar com a magnitude limite, na "borda" do universo. Como o universo possuí \(N_0\) estrelas, seu raio deve ser dado por, 
+    To find \(C\), compare with the limiting magnitude at the "edge" of the universe. Since the universe contains \(N_0\) stars, its radius is given by
 
     \[N_0 = \frac{4\pi R^3}{3} \rightarrow R = \left(\frac{3N_0}{4\pi}\right)^{1/3}\]
 
-    Equacionando agora para \(m_{lim}\), 
+    Writing the equation for \(m_{lim}\),
     
     \[m_{lim} = 5\log R + C\]
 
-    No qual, podemos isolar a constante \(C = m_{lim}-5\log R\). Substituindo na expresssão de \(dP(m)\),
+    we can isolate the constant \(C = m_{lim}-5\log R\). Substituting into the expression for \(dP(m)\),
 
-    \[dP(m) = \frac{4\pi n \ln 10  }{5 N_0}10^{0,6(m-m_{lim}+5\log R)}dm\]
+    \[dP(m) = \frac{4\pi n \ln 10  }{5 N_0}10^{0.6(m-m_{lim}+5\log R)}dm\]
 
-    Trabalhando nessa expressão, 
+    Working through this expression,
 
-    \[dP(m) = \frac{4\pi n \ln 10  }{5 N_0}10^{0,6(m-m_{lim})}10^{3\log R}dm\]
+    \[dP(m) = \frac{4\pi n \ln 10  }{5 N_0}10^{0.6(m-m_{lim})}10^{3\log R}dm\]
 
-    Usando as propriedades do log, \(a\log b = \log b^a\) e \(10^{\log x} = x\), temos, 
+    Using the logarithm identities \(a\log b = \log b^a\) and \(10^{\log x} = x\), we have
 
-    \[dP(m) = \frac{4\pi n R^3\ln 10}{5N_0}10^{0,6(m-m_{lim})}dm\]
+    \[dP(m) = \frac{4\pi n R^3\ln 10}{5N_0}10^{0.6(m-m_{lim})}dm\]
 
-    Substituindo \(R\), 
+    Substituting \(R\),
 
-    \[\boxed{dP(m) = \frac{3\ln 10}{5}10^{0,6(m-m_{lim})}dm}\]
+    \[\boxed{dP(m) = \frac{3\ln 10}{5}10^{0.6(m-m_{lim})}dm}\]
 
-    Ou seja, a probabilidade não depende de \(n\) e nem de \(N_0\)!
+    The probability therefore depends on neither \(n\) nor \(N_0\).
 
-    \item Para uma estrela ser vísivel, sua magnitude deve ser \(m\leq 6\), assim, equacionando, 
+    \item For a star to be visible, its magnitude must satisfy \(m\leq 6\). Thus
     
-    \[P(m\leq 6) = \int_{-\infty}^6 dP(m) = \frac{3\ln 10}{5}\int_{-\infty}^610^{0,6(m-m_{lim})}dm\]
+    \[P(m\leq 6) = \int_{-\infty}^6 dP(m) = \frac{3\ln 10}{5}\int_{-\infty}^610^{0.6(m-m_{lim})}dm\]
 
-    Usando a integral dada no enuncicado, 
+    Using the integral given in the statement,
 
-    \[P(m\leq 6) = \frac{3\ln 10}{5}2881,6 e^{-1,381 m_{lim}}\]
+    \[P(m\leq 6) = \frac{3\ln 10}{5}2881.6 e^{-1.381 m_{lim}}\]
 
-    Simplificando os fatores numéricos, 
+    Simplifying the numerical factors,
 
-    \[\boxed{P(m\leq 6) \approx 3981,08 e^{-1,381 m_{lim}}} \]
+    \[\boxed{P(m\leq 6) \approx 3981.08 e^{-1.381 m_{lim}}} \]
 
-    A fim de curiosidade, colocando \(m_{lim}\approx 40\), para uma estimativa, teriamos, 
+    Out of curiosity, taking \(m_{lim}\approx 40\) as an estimate, we would have
 
     \[P(m\leq 6)\approx 10^{-20}\]
 
-    Ou seja, mesmo no modelo mais simples o universo, a nossa capacidade e insigficicancia prevalece.
+    Even in the simplest model of the universe, our capability and our insignificance prevail.
     \end{alternativas}
 
 \end{pssolution*}
@@ -183,43 +184,43 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
 
 \pts{4}
 \begin{pproblem}
-    O \textit{Brilho Superfícial}, fluxo por ângulo sólido por frequência, \(B_\nu\) é dada pela Lei de Plank:
+    The \textit{surface brightness}, flux per solid angle per frequency, \(B_\nu\), is given by Planck's law:
     \[B_\nu = \frac{dF}{d\nu d\Omega} = \frac{2h\nu^3}{c^2(e^{\frac{h\nu}{k_BT}}-1)}\] 
     \begin{alternativas}
-        \item Encontre uma expressão para:
+        \item Find an expression for:
         \[B_\lambda = \frac{dF}{d\lambda d\Omega}\]
-        \item A partir de \(B_\lambda\) encontre o comprimento de onda máximo de onda \(\lambda_{max}\) que uma estrela de temperatura \(T\) emite (você terá que resolver algo numéricamente).
-        \item Para pequenas frequências temos a aproximação de Righlight-Jeans. Obetenha uma expressão para \(B_\nu\) para frequêncais pequenas.
+        \item Starting from \(B_\lambda\), find the peak wavelength \(\lambda_{max}\) emitted by a star of temperature \(T\) (you will have to solve something numerically).
+        \item At low frequencies we have the Rayleigh-Jeans approximation. Obtain an expression for \(B_\nu\) at low frequencies.
         \end{alternativas}
 
 \begin{pssolution*}{}{}
     \begin{alternativas}
-        \item Temos que
+        \item We have
         \[B_\lambda = \frac{dF}{d\lambda d\Omega} = \frac{dF}{d\nu d\Omega}\frac{d\nu}{d\lambda}\]
 
-        Utilizando a relação fundamental da ondulatória, \(c=\nu\lambda \rightarrow \nu = c/\lambda\) chegamos em 
+        Using the fundamental wave relation \(c=\nu\lambda \rightarrow \nu = c/\lambda\), we arrive at
 
         \[B_\lambda = \frac{2h(c/\lambda)^3}{c^2(e^{\frac{hc}{\lambda k_BT}}-1)}\frac{d}{d\lambda}\left(\frac{c}{\lambda}\right) = \frac{2hc^2}{\lambda^5}\frac{1}{(e^{\frac{hc}{\lambda k_BT}}-1)}\]
 
-        \item Para resolver esse item, pracisamos achar o ponto máximo de \(B_\lambda\). Mas diferenciar \(B_\lambda\) diretamente é uma tarefa estremamente chata. Uma ideia mais eficiente é tirar o logaritimo natural de \(B_\lambda\) e diferenciar o mesmo. Uma vez que estamos no ponto de máximo, ambas as maneiras chegarâo no mesmo, resultado
+        \item To solve this part we need the maximum of \(B_\lambda\). Differentiating \(B_\lambda\) directly is extremely tedious. A more efficient approach is to take the natural logarithm of \(B_\lambda\) and differentiate that. At a maximum, both procedures give the same result.
         
         \[\ln B_\lambda = -5\ln \lambda - \ln (e^{hc/\lambda k_BT}-1) + C\]
 
-        Onde \(C\) é uma constante que absorve os \(\ln\) das outras constantes de  \(B_\lambda\). Continuando a derivar 
+        where \(C\) is a constant that absorbs the \(\ln\) of the other constants in \(B_\lambda\). Differentiating further,
 
         \[\frac{d \ln B_\lambda}{d\lambda} = -\frac{5}{\lambda} + \frac{e^{hc/\lambda k_BT}}{e^{hc/\lambda k_BT}-1}\frac{hc}{k_BT\lambda^2}=0\]
 
-        Definindo \(x = \frac{hc}{k_BT\lambda}\) 
+        Defining \(x = \frac{hc}{k_BT\lambda}\),
 
         \[\frac{xe^x}{e^x-1}=5\]
 
         \[x=5e^{-x}(e^x-1) = 5(1-e^{-x})\]
 
-        Utilizando iteração, podemos resolver para \(x\), obtendo \(x\approx 4,965\). Voltando a definição de \(x\)
+        Solving by iteration for \(x\) gives \(x\approx 4.965\). Returning to the definition of \(x\),
 
-        \[4,965 = \frac{hc}{k_B T\lambda_{max}}\rightarrow \boxed{\lambda_{max} \approx \frac{2,989 \cdot 10^{-3}}{T}}\]
+        \[4.965 = \frac{hc}{k_B T\lambda_{max}}\rightarrow \boxed{\lambda_{max} \approx \frac{2.989 \cdot 10^{-3}}{T}}\]
 
-        Essa é a famosa \textit{Lei de Wien}, comumente escrita na forma \(\lambda = b/T\), onde \(b\approx 2,989 \cdot 10^{-3}\).
+        This is Wien's law, commonly written \(\lambda = b/T\), where \(b\approx 2.989 \cdot 10^{-3}\).
 
     \end{alternativas}
 \end{pssolution*}
@@ -227,89 +228,89 @@ Estas questões foram produzidas/selecionadas cuidadosamente com o objetivo de p
 
 \pts{3}
 \begin{pproblem}
-    A luminosidade de um corpo secundário, depende da área iluminada vísivel do astro. Nestá questão vamos fazer um breve estudo sobre esse fenômeno.
+    The luminosity of a secondary body depends on the visible illuminated area of the object. In this question we briefly study that phenomenon.
     \begin{alternativas}
-        \item  Considere a Seguinte situação:
+        \item  Consider the following situation:
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.8\linewidth]{imagens/fotometria 1.png}
-            \caption{Esquema Sol-Terra-Lua}
+            \caption{Sun-Earth-Moon diagram}
         \end{figure}
 
-        Encontre uma expressão para a razão \(\Phi\) entre a área iluminada em função de \(\alpha\) e a área total do planeta.
+        Find an expression for the ratio \(\Phi\) of the illuminated area, as a function of \(\alpha\), to the total area of the planet.
         
-        \item Encontre os ângulos \(\alpha\) em que temos a fase da Lua em: Nova, crescente, cheia e minguante, respectivamente.
+        \item Find the angles \(\alpha\) at which the Moon is in the phases new, waxing, full, and waning, respectively.
     \end{alternativas}
 
 \begin{pssolution*}{}{}
-    Para resolver a questão, vamos nos guiar no esquema da imagem abaixo:
+    To solve the problem, follow the diagram below:
     \begin{figure}[H]
        \centering
        \includegraphics[width=0.8\linewidth]{imagens/fotometriaplanetaria.png}
-       \caption{Fonte: Introduction do Planetary Fotometry} 
+       \caption{Source: Introduction to Planetary Photometry} 
     \end{figure}
 
-    Do lado esquerdo, vamos um esquema de como o plaeta se parece no céu e na direita uma representação vista "de cima". Aqui, podemos perceber que a área que vemos é composta por metade da área do cículo mais metadade da área de uma elipse de semi eixo maior \(R\) e semi eixo menor \(R\cos\alpha\). Assim
+    On the left is a sketch of how the planet appears in the sky, and on the right a view "from above". The area we see is half the area of the circle plus half the area of an ellipse with semi-major axis \(R\) and semi-minor axis \(R\cos\alpha\). Thus
 
     \[\Phi = \frac{\pi R^2/2 + \pi R^2\cos\alpha/2}{\pi R^2} \ \boxed{\therefore \Phi = \frac{1+\cos\alpha}{2}}\]
 
-    Na Lua nova, temos \(\Phi = 0\), na crescente \(\Phi = 1/2\), na cheia \(\Phi = 1\) e na minguante \(\Phi = 1/2\), assim:
+    At new moon, \(\Phi = 0\); at waxing, \(\Phi = 1/2\); at full moon, \(\Phi = 1\); and at waning, \(\Phi = 1/2\). Thus
 
     \[\boxed{\alpha_{nova} = 180^\circ, \ \alpha_{crescente} = 90^\circ, \ \alpha_{cheia} = 0^\circ, \ \alpha_{minguante} = 90^\circ}\]
 \end{pssolution*}
 \end{pproblem}
 
 \pts{5}
-\begin{pproblem} (Apostila Magna)
-    Neste problema, modelaremos o efeito da atmosfera na Terra. Suponha que o Sol
-seja um corpo negro de temperatura \(T_1\) e raio \(R_1\). A Terra é uma esfera que está localizada
-a uma distância \(R\) do Sol e possui raio \(R_3\). A emissividade da Terra é \(\epsilon_3\).
+\begin{pproblem} (Magna notes)
+    In this problem we model the effect of the atmosphere on Earth. Suppose that the Sun
+is a blackbody of temperature \(T_1\) and radius \(R_1\). Earth is a sphere located
+at a distance \(R\) from the Sun, with radius \(R_3\). Earth's emissivity is \(\epsilon_3\).
 \begin{alternativas}
-    \item Se não houvesse atmosfera na Terra, determine sua temperatura de equilíbrio, \(T_3\).
-    \item  Agora, consideraremos os efeitos da atmosfera. Modele-a como uma casa esférica de gás,
-    com uma emissividade \(\epsilon_2\) e raio exterior \(R_2>R_3\), concêntrica à Terra. No equilíbrio térmico,
-    sua absortividade para os comprimentos de onda no ultravioleta e no infravermelho é \(\epsilon_2\). A
-    atmosfera transmite uma fração \(t\) da radiação ultravioleta mas é completamente opaca ao
-    infravermelho. Assumindo que o Sol emita luz ultravioleta enquanto a Terra emite e re-emite
-    no infravermelho, determine as temperaturas \(T_2\) da atmosfera e \(T_3\) da Terra, no equilíbrio
-    termodinâmico. Assuma que a atmosfera seja um condutor de calor perfeito, de forma que
-    toda a radiação incidente sobre ela seja uniformemente distribuída por sua superfície.
+    \item If Earth had no atmosphere, determine its equilibrium temperature, \(T_3\).
+    \item  Now we include the atmosphere. Model it as a spherical shell of gas,
+    with emissivity \(\epsilon_2\) and outer radius \(R_2>R_3\), concentric with Earth. In thermal equilibrium,
+    its absorptivity at ultraviolet and infrared wavelengths is \(\epsilon_2\). The
+    atmosphere transmits a fraction \(t\) of the ultraviolet radiation but is completely opaque to
+    infrared radiation. Assuming that the Sun emits ultraviolet light while Earth emits and re-emits
+    in the infrared, determine the temperature \(T_2\) of the atmosphere and the temperature \(T_3\) of Earth in thermodynamic
+    equilibrium. Assume that the atmosphere is a perfect thermal conductor, so that
+    all radiation incident on it is distributed uniformly over its surface.
 \end{alternativas}
 
 \begin{pssolution*}{}{}
     \begin{alternativas}
-        \item No equilíbiro termodinâmico, temos que a quantidade de potencia absorvida é a mesma que a emitida. Além disso, a emissividade e a absortividade são as mesmas. Desse modo, 
+        \item In thermodynamic equilibrium, the power absorbed equals the power emitted. The emissivity and the absorptivity are also equal. Thus
         \[\frac{4\pi R_1^2\sigma T_1^4}{4\pi R^2}\pi R_3^2\epsilon_3 = 4\pi R_3^2\sigma T_3^4\epsilon_3\]
 
-        Resolvendo para \(T_3\), 
+        Solving for \(T_3\),
 
         \[\boxed{T_3 = T_1\left(\frac{R_1^2}{4\pi R^2}\right)^{1/4}}\]
 
-         \item A temperatura da atmosfera é calculada por 
+         \item The temperature of the atmosphere is
          
          \[T_2 = T_1\left(\frac{R_1^2}{4\pi R^2 }\right)^{1/4}\]
 
-         O processo é analogo ao item anterior. A luminosidade transmitida pela terra é, 
+         The reasoning is analogous to the previous part. The luminosity transmitted by Earth is
 
          \[L_2 = {4\pi R_2^2\sigma T_2^4\epsilon_2} t\]
 
-         A Terra irá refletir toda essa radiação e a atmosfera refletirá de volta apenas uma fração t, desse modo, a luminosidade total é dadda por, 
+         Earth reflects all of this radiation, and the atmosphere reflects only a fraction t back, so the total luminosity is
 
          \[L_{2,T} = 4\pi R_2^2\sigma T_2^4\epsilon_2 (t+t^2+t^3+...)\]
 
-         O item dentro do parenteses é uma somatóriso de PG infinito, com \(q_1 = t\) e \(r = t\), como \(t<1\), o valor do somatório vale, 
+         The expression in parentheses is an infinite geometric series, with first term \(q_1 = t\) and common ratio \(r = t\). Since \(t<1\), the sum is
 
          \[(t+t^2+t^3+...) = \sum_{n=1}^{\infty}t^n = \frac{t}{1-t}\]
 
-         Igualando ambas, 
+         Equating the two luminosities,
 
          \[L_{2,T} = L_3 \rightarrow \frac{4\pi R_2^2\sigma T_2^4 \epsilon_2 t}{1-t} = 4\pi R_3^2\sigma T_3^4\]
 
-         Resolvendo para \(T_3\), 
+         Solving for \(T_3\),
 
          \[T_3 = T_2\left(\frac{R_2^2\epsilon_2}{R_3^2}\frac{t}{1-t}\right)^{1/4}\]
 
-         Substituindo o valor de \(T_2\), 
+         Substituting \(T_2\),
 
          \[\boxed{T_3 =T_1\left(\frac{R_1^2R_2^2}{4\pi R^2R_3^2}\frac{\epsilon_2t}{1-t}\right)^{1/4}}\]
 
@@ -321,107 +322,106 @@ a uma distância \(R\) do Sol e possui raio \(R_3\). A emissividade da Terra é 
 
 
 \pts{2}
-\begin{pproblem}(Lista 2 - 2021)
-    A Nebulosa do Anel (M57) possui uma magnitude aparente igual a 9 e um
-diâmetro angular de 2$^{\prime}$ para um observador na Terra. Qual seria a magnitude aparente do céu
-noturno de um planeta orbitando uma estrela exatamente no centro de M57?
+\begin{pproblem}(Problem set 2 - 2021)
+    The Ring Nebula (M57) has an apparent magnitude of 9 and an
+angular diameter of 2$^{\prime}$ for an observer on Earth. What would be the apparent magnitude of the night
+sky of a planet orbiting a star exactly at the center of M57?
 \begin{pssolution*}{}{}
-    O céu noturno compreende um ângulo sólido de \(2\pi\) sr, já o ângulo sólido visto por nés é \(\Omega \approx \pi \theta^2\), onde \(\theta\) é o raio angular. Como o Fluxo é proporcional a \(\Omega\), temos
+    The night sky covers a solid angle of \(2\pi\) sr, while the solid angle we see is \(\Omega \approx \pi \theta^2\), where \(\theta\) is the angular radius. Since the flux is proportional to \(\Omega\),
 
-    \[m_{ceu}-m = -2,5\log\left(\frac{\Omega_{ceu}}{\Omega}\right)\]
+    \[m_{ceu}-m = -2.5\log\left(\frac{\Omega_{ceu}}{\Omega}\right)\]
 
-    Para converter \(\Omega\) de arco-minuto\(^2\) para sr, temos que multiplicar por \(\left(\frac{\pi}{180\cdot60}\right)^2\), assim
+    To convert \(\Omega\) from arcmin\(^2\) to sr, multiply by \(\left(\frac{\pi}{180\cdot60}\right)^2\). Thus
     
     \[m_{ceu} = 9 - \log\left(\frac{2\pi}{\pi(\frac{\pi}{180\cdot60})^2}\right)\]
 
-    \[\boxed{m_{ceu} = -9,43}\]
+    \[\boxed{m_{ceu} = -9.43}\]
 \end{pssolution*}
 \end{pproblem}
 
 
 \pts{4}
-\begin{pproblem} (Adaptado Lista 4 - 2021)
-    O Efeito Cherenkov foi primeiramente detectado pelo cientista soviético
-    Pavel Cherenkov, em 1937. Mais tarde, em conjunto com seus colegas de trabalho, I. E. Tamm e
-    I. M. Frank, ele interpretou fisicamente o fenômeno, ganhando, assim, o Prêmio Nobel de Física
-    de 1958. Antes de fazer um estudo matemático, precisamos, primeiro, entender um pouco mais
-    sobre seu princípio.
+\begin{pproblem} (Adapted from Problem set 4 - 2021)
+    The Cherenkov effect was first detected by the Soviet scientist
+    Pavel Cherenkov in 1937. Later, together with his colleagues I. E. Tamm and
+    I. M. Frank, he gave the phenomenon a physical interpretation and was awarded the Nobel Prize in Physics
+    in 1958. Before a mathematical treatment, we first need to understand the principle a little better.
 
-    Quando partículas carregadas de alta energia percorrem um meio dielétrico, é possível que, caso
-    sua velocidade seja maior que a velocidade de fase ($\frac{c}{n}$), átomos sejam excitados. Esses, por sua
-    vez, ao retornarem ao estado fundamental, emitem radiação eletromagnética. As ondas emitidas
-    se espalham de forma esférica e, quando somadas, formam um cone de ângulo de abertura $2\alpha$,
-    como mostra a figura abaixo.
+    When high-energy charged particles travel through a dielectric medium, atoms can be excited if
+    the particle speed exceeds the phase velocity ($\frac{c}{n}$). Those atoms, in
+    turn, emit electromagnetic radiation when they return to the ground state. The emitted waves
+    spread spherically and, when superposed, form a cone of opening angle $2\alpha$,
+    as the figure below shows.
     \begin{figure}[H]
       \centering
       \includegraphics[width=0.9\linewidth]{imagens/cherenkov.png}  
-      \caption{Mecanismo de radiação do Efeito Cherenkov}
+      \caption{Radiation mechanism of the Cherenkov effect}
     \end{figure}
 
-    Esse efeito é similar a um jato movendo-se em velocidade supersônica, ou seja, segue o mesmo
-    princípio do Cone de Mach, porém, com a luz. Finalmente, iremos desenvolver o modelo matemático do Efeito Cherenkov.
+    This effect is similar to a jet moving at supersonic speed: it follows the same
+    principle as the Mach cone, but with light. We now develop the mathematical model of the Cherenkov effect.
 
     \begin{center}
-        \textbf{Parte A - Modelo Teórico}    
+        \textbf{Part A - Theoretical Model}    
     \end{center}
     
-    Considere uma partícula movimentando-se a velocidades relativísticas em um meio de índice de
-    refração $n$. Sabe-se que sua massa de repouso é $m_0$, possui momento linear $p$ e velocidade $v$. Em
-    determinado momento, há emissão de um fóton sob um ângulo $\alpha$, como mostra a figura 1.
+    Consider a particle moving at relativistic speeds through a medium of refractive index
+    $n$. Its rest mass is $m_0$, and it has linear momentum $p$ and speed $v$. At a
+    given moment, a photon is emitted at an angle $\alpha$, as Figure 1 shows.
 
     \begin{alternativas}
-        \item Sendo $\mu$ a frequência do fóton emitido, determine a equação de seu momento
-        linear, $p_\mu$, e sua energia, $E_\mu$. Sua resposta deve estar em função de $n$, $\mu$ e constantes físicas.
-        \item Encontre uma expressão para o momento linear da partícula após a emissão
-    do fóton em função de $p_\mu$, $p$ e $\alpha$.
-        \item Sendo $\beta_n = \frac{c}{vn}$, prove que a relação abaixo é verdadeira:
+        \item Letting $\mu$ be the frequency of the emitted photon, determine its linear
+        momentum, $p_\mu$, and its energy, $E_\mu$. Your answer must be in terms of $n$, $\mu$, and physical constants.
+        \item Find an expression for the linear momentum of the particle after it emits
+    the photon, in terms of $p_\mu$, $p$, and $\alpha$.
+        \item Letting $\beta_n = \frac{c}{vn}$, prove that the relation below holds:
         \begin{equation}
             \cos\alpha = \frac{1}{\beta_n}
         \end{equation}
-        \item Considerando que o momento linear e a energia se conservem, determine a
-        velocidade mínima para a ocorrência do Efeito Cherenkov.
-        \textbf{Dica:} Quando comparado com os outros parâmetros, o fator $(n^2-1)h\mu$ pode ser desprezado.
+        \item Assuming that linear momentum and energy are conserved, determine the
+        minimum speed at which the Cherenkov effect can occur.
+        \textbf{Hint:} Compared with the other parameters, the factor $(n^2-1)h\mu$ may be neglected.
 
     \begin{center}
-        \textbf{Parte B - Reações Nucleares}    
+        \textbf{Part B - Nuclear Reactions}    
     \end{center}
     
-    A cadeia próton-próton é um processo de reações de fusão para conversão de hidrogênio em hélio.
-    Um dos ramos possíveis da cadeia próton-próton é a $pp \text{ IV}$, na qual, teoricamente, um átomo de
-    hélio-3 reage diretamente com um próton, conforme a reação a seguir:
+    The proton-proton chain is a sequence of fusion reactions that convert hydrogen into helium.
+    One possible branch of the proton-proton chain is $pp \text{ IV}$, in which, in principle, a
+    helium-3 atom reacts directly with a proton, according to the reaction below:
 
     \begin{equation}
         ^3\text{He} + ^1\text{H} \rightarrow ^4\text{He} + \nu + \_\_
     \end{equation}
 
-        \item  Indicando a lei de conservação nuclear utilizada, indique qual partícula faltante
-        no quadrado da reação acima.
+        \item  State the nuclear conservation law you use, and identify the missing particle
+        in the blank of the reaction above.
 
-        \item  Indicando a lei de conservação nuclear utilizada, indique qual partícula faltante
-        no quadrado da reação abaixo:
+        \item  State the nuclear conservation law you use, and identify the missing particle
+        in the blank of the reaction below:
 
         \begin{equation}
             \pi^- \rightarrow \mu^- + \_
         \end{equation}
         
-        \textbf{Dados:} Massa do píon: $140 \ \text{MeV}/c^2$, massa do múon: $106 \ \text{MeV}/c^2$.
+        \textbf{Data:} Pion mass: $140 \ \text{MeV}/c^2$, muon mass: $106 \ \text{MeV}/c^2$.
     \end{alternativas}
 
 \begin{pssolution*}{}{}
     \begin{center}
-        \textbf{Parte A - Modelo Teórico}    
+        \textbf{Part A - Theoretical Model}    
     \end{center}
 
     \begin{alternativas}
-        \item Para um fóton, as relações de De Broglie, nos dizem que 
+        \item For a photon, the de Broglie relations give
         \[E = h\mu, \ \ p = \frac{h}{\lambda}\]
-        Onde \(h\) é a constante de plank.
+        where \(h\) is Planck's constant.
 
-        Utilizando a relação fundamental da ondulatória, \(\lambda = v/\mu = \frac{c}{n\mu}\), assim 
+        Using the fundamental wave relation, \(\lambda = v/\mu = \frac{c}{n\mu}\), so
 
         \[\boxed{E = h\mu, \ \ p = \frac{nh\mu}{c}}\]
 
-        \item Como o momento total é conservado, considereque a particula está se movendo com momento \(p\) ao longo do eixo \(x\), antes de emitir um foton. Assim, temos 
+        \item Since the total momentum is conserved, suppose the particle moves with momentum \(p\) along the \(x\) axis before emitting a photon. Then
         
         \[p = p_\mu\cos\alpha + p'_x\]
 
@@ -429,74 +429,74 @@ noturno de um planeta orbitando uma estrela exatamente no centro de M57?
 
         \[p' = \sqrt{p_x^2 + p_y^2}\]
 
-        Resolvendo para \(p'\)
+        Solving for \(p'\),
 
         \[p'^2 =(p - p_\mu\cos\alpha)^2 +p_\mu^2\sin^2\alpha \]
 
         \[p'^2 = p^2 - 2p_\mu p \cos\alpha + p_\mu^2\]
 
-        Finalmente
+        Finally,
 
         \[p' = \sqrt{p^2-2pp_\mu\cos\alpha+p^2_\mu}\]
 
-        \item Olhe a seguinte figura, 
+        \item Consider the following figure.
         
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.7\linewidth]{imagens/cherenkov.1.png}
-            \caption{Esquema Cherenkov}
+            \caption{Cherenkov diagram}
         \end{figure}
 
-        Note que o raio do circulo é dado pela distância percorrida pelo fóton. A distância percorrida do centro do cirulo até o fim do cone é \(vt\), assim
+        The radius of the circle is the distance traveled by the photon. The distance from the center of the circle to the end of the cone is \(vt\), so
 
         \[\boxed{\cos\alpha = \frac{ct}{nvt} = \frac{c}{nv} \equiv \frac{1}{\beta_n}}\]
 
-        \item Definindo \(c=1\), a conservação de energia nos diz
+        \item Setting \(c=1\), energy conservation gives
         \[\sqrt{p^2+m_0^2} = \sqrt{p'^2+m_0^2}+h\mu\]
 
-        Trablhando nessa expressão
+        Working through this expression,
 
         \[\sqrt{p'^2 + m_0^2} = \sqrt{p^2+m_0^2} - h\mu\]
 
         \[p'^2 + m_0^2 = p^2+m_0^2 + h^2\mu^2 - 2h\mu\sqrt{p^2+m_0^2}\]
 
-        Substituindo \(p'\)
+        Substituting \(p'\),
 
         \[p^2-2pp_\mu\cos\alpha+p^2_\mu = p^2+h^2\mu^2 - 2h\mu\sqrt{p^2+m_0^2}\]
 
-        Resolvendo para \(\cos\alpha\) 
+        Solving for \(\cos\alpha\),
 
         \[\cos\alpha = \frac{p_\mu^2 - h^2\mu^2+2h\mu\sqrt{p^2+m_0^2}}{2pp\mu}\]
 
-        Simplificando 
+        Simplifying,
 
         \[\cos\alpha = \frac{p_\mu}{2p} - \frac{h^2\mu^2}{2pp_\mu} + \frac{h\mu\sqrt{p^2+m_0^2}}{pp_\mu}\]
         
-        Substituindo \(p_\mu = nh\mu\)
+        Substituting \(p_\mu = nh\mu\),
 
         \[\cos\alpha = \frac{nh\mu}{2p} + \frac{h\mu}{2np}+ \frac{\sqrt{p^2+m_0^2}}{np}\]
 
         \[\cos\alpha = \frac{h\mu(n^2-1)+2\sqrt{p^2+m_0^2}}{2np}\]
 
-        Desprezando o termo \(h\mu(n^2-1)\) e substituindo \(\cos\alpha\)
+        Neglecting the term \(h\mu(n^2-1)\) and substituting \(\cos\alpha\),
 
         \[\frac{1}{nv} = \frac{\sqrt{p^2+m_0^2}}{np}\]
 
-        Resolvendo para \(v\)
+        Solving for \(v\),
 
         \[v = \frac{p}{\sqrt{p^2+m_0^2}}\]
 
-        Porfim, voltando os \(c\)'s, temos 
+        Finally, restoring the factors of \(c\),
 
         \[\boxed{v = \frac{pc^2}{\sqrt{p^2c^2+m_0^2c^4}}}\]
 
         \begin{center}
-            \textbf{Parte B - Reações Nucleares}    
+            \textbf{Part B - Nuclear Reactions}    
         \end{center}
 
-        \item Utilizando a conservação de carga, do lado esquerdo temos \(2+1=3\) prótons, porém do lado direito, só temos \(2\), portanto a particula faltante deve conter um proton. Já a massa atômica, segue como \(3+1=4\) e do lado direito \(4\). Assim, a particula faltante deve ter a carga de um proton e a massa muito menor do que este. A única partícula que seja essa descrição é o \(\boxed{\text{pósiton, }e^+}\).
+        \item Using charge conservation, the left-hand side has \(2+1=3\) protons, but the right-hand side has only \(2\), so the missing particle must contain one proton. The mass number is \(3+1=4\) on the left and \(4\) on the right. The missing particle must therefore have the charge of a proton and a mass much smaller than a proton's. The only particle that fits this description is the \(\boxed{\text{positron, }e^+}\).
             
-        \item Utilizando que o número leptônico é constante, temos que o pion não é um lepton \(n_L=0\), mas o múon, é um lepton com \(n_L=+1\), então a nossa partícula deve ter \(n_L=-1\). O únio antilépton neutro associado ao múon com \(n_L=-1\) é o antineutrino do múon, \(\bar{\nu}_\mu\), portanto, a relação completa é 
+        \item Lepton number is conserved. The pion is not a lepton, \(n_L=0\), but the muon is a lepton with \(n_L=+1\), so the missing particle must have \(n_L=-1\). The only neutral antilepton associated with the muon and carrying \(n_L=-1\) is the muon antineutrino, \(\bar{\nu}_\mu\). The complete reaction is therefore
         \[\boxed{\pi^{-}\rightarrow \mu^- + \bar{\nu}_\mu}{}\]
 
     \end{alternativas}
@@ -506,91 +506,91 @@ noturno de um planeta orbitando uma estrela exatamente no centro de M57?
 
 
 \pts{3} 
-\begin{pproblem}(Lista 3 - Vinhedo 2022)
-Juvelino, diretamente de seu observatório em Paris, França, monitora a estrela Polaris ($\alpha\text{UMi}$). Ele tem como objetivo descobrir a temperatura de cor $T_c$ do astro. Alguns dos dados de que ele dispõe a respeito de seu alvo são:
+\begin{pproblem}(Problem set 3 - Vinhedo 2022)
+Juvelino, observing directly from his observatory in Paris, France, monitors the star Polaris ($\alpha\text{UMi}$). His goal is to find the color temperature $T_c$ of the star. Some of the data he has on his target are:
 
 \begin{itemize}
-    \item Magnitude aparente na banda $V$: $V = 1,98$;
-    \item Magnitude absoluta na banda $V$: $M_V = -3,60$;
-    \item Magnitude absoluta na banda $B$: $M_B = -3,19$.
+    \item Apparent magnitude in the $V$ band: $V = 1.98$;
+    \item Absolute magnitude in the $V$ band: $M_V = -3.60$;
+    \item Absolute magnitude in the $B$ band: $M_B = -3.19$.
 \end{itemize}
 
-Com as informações fornecidas, ajude Juvelino!
+Using the information provided, help Juvelino!
 
 \begin{alternativas}
-    \item Realizando diversas observações, Juvelino determinou que a extinção interestelar na banda $V$ na direção de Polaris é $a_V = 5,8 \, \text{mag/kpc}$. Determine a distância, em pc, de $\alpha\text{UMi}$ até a Terra.
-    \item Usando a relação empírica
+    \item From many observations, Juvelino determined that the interstellar extinction in the $V$ band toward Polaris is $a_V = 5.8 \, \text{mag/kpc}$. Find the distance, in pc, from $\alpha\text{UMi}$ to Earth.
+    \item Using the empirical relation
     \begin{equation}
-        \frac{A_V}{E_{B-V}} = 3,0
+        \frac{A_V}{E_{B-V}} = 3.0
     \end{equation}
-    sendo $A_V$ a extinção interestelar total na banda $V$ e $E_{B-V}$ o excesso de cor $B-V$, determine o índice de cor $B-V$ da estrela observada.
-    \item Demonstre a relação
+    where $A_V$ is the total interstellar extinction in the $V$ band and $E_{B-V}$ is the $B-V$ color excess, find the $B-V$ color index of the observed star.
+    \item Show the relation
     \begin{equation}
-        T_c = \frac{7009}{(B-V) + 0,47}
+        T_c = \frac{7009}{(B-V) + 0.47}
     \end{equation}
-    na qual a temperatura de cor é dada em Kelvin. Para tanto, use o fato de que estrelas de classe espectral $A0$ possuem $(B-V) = 0$ e $T_c = 15000 \, \text{K}$. Use também que os comprimentos de onda das bandas $B$ e $V$ são, respectivamente, $\lambda_B = 440 \, \text{nm}$ e $\lambda_V = 548 \, \text{nm}$. Justifique quaisquer aproximações feitas.
+    in which the color temperature is given in kelvin. To do so, use the fact that stars of spectral class $A0$ have $(B-V) = 0$ and $T_c = 15000 \, \text{K}$. Also use the wavelengths of the $B$ and $V$ bands, $\lambda_B = 440 \, \text{nm}$ and $\lambda_V = 548 \, \text{nm}$, respectively. Justify any approximations you make.
 
-    \textbf{DICA: A lei de plack talvez seja útil}
-    \item Determine a temperatura de cor de Polaris.
+    \textbf{HINT: Planck's law may be useful}
+    \item Find the color temperature of Polaris.
 \end{alternativas}
 \begin{pssolution*}{}{}
     \begin{alternativas}
-        \item A expressão que relaciona corretamente as magnitudes é 
+        \item The expression that correctly relates the magnitudes is
         \[V - M_V = 5 \log d - 5 + a_V d\]
 
-        Essa equação, só pode ser resolvida por meio da iteração,
+        This equation can be solved only by iteration:
 
         \[d = \frac{V-M_V - 5\log d + 5}{a_v}\]
 
-        Iterando, chegamos em \(\boxed{d\approx 100\text{ pc}}\).
+        Iterating, we obtain \(\boxed{d\approx 100\text{ pc}}\).
 
-        \item Pela definição, \(E_{B-V} = A_B - A_V\). Assim
+        \item By definition, \(E_{B-V} = A_B - A_V\). Thus
         
-        \[\frac{A_V}{A_B-A_V} = 3,00\]
+        \[\frac{A_V}{A_B-A_V} = 3.00\]
 
-        \[A_B = \frac{A_V}{3}+A_V = 0,77\]
+        \[A_B = \frac{A_V}{3}+A_V = 0.77\]
 
-        Assim, 
+        Thus
 
-        \[B-M_B = 5\log d - 5 + A_B\rightarrow B = 2,58\]
+        \[B-M_B = 5\log d - 5 + A_B\rightarrow B = 2.58\]
 
-        E pela definição, o índice \(B-V\) = \(\boxed{U_{B-V} = B-V = 0,60}\)
+        By definition, the \(B-V\) index is \(\boxed{U_{B-V} = B-V = 0.60}\)
 
-        \item Utilizando a Lei de Planck, temos que 
+        \item Using Planck's law,
         
         \[\frac{B_B}{B_V} = \frac{F_B}{F_V} \left(\frac{\lambda_V}{\lambda_B}\right)^5 \frac{e^{\frac{\beta hc}{\lambda_V}-1}}{e^{\frac{\beta hc}{\lambda_B}-1}}\]
 
-        Utilizando a aproximação de Wein, temos
+        Using the Wien approximation,
 
         \[\frac{F_B}{F_V} = \left(\frac{\lambda_V}{\lambda_B}\right)^5 \frac{e^{\frac{\beta hc}{\lambda_V}}}{e^{\frac{\beta hc}{\lambda_B}}}\]
 
-        Utilizando a equação de Pogson para comparar as magnitudes, 
+        Using Pogson's equation to compare the magnitudes,
 
-        \[B-V = -2,5\log\left(\frac{F_B}{F_V}\right)+C\]
+        \[B-V = -2.5\log\left(\frac{F_B}{F_V}\right)+C\]
 
-        Aqui adicionamos uma constante, pois estamos trabalhando com diferentes comprimentos de ondas. Trabalhando na expressão, 
+        A constant is included because the two bands have different wavelengths. Working through the expression,
 
-        \[B-V = -2,5\log\left(\left(\frac{\lambda_V}{\lambda_B}\right)^5 \frac{e^{\frac{\beta hc}{\lambda_V}}}{e^{\frac{\beta hc}{\lambda_B}}}\right)+C\]
+        \[B-V = -2.5\log\left(\left(\frac{\lambda_V}{\lambda_B}\right)^5 \frac{e^{\frac{\beta hc}{\lambda_V}}}{e^{\frac{\beta hc}{\lambda_B}}}\right)+C\]
 
-        Trabalhando nessa expressão, 
+        Working through it further,
 
-        \[B-V = -2,5\log\left(\frac{\lambda_V}{\lambda_B}\right)^5 + 2,5 \beta hc\left(\frac{1}{\lambda_B}-\frac{1}{\lambda_V}\right)\log e + C\]
+        \[B-V = -2.5\log\left(\frac{\lambda_V}{\lambda_B}\right)^5 + 2.5 \beta hc\left(\frac{1}{\lambda_B}-\frac{1}{\lambda_V}\right)\log e + C\]
 
-        E utilizando \(\beta = \frac{1}{k_B T_c}\) e substituindo os valores, 
+        Using \(\beta = \frac{1}{k_B T_c}\) and substituting the values,
 
-        \[B-V = -1,19 + \frac{7009}{T_c}+C\]
+        \[B-V = -1.19 + \frac{7009}{T_c}+C\]
 
-        Para o tipo \(A_0\), \((B_V)=0\) e \(T_c = 15000\)K. Assim, 
+        For type \(A_0\), \((B_V)=0\) and \(T_c = 15000\)K. Thus
 
-        \[-1,19 + \frac{7009}{15000} + C = 0 \rightarrow C = 0,72\]
+        \[-1.19 + \frac{7009}{15000} + C = 0 \rightarrow C = 0.72\]
 
-        Assim, 
+        Thus
 
-        \[B-V = -0,47 + \frac{7009}{T_c} \rightarrow \ \ \boxed{T_c = \frac{7009}{(B-V) + 0,47}}\]
+        \[B-V = -0.47 + \frac{7009}{T_c} \rightarrow \ \ \boxed{T_c = \frac{7009}{(B-V) + 0.47}}\]
 
-        \item da equação anterior, 
+        \item From the previous equation,
         
-        \[\boxed{T_c = \frac{7009}{0,60 + 0,47} \approx 6600 \text{ K}}\]
+        \[\boxed{T_c = \frac{7009}{0.60 + 0.47} \approx 6600 \text{ K}}\]
     \end{alternativas}    
 
 \end{pssolution*}
@@ -599,18 +599,18 @@ Com as informações fornecidas, ajude Juvelino!
 
 \pts{4}
 \begin{pproblem}
-    (Lista 4 - 2020) Apesar de assustadora, a plantação de bananeiras de Juvelino possui um céu perfeito para uma de suas duas paixões: astrofotografia. Ele possui um telescópio de 200 mm de diâmetro e uma super CCD acoplada, com os parâmetros: lado do pixel \(5\ \mu\text{m}\), escala de placa \(3,2\ \text{arcmin/mm}\), eficiência quântica de 97\%, RON (Read-out noise, ou ruído de leitura) 1 contagem/pixel e DN (ruído térmico) 1 contagem/(pixel.hora). Ele prefere fazer suas observações na banda \(V\) (comprimento de onda central \(\lambda_V = 5500\ \text{Å}\), largura de banda \(\Delta \lambda = 820\ \text{Å}\)), pois lembra-se de um número mágico associado a ela: o fluxo de fótons de um objeto de magnitude 0 nessa banda é \(\phi_0 = 1000\ \text{fótons/}(\AA\cdot \text{cm}^2)\). Juvelino possui 2 alvos prediletos: uma estrela de magnitude \(m_V = 4,51\) e um aglomerado globular de brilho superficial uniforme em \(V\) de \(19,5\ \text{mag/arcsec}^2\) e diâmetro angular \(\theta = 40''\).
+    (Problem set 4 - 2020) Frightening as it is, Juvelino's banana plantation has a perfect sky for one of his two passions: astrophotography. He has a telescope 200 mm in diameter with a super CCD attached. Its parameters are: pixel side \(5\ \mu\text{m}\), plate scale \(3.2\ \text{arcmin/mm}\), quantum efficiency 97\%, RON (read-out noise) 1 count/pixel, and DN (thermal noise) 1 count/(pixel.hour). He prefers to observe in the \(V\) band (central wavelength \(\lambda_V = 5500\ \text{Å}\), bandwidth \(\Delta \lambda = 820\ \text{Å}\)), because he remembers a magic number associated with it: the photon flux of a magnitude-0 object in this band is \(\phi_0 = 1000\ \text{photons/}(\AA\cdot \text{cm}^2)\). Juvelino has two favorite targets: a star of magnitude \(m_V = 4.51\) and a globular cluster of uniform surface brightness in \(V\) of \(19.5\ \text{mag/arcsec}^2\) and angular diameter \(\theta = 40''\).
 
     \begin{alternativas}
-        \item Sabendo que o brilho do céu noturno no sítio de Juvelino é de \(21,9\) mag/arcsec\(^2\) na banda V e o seeing astrônomico \(\theta_0=1,2''\) calcule a razão sinal-ruído obtida em uma foto da estrela predileta com um tempo de exposição \(t_{exp}=30\)s.
-        \item Calcule a magnitude do ponto zero do sistema telescópio + CCD de Juvelino, tendo como base os dados da estrela.
+        \item The night-sky brightness at Juvelino's farm is \(21.9\) mag/arcsec\(^2\) in the V band, and the astronomical seeing is \(\theta_0=1.2''\). Calculate the signal-to-noise ratio obtained in a photo of his favorite star with exposure time \(t_{exp}=30\)s.
+        \item Calculate the zero-point magnitude of Juvelino's telescope + CCD system, using the data for the star.
         
-        A segunda grande paixão de Juvelino é Jiang, uma universitária chinesa que mora em Pequim. Após anos de distânciamento, Jiang propõe que Juvelino se mude para China. Antes de tomar a decisão, ele pesquisa o brilho do céu noturno na banda V na cidade de sua amada, que é \(19,3\) mag/arcsec\(^2\). Isso terá algum impacto no imageamento do aglomerado, que também é visível na residência de Jiang.
+        Juvelino's other great passion is Jiang, a Chinese university student who lives in Beijing. After years apart, Jiang suggests that Juvelino move to China. Before deciding, he looks up the night-sky brightness in the V band in his beloved's city, which is \(19.3\) mag/arcsec\(^2\). That will affect imaging of the cluster, which is also visible from Jiang's home.
 
-        \item Juvelino não consegue viver sem tirar fotos do aglomerado. Ele possuí regras invioláveis ao fazer imagens desse objeto, independentemente do local em que as faz: obter a razão sinal-ruído $S/N=10$; e tirar o mesmo número $X$ de fotos do aglomerado em uma noite. $X$ é o número de fotos permitido pelas condiçõe de céu na sua plantação de bananeiras. Esse número de imagens por noite é limitado pela bateria do CCD (duração de $3,2$ horas) e pelo tempo de exposição requerido por foto. Ajude-o nesse dilema! Faça os cálculos, determine quantas fotos do aglomerado ele consegue fazer em uma noite (em Pequim e no sítio) e conclua: ele vai tornar a ver a sua amada, ou este amor será ruidoso demais?
+        \item Juvelino cannot live without photographing the cluster. He has inviolable rules for imaging this object, wherever he does it: reach a signal-to-noise ratio $S/N=10$, and take the same number $X$ of photos of the cluster in one night. $X$ is the number of photos allowed by the sky conditions at his banana plantation. That number of frames per night is limited by the CCD battery (which lasts $3.2$ hours) and by the exposure time required for each photo. Help him with this dilemma! Do the calculations, find how many photos of the cluster he can take in one night (in Beijing and at the farm), and conclude: will he see his beloved again, or will this love be too noisy?
     \end{alternativas}
 \begin{pssolution*}{}{}
-    A solução oficial se encontra \href{https://drive.google.com/file/d/1q81Ba0RXA_L845xAE0uhVMecuhXAr2Ad/view?usp=sharing}{aqui}.
+    The official solution can be found \href{https://drive.google.com/file/d/1q81Ba0RXA_L845xAE0uhVMecuhXAr2Ad/view?usp=sharing}{here}.
 \end{pssolution*}
 \end{pproblem}
 
