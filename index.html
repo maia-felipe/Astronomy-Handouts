@@ -2,116 +2,251 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Olympiad Astronomy Problem Sets</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Olympiad Astronomy Problem Sets · Felipe Maia</title>
+  <meta name="description" content="Free problem sets and full solutions for olympiad astronomy: celestial mechanics, positional astronomy, photometry, thermodynamics, optics and cosmology. Written for the Brazilian IOAA/OLAA selection.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Olympiad Astronomy Problem Sets">
+  <meta property="og:description" content="Free problem sets and full solutions for IOAA/OLAA preparation.">
+  <meta property="og:url" content="https://maia-felipe.github.io/Handouts-Astronomia/">
+  <meta property="og:image" content="https://maia-felipe.github.io/Handouts-Astronomia/assets/img/sky-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header style="margin-left: 330px;">
-    <h1>Olympiad Astronomy Problem Sets</h1>
-    <p>Materials for study and preparation</p>
+
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="Felipe Maia, back to top">
+        <span class="brand-dot" aria-hidden="true"></span>
+        Felipe Maia
+      </a>
+      <nav aria-label="Sections">
+        <ul class="nav">
+          <li><a href="#handouts">Handouts</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Start of container -->
-  <div class="container">
-    
-    <!-- About Me section -->
-    <section class="bio">
-      <h2>About Me</h2>
-      <p>
-        Hi everyone, I'm Felipe Maia! I'm a first-year student at Yale, studying CS&Math and Physics. I also care about helping other young students prepare for science competitions. I was Director of the Brazilian Online Olympiads (OBOs) and Coordinator of the astronomy department at NOIC in 2024 and 2025. In 2025 I also qualified for the OLAA and the NBPhO, winning a gold medal and a bronze medal, respectively. I am currently on the committee that organizes the IOAA/OLAA selection process in Brazil.
-      </p>
-      <p>
-        This page is for sharing problem sets, handouts, and other resources that help students prepare for science olympiads, especially the Brazilian selection process. I believe knowledge should be accessible and inspiring, and that is what I try to offer here. This work is directly inspired by Professor Kevin Zhou, whose
-        <a href="https://knzhou.github.io/" target="_blank" rel="noopener noreferrer">website</a>
-        is well worth a visit.
-      </a>
-      </p>
-      <p>
-        For questions, corrections, or collaborations, feel free to get in touch:
-        <a href="mailto:felipe.silva@yale.edu">felipe.silva@yale.edu</a>.
-      </p>
+  <main id="top" class="wrap">
+
+    <!-- ============ Hero ============ -->
+    <div class="grid grid--hero">
+      <div class="tile hero-title md-6 lg-8">
+        <p class="label">Olympiad astronomy · IOAA / OLAA prep</p>
+        <h1>Olympiad<br>Astronomy<br>Problem <span class="accent">Sets</span></h1>
+        <p class="hero-sub">Problem sets with full solutions, written to prepare students for the Brazilian team selection for the IOAA and OLAA. Free to download.</p>
+      </div>
+
+      <!-- Hero photo: replace assets/img/sky-hero.jpg with your own astrophoto and update the caption below. -->
+      <figure class="tile tile--photo md-6 lg-4">
+        <img src="assets/img/sky-hero.jpg" width="1600" height="1066"
+             alt="A blue ring of light curving around a bright orange galaxy against a dark field of distant galaxies">
+        <figcaption>Gravitational lens LRG 3-757 · ESA/Hubble &amp; NASA</figcaption>
+      </figure>
+    </div>
+
+    <!-- ============ Stats ============ -->
+    <div class="grid grid--pairs" aria-label="At a glance">
+      <div class="tile stat md-3 lg-3"><strong>7</strong><span class="label">Topics</span></div>
+      <div class="tile stat md-3 lg-3"><strong>57</strong><span class="label">Problems</span></div>
+      <div class="tile stat md-3 lg-3"><strong>114</strong><span class="label">Pages of solutions</span></div>
+      <div class="tile stat md-3 lg-3"><strong>Free</strong><span class="label">PDF, no sign-up</span></div>
+    </div>
+
+    <!-- ============ Handouts ============ -->
+    <section id="handouts" class="section" aria-labelledby="handouts-title">
+      <div class="section-head">
+        <span class="label">01 — Handouts</span>
+        <h2 id="handouts-title">Problem sets</h2>
+      </div>
+
+      <ol class="sets">
+        <li class="set">
+          <span class="set-num">01</span>
+          <div class="set-body">
+            <h3>Celestial Mechanics</h3>
+            <p>Orbits in unusual potentials, hodographs, hyperbolic trajectories, rockets and escape speeds, pulsars, binaries and tides.</p>
+          </div>
+          <span class="set-count">19 problems</span>
+          <div class="set-links">
+            <a href="banco%20de%20questoes/mecceleste/mecceleste.pdf" target="_blank" rel="noopener">Problems <span>14 pp</span></a>
+            <a href="banco%20de%20questoes/mecceleste/meccelestesol.pdf" target="_blank" rel="noopener">Solutions <span>57 pp</span></a>
+          </div>
+        </li>
+        <li class="set">
+          <span class="set-num">02</span>
+          <div class="set-body">
+            <h3>Positional Astronomy</h3>
+            <p>Sundials, the equation of time, sunrise and sunset, occultations and spherical trigonometry.</p>
+          </div>
+          <span class="set-count">11 problems</span>
+          <div class="set-links">
+            <a href="banco%20de%20questoes/astropos/astropos.pdf" target="_blank" rel="noopener">Problems <span>5 pp</span></a>
+            <a href="banco%20de%20questoes/astropos/astropossol.pdf" target="_blank" rel="noopener">Solutions <span>21 pp</span></a>
+          </div>
+        </li>
+        <li class="set">
+          <span class="set-num">03</span>
+          <div class="set-body">
+            <h3>Photometry &amp; Modern Physics</h3>
+            <p>Optical depth, blackbodies, magnitudes and surface brightness, the Cherenkov effect.</p>
+          </div>
+          <span class="set-count">10 problems</span>
+          <div class="set-links">
+            <a href="banco%20de%20questoes/foto/foto.pdf" target="_blank" rel="noopener">Problems <span>5 pp</span></a>
+            <a href="banco%20de%20questoes/foto/fotosol.pdf" target="_blank" rel="noopener">Solutions <span>16 pp</span></a>
+          </div>
+        </li>
+        <li class="set">
+          <span class="set-num">04</span>
+          <div class="set-body">
+            <h3>Thermodynamics</h3>
+            <p>Galaxies as ideal gases, adiabatic indices of stars, atmosphere models, black-hole thermodynamics and gas-powered rockets.</p>
+          </div>
+          <span class="set-count">7 problems</span>
+          <div class="set-links">
+            <a href="banco%20de%20questoes/termo/termo.pdf" target="_blank" rel="noopener">Problems <span>5 pp</span></a>
+            <a href="banco%20de%20questoes/termo/termosol.pdf" target="_blank" rel="noopener">Solutions <span>20 pp</span></a>
+          </div>
+        </li>
+        <li class="set">
+          <span class="set-num">05</span>
+          <div class="set-body">
+            <h3>Optics &amp; Telescopes</h3>
+            <p>Keplerian telescopes, geometric optics, the diffraction limit and atmospheric refraction.</p>
+          </div>
+          <span class="set-count">5 problems<br>In progress</span>
+          <div class="set-links">
+            <a href="banco%20de%20questoes/opt/opt.pdf" target="_blank" rel="noopener">Problems <span>4 pp</span></a>
+            <a href="banco%20de%20questoes/opt/optsol.pdf" target="_blank" rel="noopener">Solutions <span>9 pp</span></a>
+          </div>
+        </li>
+        <li class="set">
+          <span class="set-num">06</span>
+          <div class="set-body">
+            <h3>Cosmology</h3>
+            <p>Deriving the Friedmann equation, and universes where the gravitational constant varies.</p>
+          </div>
+          <span class="set-count">3 problems<br>In progress</span>
+          <div class="set-links">
+            <a href="banco%20de%20questoes/cosmo/cosmo.pdf" target="_blank" rel="noopener">Problems <span>3 pp</span></a>
+            <a href="banco%20de%20questoes/cosmo/cosmosol.pdf" target="_blank" rel="noopener">Solutions <span>10 pp</span></a>
+          </div>
+        </li>
+        <li class="set">
+          <span class="set-num">07</span>
+          <div class="set-body">
+            <h3>Miscellaneous</h3>
+            <p>Binary stars, parallax and the other effects that shift a star's apparent position.</p>
+          </div>
+          <span class="set-count">2 problems<br>In progress</span>
+          <div class="set-links">
+            <a href="banco%20de%20questoes/mis/mis.pdf" target="_blank" rel="noopener">Problems <span>2 pp</span></a>
+            <a href="banco%20de%20questoes/mis/missol.pdf" target="_blank" rel="noopener">Solutions <span>3 pp</span></a>
+          </div>
+        </li>
+        <li class="set set--all">
+          <span class="set-num">All</span>
+          <div class="set-body">
+            <h3>Complete question bank</h3>
+            <p>Every topic with its solutions in a single PDF, good for printing or reading offline.</p>
+          </div>
+          <span class="set-count">57 problems</span>
+          <div class="set-links">
+            <a href="banco%20de%20questoes/solucao.pdf" target="_blank" rel="noopener">Problems + solutions <span>114 pp</span></a>
+          </div>
+        </li>
+      </ol>
+
+      <p class="sets-note">Some problems are adapted from earlier selection tests and other sources; those are credited in each statement.</p>
     </section>
 
-    <!-- Available materials section -->
-    <section class="section">
-      <h2>Available materials</h2>
-      <ul>
-        <li>
-          <a href="https://maiafelipe0911.github.io/Handouts-Astronomia/banco%20de%20questoes/mecceleste/mecceleste.pdf" target="_blank">
-            Celestial Mechanics
-          </a>
-        </li><li>
-          <a href="https://maiafelipe0911.github.io/Handouts-Astronomia/banco%20de%20questoes/mecceleste/meccelestesol.pdf" target="_blank">
-            Celestial Mechanics (Solutions)
-          </a>
-        </li><li>
-          <a href="https://maiafelipe0911.github.io/Handouts-Astronomia/banco%20de%20questoes/astropos/astropos.pdf" target="_blank">
-            Positional Astronomy
-          </a>
-        </li><li>
-          <a href="https://maiafelipe0911.github.io/Handouts-Astronomia/banco%20de%20questoes/astropos/astropossol.pdf" target="_blank">
-            Positional Astronomy (Solutions)
-          </a>
-        </li><li>
-          <a href="https://maiafelipe0911.github.io/Handouts-Astronomia/banco%20de%20questoes/foto/foto.pdf" target="_blank">
-            Photometry and Modern Physics
-          </a>
-        </li><li>
-          <a href="https://maiafelipe0911.github.io/Handouts-Astronomia/banco%20de%20questoes/foto/fotosol.pdf" target="_blank">
-            Photometry and Modern Physics (Solutions)
-          </a>
-        </li><li>
-          <a href="https://maiafelipe0911.github.io/Handouts-Astronomia/banco%20de%20questoes/termo/termo.pdf" target="_blank">
-            Thermodynamics
-          </a>
-        </li><li>
-          <a href="https://maiafelipe0911.github.io/Handouts-Astronomia/banco%20de%20questoes/termo/termosol.pdf" target="_blank">
-            Thermodynamics (Solutions)
-          </a>
-        </li>
-        </li><li>
-          <a href="https://maiafelipe0911.github.io/Handouts-Astronomia/banco%20de%20questoes/opt/opt.pdf" target="_blank">
-            Optics and Telescopes
-          </a>
-        </li>
-        </li><li>
-          <a href="https://maiafelipe0911.github.io/Handouts-Astronomia/banco%20de%20questoes/opt/optsol.pdf" target="_blank">
-            Optics and Telescopes (Solutions)
-          </a>
-        </li>
-        </li><li>
-          <a href="https://maiafelipe0911.github.io/Handouts-Astronomia/banco%20de%20questoes/cosmo/cosmo.pdf" target="_blank">
-            Cosmology
-          </a>
-        </li>
-        </li><li>
-          <a href="https://maiafelipe0911.github.io/Handouts-Astronomia/banco%20de%20questoes/cosmo/cosmosol.pdf" target="_blank">
-            Cosmology (Solutions)
-          </a>
-        </li>  
-        </li><li>
-          <a href="https://maiafelipe0911.github.io/Handouts-Astronomia/banco%20de%20questoes/mis/mis.pdf" target="_blank">
-            Miscellaneous
-          </a>
-        </li>
-        </li><li>
-          <a href="https://maiafelipe0911.github.io/Handouts-Astronomia/banco%20de%20questoes/mis/missol.pdf" target="_blank">
-            Miscellaneous (Solutions)
-          </a>
-        </li>
-        </li><li>
-          <a href="https://maiafelipe0911.github.io/Handouts-Astronomia/banco%20de%20questoes/solucao.pdf" target="_blank">
-            All-in-one PDF
-          </a>
-        </li>
-      </ul>
-    </section>
-    
-  </div>
-  <!-- End of container -->
+    <!-- ============ About ============ -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="section-head">
+        <span class="label">02 — About</span>
+        <h2 id="about-title">About me</h2>
+      </div>
 
-  <footer>
-    <p>&copy; 2025 Felipe Maia - Olympiad Astronomy</p>
+      <div class="grid">
+        <!-- Portrait: drop a photo at assets/img/portrait.jpg and it replaces the monogram automatically. -->
+        <figure class="tile tile--photo portrait md-6 lg-4">
+          <span class="monogram" aria-hidden="true">FM</span>
+          <img src="assets/img/portrait.jpg" width="1200" height="1500" alt="Portrait of Felipe Maia" loading="lazy" onerror="this.remove()">
+        </figure>
+
+        <div class="tile bio md-6 lg-8">
+          <span class="label">Felipe Maia · Yale · CS &amp; Math and Physics</span>
+          <h3>Hi everyone, I'm Felipe.</h3>
+          <p>I'm a first-year student at Yale, studying CS &amp; Math and Physics. I also care about helping other young students prepare for science competitions. I was <strong>Director of the Brazilian Online Olympiads (OBOs)</strong> and <strong>Coordinator of the astronomy department at NOIC</strong> in 2024 and 2025. In 2025 I also qualified for the OLAA and the NBPhO, winning a gold medal and a bronze medal, respectively. I am currently on the <strong>committee that organizes the IOAA/OLAA selection process</strong> in Brazil.</p>
+          <p>This page is for sharing problem sets, handouts, and other resources that help students prepare for science olympiads, especially the Brazilian selection process. I believe knowledge should be accessible and inspiring, and that is what I try to offer here. This work is directly inspired by Professor Kevin Zhou, whose <a href="https://knzhou.github.io/" target="_blank" rel="noopener noreferrer">website</a> is well worth a visit.</p>
+        </div>
+
+      </div>
+      <div class="grid grid--pairs">
+        <div class="tile fact md-3 lg-3">
+          <span class="label">OLAA 2025</span>
+          <strong><span class="medal medal--gold" aria-hidden="true"></span>Gold medal</strong>
+        </div>
+        <div class="tile fact md-3 lg-3">
+          <span class="label">NBPhO 2025</span>
+          <strong><span class="medal medal--bronze" aria-hidden="true"></span>Bronze medal</strong>
+        </div>
+        <div class="tile fact md-3 lg-3">
+          <span class="label">Currently</span>
+          <strong>IOAA/OLAA selection committee, Brazil</strong>
+        </div>
+        <div class="tile fact md-3 lg-3">
+          <span class="label">2024 – 2025</span>
+          <strong>Director, OBOs · Astronomy coordinator, NOIC</strong>
+        </div>
+      </div>
+
+      <!-- Event photos: once assets/img/event-1.jpg and event-2.jpg exist, uncomment this block.
+      <div class="grid">
+        <figure class="tile tile--photo md-3 lg-6">
+          <img src="assets/img/event-1.jpg" width="1600" height="1067" alt="DESCRIBE THE PHOTO" loading="lazy">
+          <figcaption>CAPTION</figcaption>
+        </figure>
+        <figure class="tile tile--photo md-3 lg-6">
+          <img src="assets/img/event-2.jpg" width="1600" height="1067" alt="DESCRIBE THE PHOTO" loading="lazy">
+          <figcaption>CAPTION</figcaption>
+        </figure>
+      </div>
+      -->
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="section-head">
+        <span class="label">03 — Contact</span>
+        <h2 id="contact-title">Questions, corrections, collaborations</h2>
+      </div>
+      <div class="grid">
+        <div class="tile lg-12">
+          <span class="label">Email</span>
+          <a class="contact-link" href="mailto:felipe.silva@yale.edu">felipe.silva@yale.edu</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap label">
+      <span>© 2025–2026 Felipe Maia · Olympiad Astronomy</span>
+      <a href="https://github.com/maia-felipe/Handouts-Astronomia" target="_blank" rel="noopener">Source on GitHub ↗</a>
+    </div>
   </footer>
+
 </body>
 </html>
