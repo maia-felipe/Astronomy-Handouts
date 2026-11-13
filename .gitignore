@@ -1,0 +1,13 @@
+# LaTeX build artifacts (PDFs are kept: the site links to them)
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.out
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
+
+# OS / editor
+.DS_Store
